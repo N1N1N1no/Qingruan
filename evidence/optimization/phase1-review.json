@@ -1,0 +1,211 @@
+{
+  "status": "PHASE1_MODULE_ENGINEERING_ACCEPTANCE_READY",
+  "updated_at": "2026-11-10T19:25:44.636158+08:00",
+  "phase1_accepted": true,
+  "baseline_files_checked": 67,
+  "baseline_sources_unchanged": true,
+  "default_backend_unchanged": true,
+  "array_configurations_mapped": 10,
+  "backend_configurations_mapped": 6,
+  "primary_engineering_candidate": "R8_C16_L4/shared",
+  "selection_basis": "minimum measured backend-area times finite 12-MAC-module-sample cycles among three fully mapped shortlist geometries; not full-SoC ADP or a global optimum",
+  "shared_backend_comparison": [
+    {
+      "id": "R8_C16_L4",
+      "area": 1841282.550973,
+      "module_test_cycles_12": 5623670,
+      "setup_slack_ns": 0.000454903,
+      "hold_slack_ns": 0.094101772,
+      "area_change_vs_primary_percent": 0.0,
+      "MAC_sample_cycles_change_vs_primary_percent": 0.0
+    },
+    {
+      "id": "R8_C32_L4",
+      "area": 3267286.69766,
+      "module_test_cycles_12": 3932542,
+      "setup_slack_ns": 0.00255394,
+      "hold_slack_ns": 0.094101772,
+      "area_change_vs_primary_percent": 77.44624234523094,
+      "MAC_sample_cycles_change_vs_primary_percent": -30.071608042434928
+    },
+    {
+      "id": "R16_C8_L4",
+      "area": 1923446.759003,
+      "module_test_cycles_12": 7236475,
+      "setup_slack_ns": 0.005102158,
+      "hold_slack_ns": 0.094101772,
+      "area_change_vs_primary_percent": 4.4623356685035365,
+      "MAC_sample_cycles_change_vs_primary_percent": 28.678869848337474
+    }
+  ],
+  "RV32_backend_interleaving": [
+    {
+      "id": "R8_C16_L4",
+      "commands_per_mode": 22,
+      "FP32_cycles_equal": true,
+      "same_firmware_binary_in_both_modes": true,
+      "negative_control_detected": true
+    },
+    {
+      "id": "R8_C32_L4",
+      "commands_per_mode": 22,
+      "FP32_cycles_equal": true,
+      "same_firmware_binary_in_both_modes": true,
+      "negative_control_detected": true
+    },
+    {
+      "id": "R16_C8_L4",
+      "commands_per_mode": 22,
+      "FP32_cycles_equal": true,
+      "same_firmware_binary_in_both_modes": true,
+      "negative_control_detected": true
+    }
+  ],
+  "software": {
+    "nonmac_addresses": {
+      "status": "C_MODEL_COMMAND_ADDRESS_MAPPING_PASS",
+      "node_counts": {
+        "17": 67,
+        "POST_nodes": 77,
+        "5": 62,
+        "13": 29,
+        "9": 77,
+        "10": 12,
+        "14": 12,
+        "6": 58,
+        "8": 23,
+        "15": 1
+      },
+      "elements_checked": {
+        "17": 11336384,
+        "POST": 17055352,
+        "5": 10348800,
+        "13": 3725568,
+        "9": 13237056,
+        "10": 1430016,
+        "14": 2189712,
+        "6": 3763200,
+        "8": 3236352,
+        "15": 768
+      },
+      "POST_batch_commands": 1877,
+      "total_commands": 2584,
+      "commands_sha256": "ac25717fbe8845d8a55628479232007dcf27cbbfb439f4309c044f267bba91bd",
+      "remaining_CPU_nonmac_nodes": [
+        {
+          "node": 445,
+          "opcode": 4,
+          "dtype": 7,
+          "output_bytes": 32
+        },
+        {
+          "node": 446,
+          "opcode": 6,
+          "dtype": 7,
+          "output_bytes": 16
+        },
+        {
+          "node": 447,
+          "opcode": 8,
+          "dtype": 7,
+          "output_bytes": 24
+        }
+      ]
+    },
+    "mac_addresses": {
+      "status": "ALL_MODEL_MAC_RAW_BINDING_ADDRESS_PASS",
+      "MAC_nodes": 77,
+      "MAC_batches": 1877,
+      "hardware_im2col_commands": 1,
+      "A_addresses_checked": 14307984,
+      "B_addresses_checked": 31059456,
+      "direct_A_elements": 14157456,
+      "direct_B_elements": 31059456,
+      "previous_CPU_packing_bytes_removed": 45367440
+    },
+    "aux_host_numeric": {
+      "status": "PASS",
+      "nodes": 82,
+      "commands": 161,
+      "output_bytes": 28001280,
+      "written_bytes": 28302336,
+      "negative_control_detected": true,
+      "hardware_executed": false,
+      "whole_model_inference": false
+    }
+  },
+  "current_C_RV32_regressions": [
+    {
+      "test": "aux-soc",
+      "status": "PASS_CURRENT_SOURCE"
+    },
+    {
+      "test": "planner-soc",
+      "status": "PASS_CURRENT_SOURCE"
+    },
+    {
+      "test": "mac-plan-soc",
+      "status": "PASS_CURRENT_SOURCE"
+    }
+  ],
+  "firmware_builds": [
+    {
+      "id": "R8_C16_L4",
+      "bytes": 52592,
+      "executed": false
+    },
+    {
+      "id": "R8_C32_L4",
+      "bytes": 52592,
+      "executed": false
+    },
+    {
+      "id": "R16_C8_L4",
+      "bytes": 52592,
+      "executed": false
+    }
+  ],
+  "pending_phase1": [],
+  "native_validation_authorized": true,
+  "phase2_started": false,
+  "whole_model_accuracy_accepted": false,
+  "final_SoC_selection": "PENDING_PHASE2",
+  "official_preprocess_provenance": "User reports no edits, origin uncertain; unchanged local ZIP member match does not authenticate organizer-hosted origin.",
+  "source_sha256": {
+    "/mnt/data/Ubuntu/qingruan/native/swin-tiny/stage-status.json": "4dc3435b2e73e9b3167e9c86d53484fd2a7a071af0628d3e1e2a1e0c3a53a785",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/review_phase1.py": "fddae93d4f0f294a06a7702bf470c70d6ca0454c5db4ad35eae0425a02bae4f0",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/design-space.json": "c8746c7b6fd1e5f9aeaeeed626717f0d5d592d55fa8fb1df79c13b4b35d979e1",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/array-synthesis/summary.json": "9fb7c758b04e7658c5cae0fdcd15227b73e2413eb28ec06b534c650ed78642d2",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/array-functional/summary.json": "551c5bbc77c9afad02a91311bc9c542849c0a152c7a99b5328c32a808265633b",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/controller-sweep/summary.json": "802dbb8816cb7b46a59089967c8bb882d1b013a57f8b0181b6791a2ab52797c3",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/array-module-comparison.json": "c51cf114c2b9c28b9e509e54a420b355f5d476e177a4ab7ef2a965dc571fa087",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/backend-module-comparison.json": "763b986972c6d0c97d8bf30be22e871d5311187e6601cb4c2d0c61be329772b8",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/backend-synthesis/R8_C16_L4/private/summary.json": "c0fdb93faeab0495f59a8fa606d98c1a8ee78a466d5271366fdf1a99da0dbcc7",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/backend-synthesis/R8_C16_L4/shared/summary.json": "5d8365d1074aed2a5afc24cde83fa934d69d0dae8225561c08cf7b05f54c8d4e",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/backend-synthesis/R8_C32_L4/private/summary.json": "61cd3e29c4cf30f2da867413b44a525482f7b2a5f1942e3c867ad082e1c4de55",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/backend-synthesis/R8_C32_L4/shared/summary.json": "9a959af383c78dfedec68d58272e93af47bd8baee1452983a72bd42e39bd27da",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/backend-synthesis/R16_C8_L4/private/summary.json": "f84895a37c91361c3fd9d9f351f319aa0ec1b8f641d4f473698e50ea6cdffaaa",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/backend-synthesis/R16_C8_L4/shared/summary.json": "de7a3eddb34241b885be49c88c322830cbd38d7700d37c77a5cfe30d6f6ae155",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/backend-fp-pool/summary.json": "89ac39ab3d172aee1f650ae8856903218e29710144404667d38695ecb601b296",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/complete-soc-R8_C16_L4/summary.json": "42553ff4dce847b37f789e20eadd5211e48572c4e95b8e118dba6220cacbf745",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/complete-soc-R8_C16_L4/private/summary.json": "b3e677ce55dd78272ff936cea4647b8efc272012064ba950fa31e2efae6bf032",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/complete-soc-R8_C16_L4/shared/summary.json": "4be9f3ae664ab629bbd83d727d9c52777d9362a208de75413035730ecac758c9",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/complete-soc/summary.json": "4a8885186dd29293a317d510dd5328e00544a06e935751e5c90504456b6061f6",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/complete-soc/private/summary.json": "85d66f36e0357a2eaeef1293b9b43887c9eb0a633b2c1bba084a8176d9c2d523",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/complete-soc/shared/summary.json": "0a11f99b7d34a3e098a96e0491c12d3df7cdfb418f6bfd0e14882d2446fe7798",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/complete-soc-R16_C8_L4/summary.json": "630e493ac349290d08ff62be80149e3de5a62677fe78362f78c04c9949f74e99",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/complete-soc-R16_C8_L4/private/summary.json": "74131db8e14557df026087de30c7ae07dcf8fa12e32520a72ec1c449e293a4d2",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/complete-soc-R16_C8_L4/shared/summary.json": "d0869a3dea5902e662daf8dfe151768e997550d185be8edf04013c030987c4ab",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/nonmac-plan/summary.json": "0a8e80009c9923b4859811988ac261566da6c840d8ab929c79400d5c11e30c86",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/mac-plan/summary.json": "336483f5f68d929d60d9a94837dfdc5da2f98890bf9e573fad053c1245f2a1c1",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/aux-host/summary.json": "52e208ebe688d8199d1e762d493aeab7405c78916bac6378a56cb92bdd3509fa",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/native-validation-authorization.json": "a13bbf595a81d7ad35aa7cb9c36e758586c85da120cfc7852334d06336c84dba",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/aux-soc/summary.json": "04c23714ab0f43c1a8f3d31d2ffe360d664c9923ebf6ae84592e47ee57832654",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/planner-soc/summary.json": "e775997c3960b6f1298058c539b5ed179012228e6cb77553315cf8f854b81318",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/mac-plan-soc/summary.json": "cdd77af26ad10131211fbdbedb83c838f0621769d011a2770a26d57e58d88c77",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/complete-model-direct-build/R8_C16_L4/manifest.json": "f844807d3841ca44c96614d3a5095242de93daafb8c315f8b771bb8f2ec2480e",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/complete-model-direct-build/R8_C32_L4/manifest.json": "9cce4f4391d074a4c6253edd3548e43da7fb2efcd9f88cd96abfb4df4751b300",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/complete-model-direct-build/R16_C8_L4/manifest.json": "a22a389ff2bad4f7b855f2d16bc625c4a0712522635f64f1490dbf4eab4f60fd"
+  },
+  "scope": "Phase1 engineering review only; measured module area and finite module latency cannot replace organizer accuracy, complete RV32 inference, complete SoC area/latency/STA or gate/SDF deliverables."
+}

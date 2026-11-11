@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "case": "orphan_positive",
+      "expected_functional_pass": true,
+      "actual_status": "RECOVERED_COMPLETE_GRAPH_FROZEN_C_BYTE_EXACT_LOG_REVIEW_PASS_EXIT_STATUS_UNAVAILABLE",
+      "pass": true
+    },
+    {
+      "case": "owned_positive",
+      "expected_functional_pass": true,
+      "actual_status": "ACTUAL_RV32_FULL_IMAGE_FROZEN_C_BYTE_EXACT_PASS_OFFICIAL_REFERENCE_OPEN",
+      "pass": true
+    },
+    {
+      "case": "known_numeric_failure",
+      "expected_functional_pass": false,
+      "actual_status": "ACTUAL_RV32_FULL_IMAGE_DIAGNOSTIC_NOT_ACCEPTED",
+      "pass": true
+    },
+    {
+      "case": "bad_exit_status",
+      "expected_functional_pass": false,
+      "actual_status": "ACTUAL_RV32_FULL_IMAGE_DIAGNOSTIC_NOT_ACCEPTED",
+      "pass": true
+    },
+    {
+      "case": "corrupt_output",
+      "expected_functional_pass": false,
+      "actual_status": "ACTUAL_RV32_FULL_IMAGE_DIAGNOSTIC_NOT_ACCEPTED",
+      "pass": true
+    }
+  ],
+  "source_sha256": {
+    "/workspace/native/optimization/recover_vecpipe_image_suite.py": "3fd673cc89926c0eea573c747ef1e9ddb9ce851a4f571ed6e0262e2886cbf625"
+  },
+  "scope": "回放已完成真实日志/输出，包含已知数值失败、退出码失败和输出破坏；未重启任何仿真。"
+}

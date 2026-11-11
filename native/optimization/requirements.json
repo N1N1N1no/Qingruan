@@ -1,0 +1,78 @@
+{
+  "source_url": "https://xcnjdg7296m8.feishu.cn/wiki/YLkowzJAAifUCGkwOtpcVST1nnc",
+  "read_on": "2026-11-10",
+  "document_modified_visible": "2026-11-02 19:03",
+  "requirements": [
+    {
+      "id": "array",
+      "requirement": "Compare array configurations, correctness, utilization, inference latency and hardware area; co-optimize storage, data movement and control."
+    },
+    {
+      "id": "nonmac",
+      "requirement": "Implement model-relevant non-MAC operations in RISC-V software or dedicated Verilog integrated via AXI/MMIO."
+    },
+    {
+      "id": "participation",
+      "requirement": "Array extensions and non-MAC hardware must actually participate in model end-to-end inference."
+    },
+    {
+      "id": "new_hardware",
+      "requirement": "Provide RTL, functional verification and synthesis for new accelerators."
+    },
+    {
+      "id": "accuracy",
+      "requirement": "Meet model accuracy before system performance optimization is accepted."
+    },
+    {
+      "id": "comparison",
+      "requirement": "Compare complete inference latency, complete SoC synthesis area and ADP before and after optimization."
+    },
+    {
+      "id": "RV32_end_to_end",
+      "requirement": "Document item 6: full inference on the real RISC-V + OpenACM SoC must match organizer software reference; host-assisted RTL validation does not satisfy this requirement."
+    },
+    {
+      "id": "complete_latency_boundary",
+      "requirement": "Document PPA section: end-to-end time includes data movement, computation, software scheduling and result output, with all new hardware inside complete SoC area under common libraries/timing/area accounting."
+    },
+    {
+      "id": "reproducible_delivery",
+      "requirement": "Submit complete RTL/AXI project; mapped SoC gate netlist, SDC and reports; baseline gate simulation logs/waveforms/function results; inference program, converted weights and scripts; correctness/performance data; before-after cycles, area and critical-path report."
+    }
+  ],
+  "engineering_conditions": {
+    "clock_period_ns": 10,
+    "clock_value_is_existing_engineering_condition": true,
+    "external_RAM_bytes": 67108864,
+    "library": "existing Nangate standard cells and supplied 16x8 SRAM macro"
+  },
+  "selection_policy": "Minimum measured end-to-end ADP among candidates meeting accuracy, same-clock timing, memory and functional gates. Analytical bounds and unit tests alone do not prove a final optimum.",
+  "baseline_accuracy_open": true,
+  "status": "PHASE1_MODULE_ACCEPTED_PHASE2_REQUIRED",
+  "objective": "先帮我完成PE 阵列扩展与优化和非 MAC 操作实现与加速，确定最优方案后执行；在保证前面目标都完成的情况下再进行推理功能验证和系统性能优化，一切标准均按飞书文档",
+  "visible_scoring": {
+    "baseline_synthesis_timing": 20,
+    "model_deployment": "30*alpha",
+    "array_extension": "15*alpha",
+    "non_MAC_acceleration": "15*alpha",
+    "co_design_scheduling": "10*alpha",
+    "end_to_end_PPA": "10*alpha",
+    "alpha": "model difficulty weight"
+  },
+  "hard_area_cap": "Document mentions that a reasonable cap may be set, but no numeric cap was visible; do not invent one.",
+  "user_ordered_phases": [
+    {
+      "phase": 1,
+      "name": "PE array and non-MAC solution comparison, implementation and module acceptance",
+      "active": false,
+      "scope": "Complete candidates, storage/movement/control, RTL, module functional and synthesis evidence; engineering selection with its measured scope stated.",
+      "acceptance_evidence": "native/optimization/phase1-selection.json"
+    },
+    {
+      "phase": 2,
+      "name": "End-to-end inference validation and system optimization",
+      "active": true,
+      "gate": "Do not start further full-inference verification/performance optimization until phase1 engineering acceptance; final document acceptance and final ADP optimum still require this phase."
+    }
+  ]
+}

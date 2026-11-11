@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "task_id": "prepare",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/prepare.0rwu3lni",
+      "hashes_checked": 0
+    },
+    {
+      "task_id": "software",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/firmware.td8m0qoe",
+      "hashes_checked": 0
+    },
+    {
+      "task_id": "rtl_run",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/rtl.ivckneho",
+      "hashes_checked": 0
+    },
+    {
+      "task_id": "library_check",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/gui_runs/library_check.2r4iupmr",
+      "hashes_checked": 0
+    },
+    {
+      "task_id": "conv1_vector",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/conv1_point.28hhob8r",
+      "hashes_checked": 138
+    },
+    {
+      "task_id": "conv1_point",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/conv1_point.h34ayblo",
+      "hashes_checked": 145
+    },
+    {
+      "task_id": "pe_functional",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/pe_functional.2a7jx162",
+      "hashes_checked": 12
+    },
+    {
+      "task_id": "pe_sdf",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/pe_sdf.71o4bx3p",
+      "hashes_checked": 18
+    },
+    {
+      "task_id": "array_sdf",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/pe_array_sdf.rqnsd5tg",
+      "hashes_checked": 18
+    },
+    {
+      "task_id": "axi_functional",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/pe_axi_functional.swkzh1nt",
+      "hashes_checked": 23
+    },
+    {
+      "task_id": "axi_sdf",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/pe_axi_sdf.rx709mkc",
+      "hashes_checked": 29
+    },
+    {
+      "task_id": "soc_read",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/soc_read.dbjzuval",
+      "hashes_checked": 27
+    },
+    {
+      "task_id": "soc_constraints",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/soc_constraints.lt6k7hb6",
+      "hashes_checked": 158
+    },
+    {
+      "task_id": "soc_compile",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/soc_compile.pnll5jmj",
+      "hashes_checked": 224
+    },
+    {
+      "task_id": "soc_functional",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/soc_functional.20finegx",
+      "hashes_checked": 517,
+      "rtl_gate_trace_sha256": [
+        "5b21611a08b2dd51d5b277502c520ff3c2b4eb40504337cf3e9fbb53e0e19d3e",
+        "5b21611a08b2dd51d5b277502c520ff3c2b4eb40504337cf3e9fbb53e0e19d3e"
+      ],
+      "rtl_gate_trace_equal": true
+    },
+    {
+      "task_id": "soc_export",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/soc_sdf_export._u_vhi2a",
+      "hashes_checked": 251
+    },
+    {
+      "task_id": "soc_sdf",
+      "case": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/soc_sdf.u63n3r7w",
+      "hashes_checked": 555,
+      "rtl_gate_trace_sha256": [
+        "5b21611a08b2dd51d5b277502c520ff3c2b4eb40504337cf3e9fbb53e0e19d3e",
+        "5b21611a08b2dd51d5b277502c520ff3c2b4eb40504337cf3e9fbb53e0e19d3e"
+      ],
+      "rtl_gate_trace_equal": true
+    }
+  ],
+  "errors": []
+}

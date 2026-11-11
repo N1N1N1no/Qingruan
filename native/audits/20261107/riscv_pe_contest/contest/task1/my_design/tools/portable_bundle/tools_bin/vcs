@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+_contest_vcs_root=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/../.." && pwd)
+exec "${TASK1_PYTHON:-python3}" "$_contest_vcs_root/task1/scripts/vcs_vm.py" "$@"

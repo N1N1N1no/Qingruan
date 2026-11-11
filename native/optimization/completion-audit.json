@@ -1,0 +1,1395 @@
+{
+  "status": "FULL_OBJECTIVE_NOT_ACHIEVED",
+  "audited_at": "2026-11-11T08:23:30.236255+08:00",
+  "source_document": "https://xcnjdg7296m8.feishu.cn/wiki/YLkowzJAAifUCGkwOtpcVST1nnc",
+  "phase1_status": "PHASE1_MODULE_ENGINEERING_ACCEPTANCE_READY",
+  "phase1_pending": [],
+  "requirements": [
+    {
+      "id": "array",
+      "requirement": "Compare array configurations, correctness, utilization, inference latency and hardware area; co-optimize storage, data movement and control.",
+      "status": "THREE_CONTROL_FULL_MEASUREMENTS_PASS_FINAL_OPTIMUM_OPEN",
+      "current_evidence_scope": "原三候选完整VCS首图/1000输出逐字节及共同SoC条件审查全部通过：R8_C16/R8_C32/R16_C8总周期1000484499/949222155/1046957093，面积2089316.648438/3530648.246685/2171889.432457，ADP相对R8_C16为1/1.603274/1.087807。新流水完整面积/STA通过，但完整模型和最终最优未得到。",
+      "remaining": "完整推理利用率/总周期、官方精度和满足各门槛的最终ADP选型。"
+    },
+    {
+      "id": "nonmac",
+      "requirement": "Implement model-relevant non-MAC operations in RISC-V software or dedicated Verilog integrated via AXI/MMIO.",
+      "status": "MODULE_IMPLEMENTATION_PROVEN",
+      "current_evidence_scope": "初始目标非MAC模块及当前C库7/12/67命令真实RV32证明完成。新增向量流水通过148987条算术、在途协议、三配置独立/共享后端AXI及真实RV32同固件22命令正常/损坏输出负对照。",
+      "remaining": "新向量流水完整图数值/总周期、实际门级与20图覆盖、官方精度及最终选型/交付。"
+    },
+    {
+      "id": "participation",
+      "requirement": "Array extensions and non-MAC hardware must actually participate in model end-to-end inference.",
+      "status": "PROVEN_FIRST_IMAGE_REAL_RV32_ALL8",
+      "current_evidence_scope": "原三控制方案均由真实CPU执行1396节点逻辑图、1312融合后节点事件和4640条命令，八引擎实际参与，首图1000输出均与冻结C逐字节一致。新流水完整首图/20图仍待。",
+      "remaining": "最终候选/新增流水优化需重新通过相同完整图验证，官方精度仍未完成。"
+    },
+    {
+      "id": "new_hardware",
+      "requirement": "Provide RTL, functional verification and synthesis for new accelerators.",
+      "status": "MODULE_FUNCTION_AND_SYNTHESIS_PROVEN_FINAL_SOC_PENDING",
+      "current_evidence_scope": "原主候选R8_C16完整SoC门级v5最终审查通过：22命令、所有结果/护栏、CPU/调用/引擎周期与RTL一致，实际SRAM及两类联线延迟匹配SDF，功能破坏和真实时序负对照均通过。新流水完整SoC原约束STA/物理边界/全SDF反标与真实100fs负对照通过，其损坏输出门级已通过，正常22命令仍运行；19图批跑当前4图已实际执行，剩15图排队。 新增源码链核对通过：56个CPU文件、30份后端直接输入和3控制模块与当前仿真及相应综合快照一致，后端只作已记录参数/阵列绑定，完整控制只改调用名，门级引用最终映射工件；不声称形式等价。",
+      "remaining": "新流水同固件门级正常22命令及最终完整审查；其反标诊断、真实时序负对照和CPU检出损坏输出已通过。配合完整推理及交付。"
+    },
+    {
+      "id": "accuracy",
+      "requirement": "Meet model accuracy before system performance optimization is accepted.",
+      "status": "NOT_ACHIEVED",
+      "current_evidence_scope": "原始 ONNX 在本机 CUDA 的30次重复输出全部逐字节一致，稳定仅匹配3/5；本地ZIP/解压文件和清单一致。A100输入/完整logits未提供，不能验收官方精度。",
+      "remaining": "不改模型/预处理/标签/容差地解决5张公开参考不一致；15张私有主办方结果未提供，需保留提交输出。镜像验证和冻结C比较不能替代官方精度。"
+    },
+    {
+      "id": "comparison",
+      "requirement": "Compare complete inference latency, complete SoC synthesis area and ADP before and after optimization.",
+      "status": "THREE_CONTROLS_MEASURED_ORIGINAL_AND_PIPELINE_PENDING",
+      "current_evidence_scope": "原三候选完整SoC共同库/SDC/IO和实际RV32首图实测齐全。R8_C16在这三案同图ADP最低；R8_C32为其1.603274倍、R16_C8为1.087807倍。新流水面积2114649.956611及原约束STA已通过，完整周期与原始PE全图基线仍未完成。",
+      "remaining": "新流水及原始PE完整总周期和公平前后ADP；20图、官方精度和最终候选正常门级通过后确定最终方案。"
+    },
+    {
+      "id": "RV32_end_to_end",
+      "requirement": "Document item 6: full inference on the real RISC-V + OpenACM SoC must match organizer software reference; host-assisted RTL validation does not satisfy this requirement.",
+      "status": "FROZEN_C_FIRST_IMAGE_PASS_OFFICIAL_REFERENCE_OPEN",
+      "current_evidence_scope": "原三候选完整VCS首图均通过冻结C的1000输出逐字节核对；R8_C32完整独立Verilator与VCS全部周期/报告/输出相同。新流水首图仍运行，其余4图已观察到实际CPU节点执行、15排队，尚无新流水完整图通过结论；公开软件参考仍3/5，官方精度未验收。",
+      "remaining": "最终候选完成20张提供图片的实际RV32完整推理与全输出核对；其中5张公开参考一致性仍需解决。当前20图只完成输入/参考/镜像及装载验证，不算20图推理。"
+    },
+    {
+      "id": "complete_latency_boundary",
+      "requirement": "Document PPA section: end-to-end time includes data movement, computation, software scheduling and result output, with all new hardware inside complete SoC area under common libraries/timing/area accounting.",
+      "status": "THREE_CONTROLS_MEASURED_ORIGINAL_AND_PIPELINE_PENDING",
+      "current_evidence_scope": "原三候选完整图时间均覆盖搬运、硬件调用、MMIO/DMA轮询、软件调度及最终DDR输出。10ns下R8_C16/R8_C32/R16_C8实测10.00484499/9.49222155/10.46957093秒，含启动及检查的CPU返回分别另列；完整面积采用相同边界。",
+      "remaining": "其余候选及原始基线同边界实测，新增向量流水整机回归与PPA。"
+    },
+    {
+      "id": "reproducible_delivery",
+      "requirement": "Submit complete RTL/AXI project; mapped SoC gate netlist, SDC and reports; baseline gate simulation logs/waveforms/function results; inference program, converted weights and scripts; correctness/performance data; before-after cycles, area and critical-path report.",
+      "status": "COMPONENT_REPRODUCTION_PASS_FINAL_SELECTION_AND_ASSEMBLY_INCOMPLETE",
+      "current_evidence_scope": "原任务一门级日志/波形、初始三候选及新流水完整网表/SDC/面积/时序工件、推理固件与脚本均保存。20图原预处理输入与冻结C输出逐字节核对，160个RAM数据段730528720字节经实际VCS装载全部通过；19个新镜像及首图已有镜像均保持原固件/图/权重/表地址。 实际编译依赖补充核对及113文件RTL副本完成；搬迁后106个RTL/包含文件真实VCS编译、字节和参数/路径独立审查通过。原哈希清单漏列的5项已单独关联本地原包/原任务一证据，不倒填旧清单。 新增搬迁复现已通过：原始ONNX和未改脚本生成15项图/权重/查表与3份完整计划；固件52592字节/HEX及10个符号地址一致，ELF全部装载状态和372符号记录相同，仅非装载STT_FILE临时名字不同；20图原预处理及160段730528720字节RAM有效数据的镜像哈希全部一致。",
+      "remaining": "按最终选型组合已验证的RTL、模型转换、固件与20图数据复现组件，汇集最终网表/SDC/报告、门级/正确性结果和完整周期/面积/关键路径对比，形成完整可复现交付。最终硬件、官方精度与完整ADP门槛仍未通过。"
+    }
+  ],
+  "baseline_task1_scope": "Original RTL vs full mapped baseline SoC with synthesis SDF, CPU smoke program only; typical library, 10ns, MAXIMUM triplet. This is not optimized model inference or physical/multicorner signoff.",
+  "legacy_accuracy_scope": "native/validation/accuracy-summary.json only validates the earlier CPU Python INT8 workload; it is not evidence of current Swin official accuracy.",
+  "source_sha256": {
+    "/mnt/data/Ubuntu/qingruan/native/optimization/requirements.json": "8b3167753d6b1980ae720e340fd2677632c34ce73595e795dadf12ce1adf5cee",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/phase1-review.json": "bea62154dbaa92247f614e4b58ff1da9d48fb2c4f706086e90eb7cf63fb71761",
+    "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/soc_sdf.u63n3r7w/summary.json": "f68a04dd97ddc1ba48a87e73d037c1acfdcf29a5332458f0b2fd29bfa3c5cb8e",
+    "/mnt/data/Ubuntu/qingruan/native/swin-tiny/work/verify.ylnpqxth/summary.json": "29c003a7d890b731c80c5f1c0b0ac216974359a2ba8d30c80e4d469c2a30ec8a",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/soc-hold-fix/R8_C32_L4/summary.json": "9cee4350449e159d24f6ab736ab958e15c387a2f9183a6e65391cf7be367fe2b",
+    "/mnt/data/Ubuntu/qingruan/native/validation/accuracy-summary.json": "5678bc92b7a8ef8bfa11420e593e3b12267198d1e8a7eeb942f518a2e3d4b50a",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/planner-soc/summary.json": "e775997c3960b6f1298058c539b5ed179012228e6cb77553315cf8f854b81318",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/mac-plan-soc/summary.json": "cdd77af26ad10131211fbdbedb83c838f0621769d011a2770a26d57e58d88c77",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/aux-soc/summary.json": "04c23714ab0f43c1a8f3d31d2ffe360d664c9923ebf6ae84592e47ee57832654",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/verilator-crosscheck/summary.json": "e9dd3e31c3f3f153692ba2a92fa9799ef9f405409008b20d6ce464ebaa33861b",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/audit_local_competition.py": "a0024e46f894e10884ff2791ffa237d8ce9acba8162c64ae772cbf47183dc396",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/local-package-audit/summary.json": "4b4255cc25fa3338023a212be93f4964b6d2fdad720dcc5f8382eaaf3988f2cb",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/official-reference-diagnostic/summary.json": "39e6575eed77f9ce87d2ea828b24d43e551895730e63430edfb716de1faf18d3",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/公开参考差异复现_20261110.md": "cd4b0843ae58a908f8167d5f4f91828e837ffb0e9d0dc7f3c4702ab19d5bf5e7",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/synthesize_full_soc.py": "4067027211d95609e26ae3e2657f16fbdbda3319adbc45b2cfc1991fed362681",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-synthesis/R8_C16_L4/shared/v1/preparation.json": "c59183a323eb7b59e4d2d6d7f023644bb7c8ff84ab08035c3385fdd1115ea614",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/check_cuda_stability.py": "4157ef13d80474c841c9e4f760b4bbf784f69e284793db63b767ee4e86d138ff",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/cuda-stability-host-v1/summary.json": "c664f37fc77e261bdf4b3455deeae2e677cc0cf00417fa29f439b4a8632565fb",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/cuda-stability-v1/failure.json": "a160b03be7767307afc4030fd6ffb288bfb534a2bef86f3e8af2609ac29721c8",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/close_full_soc_timing.py": "029a9390c3a80c5984f696fa8fe8a4ec75a6ee9e8240c1c00e35ef17f9edb368",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-synthesis/R8_C16_L4/shared/v1/summary.json": "bf667a16a934bc740c252c50f157f08152a9a3917fb93117525352f07ca253a3",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-timing/R8_C16_L4/shared/v1/summary.json": "5871f15ad8d99a70dee6d0759d1f18c9f2eaff72c01fa9dd87a515da7297f88f",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/prepare_full_soc_gate.py": "8f40987b939ff8b132041b1bd69402ed00137f2c4e63a261c1d9ed42d108c1bd",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/gate-alias-parser-check.json": "8ab6e8b85239d036e1c62efedd4fc817f9cf2af3d53c7ac49cb59725fbbc2e5f",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/整机综合与时序修正_20261110.md": "ce34fec57905975f5e29048c3317ba39656c9447b404f8f2506c6930d40107c7",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/run_full_soc_gate.py": "db89c4e9229694200314aef73549f6bf9da151f53ea2e5329b2a6b94a3f4a64d",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v3/preparation.json": "8dddab3a3ddd2612c926f188271c65209d1763579eb2aa3721c219e98b35fc7d",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/README.md": "171b713e7ad0e646988b71e164eb90e879aeebafcb7e2ab02c51591e2deb4820",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v3/compile-result.json": "66a108162f37e3084c43836ab645dbbc1c7b9f8cbcfedf3b59d6c97b7c3a5b47",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v3/annotation-diagnostic.json": "114fe088932551355d767a5d7e1bb40287fdb6b06cd2f72d512b76864831ae9b",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v3/stop-receipt.json": "f085d327aa9e123e79d6f247ed67f838493b29d0515026b5548e9fb39e688fc8",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v3/normal-interrupted.json": "ca50ce655f99362bf501472c18acc8a392e133a61d45a6df7dcbaed5fbfaf9e5",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/repair_sdf_cell_loads.py": "8d6b46be7e2386dfe985ab2463feac6def93dc5090e59bb43871166b85e3b74b",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/diagnose_ddc_leaf_counts.py": "6e08f1f3e86ac211ad7501d3b05ca8c4c9272d2fd0dc094eedc72305bacde059",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/gate_connectivity_audit.py": "04bfddf770fac4a4881d4202800c25c37fc21a83eeefc36c43012e54f3f778a5",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/audit_full_soc_annotation.py": "b28c0a4ddd24931d866ad9bcf90193f01804ec59d6a400a66cf1013d27baa842",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/run_full_soc_timing_probe.py": "84ea07545e55f8fd5a392297df9ed5fb09df12a7d851dfd08c8c250a3bf706c3",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/review_full_soc_gate.py": "c5bb55c5fae303594c381062106b408125afefe6f00dd2ea1f4ab4f69c2fb767",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-timing/R8_C16_L4/shared/v8/summary.json": "a27adbb9afc7cdd6827c56ed2d652795603ed6a45a2656c004f71f0631014feb",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/preparation.json": "dbda93503b6375743ebfe9fb77e79ccb817d7fff0819c18deed5079ace0c0ffe",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/compile-result.json": "42fbfa840a76223b31d6ec7f6d48a197a9a63e370bc44f39c8f69f6ca083b70b",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/annotation-review.json": "e8bded29d145dfa8e7a03bb5add95bf41f8e99a33018b82fc5de9da902fecfbb",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/wire-connectivity-review.json": "5431be6b3f8b6ba5d710a081aeb8c566050e982c9b4d46390dd3d9d553953b26",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/unused-output-review.json": "0461b2af5aaaf10eaf6cad7a2d27eeef2872b7734530e6bba3f507a763cd31fd",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/timing-probe-ucli-v1/summary.json": "9dac63adc295ebba9b19d0117a251e88c5a1c2666fa1512d2a6c55fbb06543e6",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/gate-connectivity-guards-v1/summary.json": "92033b16dd59cf307cee58fbd82fa900f8ed849ece100fbf84c4f24c04d1d75c",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/run_full_soc_gate_extended.py": "70e440b3eb97e6211070e836d82b957ee5fb635f99cdcfbeddfd2d30c7e6da96",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/extended-runtime-driver.json": "0eca21c2d8fe544e1a5fbbbe3da2dbbd65f4b0ff67a0c72ca93de4201f3d2431",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/short-deadline-stop-receipt.json": "30ad1c9085f3a338785c1f16ce91319fdda646ff919b5c05dd69629aec87f54c",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-synthesis/R16_C8_L4/shared/v1/preparation.json": "e67f7d454fd5acf9ab85e54332bdb96072a558113a54f26c6232c7ea3c6670e1",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-synthesis/R8_C32_L4/shared/v1/summary.json": "556a76dee4b0a5ef63d763a31b8e2d757e3f7b8574a577ce740a5d3e3385490e",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-timing/R8_C32_L4/shared/v1/preparation.json": "16eb3a335552af11eb54c9c1f3fb6af9ca319c4bee38ecf716b289554df8ac74",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/audit_candidate_fixtures.py": "b9347371ef6d2b48608bfd79101cd3114e8b1087609c7d194ea950b889d82e24",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-candidate-fixtures-v1/summary.json": "33e6dd70202060627998c30a6a44b24afdf4b7b46241004f45ea245d0097c51e",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/audit_full_soc_conditions.py": "37abf21661674a7019f44067cbcc36555d56540daa1bbeaeb5612305ce4053ac",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-conditions-v1/summary.json": "8b14de1ae413c1acad3d71e49ea08af0811346ce8058d6b538ac012f729b0740",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/c/original_baseline_main.c": "176ddb5f9191b32fa803f17cca64d674fa147ccca60e157ffca17bd1d92a4496",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/prepare_original_baseline.py": "811ef2c8d73b280041179dc8f039125c12f05d7ea4a0b86873512243fe58f97e",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-full/ILSVRC2012_val_00000274.JPEG/preparation.json": "861f578f5ffbcba749d65d8c08a9e7b73aaa4304b6df66ae55ce6156f6a8933d",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/run_full_soc_gate_corrupt_parallel.py": "71c8232db88427be986cbff8860f691cb3bcce095218d204bf75459c4377c7c0",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/parallel-corrupt-driver.json": "b8f0ab64123b8db6193c3c9c9bc9885c94e9ced7801bb31ff0b446fe5f1e8e54",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-timing/R8_C32_L4/shared/v1/summary.json": "1980825ab56719536dc969a265686425f8c86fd0fbdb5c5b4a33fc23b92fb267",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-timing/R16_C8_L4/shared/v1/summary.json": "a844aa6ed9920d4f3eda6531a0d449cc8ea606fe945b312024b7f0836d13becd",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/整机候选测量与剩余验收_20261110.md": "32e1536cfcb94ac33ee413d29867877d06d5567ecee9f0e163522fe395d28337",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/全任务验收证据与缺口_20261110.md": "94356c462b0c1d2f91fafa833122c0b34e1bdf35a89bd228fcdcfdffb382d651",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/run_original_baseline.py": "be6a145a03f544aed78dfbae5eecc66355ac266e146408df93f7bc40bf665fc0",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/tests/original_baseline_full_monitor.sv": "f54b31dd2a4956d50c680d7be5e341cbbc2f0e49433e7b165343b5e0a4648ae9",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/prove_original_arithmetic.py": "eb462063df4d11e7d33b1694824eb4099d8ab58224727cb33216ef668498508d",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-arithmetic-equivalence-v1/summary.json": "f3a2f2e41407d6bb4621a1d01c8339eccef273993ed207292a434b00ccd2ea0c",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-verilator-crosscheck-v4/summary.json": "828ffb8ea76de9fc3494e0facde8c61bc9a877be033146b268351c58f15cd869",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-rtl/verilator/v1/preparation.json": "8caa16712dfa5e81da1d23fe9699ad54463a8e00d14fbfbc3a874917c9039e8d",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-rtl/verilator/v1/compile-summary.json": "fbdbbe5a0324b9fb236c50cb86c135b7288987b97cccee1741a33d38c10e1cd7",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-rtl/verilator/v1/prefix-1000000-summary.json": "d3354a600715047f2635982ff94a778d82de491ada503c446bb0fa96e8fbe01e",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/review_full_model_measurements.py": "0013440296f2bff2d5c8b05c4a9bb640c02d9a8e979a96d048842ce957686886",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-model-measurements-v2/summary.json": "27e2cc8f8e9272806c6d6482e82469a8121f434dfd3562767cfd00306eb87306",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/原始整机全图基线_20261110.md": "d3fa7aee3dbc24181deef99164c240cb3593d2f94bba02560ef1947a1701ec80",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/gate_runtime_diagnostics.py": "52cc20297cd925af62964ebbaa02f820945b77f0d97b3f9bbd10837a6770182a",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/audit_gate_corruption.py": "67c1ff3950e91de87824e7b2d4537b41b66ae88cbfb882c184c6f0a1be4e05bb",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/corrupt-result.json": "0ab9e577ba49108dca3a4ef965edf730a5214b88be0e662abd903a97fba419b9",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/corrupt-review.json": "6400628e0727ed611f546cadb20b1f2d3f02c062d0ade81e128bc30af7adca5c",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-model-measurements-v3/summary.json": "9e089e6b1f25c47039d54d2d4a8bc64e35f47af4c235876e3ffdbf67f608532d",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/run_full_rv32_verilator.py": "16c91a34797cd7b5e68e574882ba133d21ce15c9b105321e635022a43767e3cf",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/capture_inflight_cycle_crosscheck.py": "050fce5991234a6ddf43777928ab1c9ac0512434742680f7fa6400422e246094",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-rv32-verilator/R8_C32_L4/ILSVRC2012_val_00000274.JPEG/v1/preparation.json": "2e281716aa53ede6a3f8a0e727803c56c8a78b59e00150bfcaa60468a5be1d07",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-rv32-verilator/R8_C32_L4/ILSVRC2012_val_00000274.JPEG/v1/compile-summary.json": "cb32ce0b5e430890d88038431a8a180cfb8a61746c08c017ce3d955e3de133de",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/inflight-cycle-crosscheck/R8_C32_L4/v2/summary.json": "196000b8b577cb0ea741e0bc99724d061882fd9b6e635a3011544afd5883fb9a",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/整图仿真交叉核对_20261111.md": "d3ee3b693033078b40f224e5dc85c9091fa1eb7f5fee328aa2eab1b77c0e9176",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-adp-break-even.json": "9335747267d266f802a30718d30fae224eb07139d2d4f780b7e3210066e9a6f7",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/crosscheck_original_parallel.py": "a1b486feef8fcb2be136271ceb8ccb0b39ec9d92d9db023a9ffc6220b5b43e7c",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/run_original_baseline_parallel.py": "69d3815af4082a0c47271ba08eda2c9d2977e9b5258cf990a856d4b20a57b7eb",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-verilator-crosscheck-v5/summary.json": "d6d36a55aaa3098e25c30644257cb92c07dcb7189765bec8350f06a812876561",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-rtl/verilator-parallel4/v1/prefix-1000000-summary.json": "6339ac7a2f495b05e66a097824d39a3ccc435fbe3a6e7a92ce0713de024870c0",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-simulator-comparison-v1/summary.json": "450412aabe9d7b0a6b02693c84e7a644422b146ecf0cdbd389037f403cd679bb",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/run_original_baseline_vcs.py": "baf3def42e99fae89d742bdbc5ecd15acf0ff59b1c070faa2063571494fe0257",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/run_original_baseline_vcs_full.py": "53d43ae05756a222c582417b075a0a02d5f23481df1e75c2c84b674ec4dba317",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-rtl/vcs/v2/prefix-1000000-summary.json": "5325f44beecf3d7157d5222b984d5bb0825664cfbe9f13b1cde5fd2db08f9335",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-rtl/vcs/v2/prefix-20000000-summary.json": "1f1227ed9517b31e3b2373c2e16cc6ee115f36f7cd5a20314ae2f9ccc50ec470",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-vcs-qualification-v2/audit.py": "1ee2907b9f38fedcbb10ba2ab7dd1f81617ecfaf26e618303f2d09039a575e6c",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-vcs-qualification-v2/summary.json": "04924cdb52369d0830ad7d93c83039d5045c0802d85ed6a3675cf08ef6f00be2",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-simulator-comparison-v2/summary.json": "7dc112d38f5da3e1a207a1bd583caf1f536d543d2ba80d411ffa67b469e7c158",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-full-vcs/v1/preparation.json": "c9c978e53ecf0184e8e33188c0eb6a81ff45c2407413de08529667724fb8051b",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/原始全图运行与仿真器核对_20261111.md": "2152466903596ff2f11188cad47c37a7b81968a39f75d4fe697a322473261768",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/向量流水整机证据与20图范围_20261111.md": "308c6e44625fa4962226a8c3a8b4e9536269de25dc915d92ba9cb4f1244ea398",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/R8_C32首图实测与面积时间比较_20261111.md": "d3a9b7dce70bf87765ff17bccfb1d0b675c1bc5d422443ec674cc83c04a9c7aa",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/review_completed_full_candidate.py": "65cebcab819e0be23fca29ac29311ae606ef76151f4ffd3052dc796553c5fd5b",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/completed-full-candidate/R8_C32_L4/v1/summary.json": "ed511dde4018fb693f954d51dfe2b3d7b04174cd9fe47f3dd66b1f6450c25b30",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/inflight-cycle-crosscheck/R8_C32_L4/v3/summary.json": "956a400f38f6d91fdc04151884df0ff6bfcd1de26ac61c2a6ddc9a59dfbea7a0",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/RTL交付依赖核对_20261111.md": "f53ca7b5a5ceb5e39d8ea49465d1357483e66c933d196b1feaf945e3e3331648",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/audit_compile_dependency_closure.py": "de4c7351e0732edfe20eab8c267308b436971075d3e3b8fdadf7444a451af12c",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/replay_compile_template.py": "ff0b962805fa3ee07c60b07c91cd3121d840935244a4043b6e71f5794d6909dd",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/review_relocated_rtl.py": "d80425a4aaedff9253fd3dde7cd9149d49e9b17219f924e7e6ae0c73f31dbdd2",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/compile-dependency-closure-v1/summary.json": "4c24d0b35fc26e936fd92bdd5c5b8ba2bd173cb6850516a91051e054fa54c8aa",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/rtl-replay-relocation-review-v1/summary.json": "72b6eaf86ffb8c450ffa30a5f634aef979cfd5a39d5ee5d6acad6b049ab5f5cf",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-gate/v1/corrupt-review.json": "c919a1b4abcf23e523e654b95a3c21c7dcc060920ed1add68db6d038c8386ac8",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/completed-full-candidate/R8_C32_L4/v2/summary.json": "45f05c523820147fe8805d59c05dc37bce8a82accfabae189233de4c43bb4218",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-model-measurements-v6/summary.json": "58246c97d3571dc1f0de018afa2aa0eb89ad6008100ac743af35a5ed8d1c9501",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-model-measurements-v6/review_driver.py": "49540d7eea63dab06c667704d7e109594ea88a0cdb5960a392a15767b0e9eb50",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-rv32/R8_C32_L4/ILSVRC2012_val_00000274.JPEG/summary.json": "f4044348bdff0ddb52ad1453c8b3e6a530b40bfb7c76bca54ea1278fa901e6f2",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/固件与模型转换复现核对_20261111.md": "c2694114357eb81acc7f5f5776ecca6d2f2fcb2ca43fbccdb3bee2e69d564a39",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/inference_replay_template.py": "02877bb4494b2fdd648130ecc548b6c04b9ee6b3040e069bc70566e25acf7166",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/prepare_inference_replay.py": "f77c3e437b2997d996e149c65d83c3c317acee14c05bf9c952de351dffd3163f",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/review_inference_replay.py": "b52b4cd14fce2b546361114b7296320a078da1a82b2b60deaff4b46fb37da31a",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/conversion_replay_template.py": "14146f39344616ba711c2bad3dd24dc41de45365bcc45d56e03e026a63616070",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/prepare_conversion_replay.py": "137851a9c8a324eb77665d765564e666096caa74e767a5f112a62b23bca6466a",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/review_conversion_replay.py": "1b4fff9db3c7665a6beecf986f7ed466fb4cd69f13d369305b8401f953f9cc64",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/inference-replay-preparation-v1/summary.json": "28a13882ce4bb29193a50e5163634305bfa02c71f2e359a991a77641ddb63d9b",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/inference-replay-review-v1/summary.json": "a9ecda15a1ad314abab47c38a7998557b2e6672c3abc80c471193c1016685059",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/conversion-replay-preparation-v1/summary.json": "bc1320dd4c99d7bff7188982e2a06fe1952780c45fe06003737fcfa78380b0af",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/conversion-replay-review-v1/summary.json": "98122a207106232c62ab3fc0aeac7820c05d1a86b005988cf238336ee9b6ae43",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/三种阵列整机实测比较_20261111.md": "6e228b5858b6d7fd42b1f9113b5534c045cee4ae6c989d17082af4fa10fc066e",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/summarize_control_comparison.py": "e4da0cb26d0863bf5b0c19e4fd9a3a289d53f2c57202f9d782f4246187c8ea47",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-model-measurements-v7/summary.json": "0145223dc6e8f45a3efddb3e5763f97308d3154aa91b457cfb591d44562e9797",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-model-measurements-v7/review_driver.py": "49540d7eea63dab06c667704d7e109594ea88a0cdb5960a392a15767b0e9eb50",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/complete-three-controls-v1/summary.json": "ab5e10591fb7b74d276398509c437527b7852000939aa5179b1371b001663b4e",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/completed-full-candidate/R8_C16_L4/v1/summary.json": "4ebb2be76b5cbb712bf7c58fa6039cae85143159dc9a1ae09f0427b2081c083f",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/completed-full-candidate/R8_C32_L4/v3/summary.json": "fc8051ff555ae610ac037e7c95e84fba0e7346236e165f14a1dcb2b8bab716f3",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/completed-full-candidate/R16_C8_L4/v1/summary.json": "7d67c41a4e71734dd4426107bf8ea430f0c809ad3191282fe9711b2f9c5f8752",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-rv32/R16_C8_L4/ILSVRC2012_val_00000274.JPEG/summary.json": "c1f0d75bb89a06a9ec30049b0411689bc78c8e930ceed8979c144b21ff76d558",
+    "/mnt/data/Ubuntu/qingruan/competition/models/swin_tiny_patch4_window7_224_imagenet1k_int8.onnx": "8a612b32e4837fa9ef96b8c84306575f0cdabd61348c15f4afaea884306cfb75",
+    "/mnt/data/Ubuntu/qingruan/competition/README.md": "5627c01316b3ffb7f1907de87078bfe89914ee242627968b18970382036f954f",
+    "/mnt/data/Ubuntu/qingruan/competition/reference_top1_5.json": "da23b61862b569a41decfc7ad274664a7934ab55dfc2230e92f7dea282d833b2",
+    "/mnt/data/Ubuntu/qingruan/competition/official_preprocess.py": "2feecc31e782dcbdaaa3bfa62aa0e01f470628eef6b43c10393891a4fb5c6e1a",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/新流水仿真与综合源码核对_20261111.md": "11b1e3d78fc55067b66e8c3391d12e7bc93b050204c98dedd2702b13b724af3c",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/audit_vecpipe_synthesis_binding.py": "3450487d3f1986113b0521584a28c70e220662a8adfcfc6ef29ec5dbc04cd905",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-synthesis-binding-v1/summary.json": "4cc8c494476f11602236e8fbdc0230c3c41c0bbbb1b020eba868f9cc8070966d",
+    "native/optimization/check_original_vcs_radiant_v2.py": "86ece1bac978eb6fd10a0d99fef99c77e143bd0d418625aa9820dc5b93450380",
+    "native/optimization/review_original_vcs_radiant.py": "060fa019fa8f2035ceefaf2372df497a166d791558e357124d3f21a06ea1f941",
+    "native/optimization/原始RTL仿真编译选项核对_20261111.md": "27f86ee8a0a0abda6b966e83c8a37ea662b9d105931da33ce90a1bef49141716",
+    "native/optimization/README.md": "171b713e7ad0e646988b71e164eb90e879aeebafcb7e2ab02c51591e2deb4820",
+    "native/optimization/work/original-vcs-radiant-v2/micro-qualification.json": "7f88663e9a7536f0ee469da9cfa452222e04dc1490be3cd7c06a026ad3e6b34b",
+    "native/optimization/work/original-vcs-radiant-v2/host-topology-observation.json": "b1321e61c822b1f27296aee33b9eb05a6ec979014340b729e944f6b05ca83888",
+    "native/optimization/check_original_vcs_radiant_affinity.py": "5ae0aaa1abad1c2419ff10254b62ef8b2a211f18f4dfe0e05c459601d127d470",
+    "native/optimization/work/original-vcs-radiant-affinity-v1/preparation.json": "51c8a4bcf87ee635d96d89f8f14944c0432c3556ec4d98afe325a5cba3a8a088",
+    "native/optimization/work/original-vcs-radiant-v2/prefix-samples.json": "70ca5a3c7d8b7579c02422b0eb1a917c9d543699168bf36fa9e177d83f594c6f",
+    "native/optimization/work/original-vcs-radiant-affinity-v1/core-selection.json": "b67236172058376f4b45207d08349dd66a4816a44c3177c6512b8c09420c06ea",
+    "native/optimization/work/original-vcs-radiant-v2/summary.json": "537cdd6a52c027fa7bd46419222f3c7cc6bab2f90bc9a3cf08b5d62c734325e0",
+    "native/optimization/work/original-vcs-radiant-v2/commands.json": "960a659f58a82fca9c414c1d1e581cb8f3beca42dbaa9f8a076341bb32757de7",
+    "native/optimization/work/original-vcs-radiant-review-v1/summary.json": "3283ff66229de72784b4aa1b1370ad8bb334c20177b6e6c89336c60927032aec",
+    "RISC-V与PE完整工程_Linux/riscv_pe_contest/contest/task2/base/src/dataset_loader.py": "3a634de13c02cea1820dff11d504bd6ce23a0b4c7d9c9b48001cdadace260cff",
+    "RISC-V与PE完整工程_Linux/riscv_pe_contest/contest/task1/my_design/project/scripts/prepare_conv1_full.py": "67207e30a797fe6d79cef7d2e76b79d6a277e538460615794dcbfbf0085136ec",
+    "native/optimization/Softmax输入域与缓存复用核对_20261111.md": "df117068a0e0a5bdb3e4f554f121638723845ee7e9eb222de79f97754c027a18",
+    "native/optimization/work/softmax-exp-reuse-v1/summary.json": "dfa12e486cb2e1f2657ba10aed77ebe02c5d88967f7955956a5c15c3cdddb580",
+    "native/optimization/analyze_softmax_exp_reuse.py": "8be13f8055cccf20a26de6d412b68493a2aa20dc36f1b279650c05b0794513b2",
+    "native/optimization/review_vecpipe_complete_candidate.py": "821fa48830ed5bf2f61b386661c871193c986972cd5d4f1117884d87bb1517d9",
+    "native/optimization/work/vecpipe-complete-candidate-review-v1/preflight.json": "ac73163cad2b711ba58bc1c1a26ed95fc679d9277784dad00e82ff01c9bb40ba",
+    "native/optimization/work/original-vcs-radiant-affinity-v1/commands.json": "9b92b408f5ef11cb3b2380bd2016a6ed5a66c2f5ffb2604f3b0b413c8fef7a24",
+    "native/optimization/review_original_vcs_radiant_affinity.py": "068833bae3fa6482e20b54888a33f5a7db4f33d620b07080234f363f08e0f4ac",
+    "native/optimization/work/original-vcs-radiant-affinity-review-v1/review_driver.py": "068833bae3fa6482e20b54888a33f5a7db4f33d620b07080234f363f08e0f4ac",
+    "native/optimization/work/original-vcs-radiant-affinity-v1/summary.json": "a8122df71c9bb6f9f6a618abd08d0ee2f25297367a920c962ecc8574926530fb",
+    "native/optimization/work/original-vcs-radiant-affinity-v1/prefix-samples.json": "c0dd327d2c792ddf44b1daa302faa22e003e5b51d5ed05323e9e397b3eeb9880",
+    "native/optimization/work/original-vcs-radiant-affinity-review-v1/summary.json": "582db9e87325dd6966c81d31ed761e92e6c72ceb70a497b31d828462f0134736"
+  },
+  "next_gate": "完成新流水首图及其余19图真实RV32、正常22命令门级最终审查；完成原始PE全图基线及官方精度，确定最终ADP与组合交付。",
+  "latest_SDF_load_repair": {
+    "status": "FULL_ALL8_SOC_MAPPED_TIMING_PASS",
+    "area": 2089316.648438,
+    "setup_slack_ns": 0.005884171,
+    "hold_slack_ns": 4.7974e-05,
+    "inserted_output_buffers": 24,
+    "buffer": "BUF_X4",
+    "SRAMs": 128,
+    "normalized_SDC_identical_to_source": true,
+    "selected_MAXIMUM_IOPATH_nonnegative": true,
+    "gate_SDF_functional_simulation_passed": false,
+    "case": "native/optimization/work/full-soc-timing/R8_C16_L4/shared/v8",
+    "session": 69188,
+    "terminal_exit_code": 0,
+    "negative_MAXIMUM_IOPATH_entries": 0,
+    "IOPATH_entries_scanned": 5216770,
+    "prior_revisions_preserved": true
+  },
+  "latest_user_reference_supplement_response": "暂无补充规则/脚本，继续按现有文件核对。精度标准与未完成项保持不变。",
+  "latest_gate_evidence": {
+    "case": "native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5",
+    "status": "ANNOTATION_AND_TIMING_NEGATIVE_CONTROL_PASS_NORMAL_RUNNING",
+    "compile_session": 16392,
+    "compile_terminal_exit_code": 0,
+    "normal_session": 64804,
+    "annotation_proof": "native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/annotation-review.json",
+    "physical_leaf_instances": 685277,
+    "IOPATH_applied": 5216770,
+    "INTERCONNECT_applied": 1804471,
+    "negative_limits_preserved": 53937,
+    "original_HDL_timing_probe_status": "FAILED_STIMULUS_MISSED_HOLD_WINDOW_DUE_TO_9_455430_PS_INPUT_MIPD",
+    "corrected_timing_probe": "native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/timing-probe-ucli-v1/summary.json",
+    "corrected_probe_actual_data_after_clock_fs": 100,
+    "corrected_probe_timing_violations": 1,
+    "gate_function_accepted": false,
+    "corruption_stage": {
+      "status": "RUNNING",
+      "session": 14120,
+      "executor": "run_full_soc_gate_corrupt_parallel.py",
+      "live_record": "corrupt-live-process.json",
+      "compiled_executable_unchanged": true
+    },
+    "normal_wall_limit_s": 86400,
+    "normal_executor": "native/optimization/run_full_soc_gate_extended.py",
+    "short_normal_diagnostic": "native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/normal.short-deadline-v1",
+    "short_normal_stop_receipt": "native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/short-deadline-stop-receipt.json",
+    "corrupt_executor_required": "run_full_soc_gate_extended.py --stage corrupt --revision v5"
+  },
+  "latest_other_candidate_synthesis": {
+    "status": "FULL_ALL8_SOC_MAPPED_TIMING_FAIL",
+    "session": 89596,
+    "case": "native/optimization/work/full-soc-synthesis/R8_C32_L4/shared/v1",
+    "scope": "Same complete SoC boundary, libraries, clock and IO constraints; no final ADP or accuracy claim.",
+    "area": 3492287.589739,
+    "setup_slack_ns": -0.097949982,
+    "hold_slack_ns": -0.004823886,
+    "SRAMs": 256,
+    "terminal_exit_code": 0,
+    "proof": "native/optimization/work/full-soc-synthesis/R8_C32_L4/shared/v1/summary.json"
+  },
+  "latest_other_candidate_timing": {
+    "status": "RUNNING",
+    "session": 89075,
+    "case": "native/optimization/work/full-soc-timing/R8_C32_L4/shared/v1",
+    "scope": "Unchanged common constraints; area/timing acceptance awaits actual result."
+  },
+  "complete_SoC_condition_audit": {
+    "status": "THREE_COMPLETE_SOC_COMMON_BOUNDARY_LIBRARY_SDC_AND_STA_AUDIT_PASS",
+    "proof": "native/optimization/work/full-soc-conditions-v1/summary.json"
+  },
+  "candidate_fixture_audit": {
+    "status": "THREE_CANDIDATE_FULL_RV32_FIXTURE_CONDITIONS_EQUAL_SOURCE_GUARDS_PASS",
+    "proof": "native/optimization/work/full-candidate-fixtures-v1/summary.json",
+    "source_files_checked_per_geometry": 134
+  },
+  "original_full_model_baseline": {
+    "status": "RUNNING_ORIGINAL_RAW_VCS_AND_QUALIFIED_VERILATOR_NO_COMPLETE_MEASUREMENT",
+    "firmware_bytes": 37048,
+    "case": "native/optimization/work/original-baseline-full/ILSVRC2012_val_00000274.JPEG",
+    "actual_RTL_execution_started": true,
+    "total_cycles_measured": false,
+    "raw_VCS_case": "native/optimization/work/original-baseline-full-vcs/v1"
+  },
+  "latest_verified_wait": {
+    "observed_at": "2026-11-11T17:28:00.215915+08:00",
+    "authoritative_check": "Reconnected handles unknown; actual native /proc confirmed four orphan image sims + original raw VCS alive; new queue controller646500 and original collector started. First-image and gate terminal proofs independently available.",
+    "new_pipeline_full_model_result_available": true,
+    "new_pipeline_gate_normal_running": false,
+    "new_pipeline_gate_complete": true,
+    "new_pipeline_normal_gate_last_completed_command": 22,
+    "goal_blocked": false,
+    "live_tool_sessions": [
+      71252,
+      96496
+    ]
+  },
+  "first_complete_RV32_measurement": {
+    "geometry": "R8_C16_L4",
+    "inference_cycles": 1000484499,
+    "inference_ns": 10004844990,
+    "CPU_return_cycle": 1002816564,
+    "engine_counters": {
+      "1": {
+        "commands": 52,
+        "cycles": 2060103,
+        "written_bytes": 12945408
+      },
+      "2": {
+        "commands": 12,
+        "cycles": 4991112,
+        "written_bytes": 5720064
+      },
+      "3": {
+        "commands": 1877,
+        "cycles": 131835743,
+        "written_bytes": 160816128
+      },
+      "4": {
+        "commands": 166,
+        "cycles": 28551516,
+        "written_bytes": 28503304
+      },
+      "5": {
+        "commands": 12,
+        "cycles": 243131378,
+        "written_bytes": 8758848
+      },
+      "6": {
+        "commands": 29,
+        "cycles": 80862975,
+        "written_bytes": 14902272
+      },
+      "7": {
+        "commands": 2369,
+        "cycles": 433598261,
+        "written_bytes": 172388832
+      },
+      "8": {
+        "commands": 123,
+        "cycles": 30273018,
+        "written_bytes": 57953280
+      }
+    },
+    "useful_MAC_utilization_during_GEMM_commands": 0.06652701157075437,
+    "useful_MAC_utilization_over_full_inference": 0.008766390692475886,
+    "logits": {
+      "bytes": 4000,
+      "sha256": "65f82e72433f74815a4df147a6bfd8d1a985b83fa3c0c8ba83e7bea40c3f0ebc",
+      "byte_exact_to_frozen_C": true,
+      "top1": 607,
+      "maximum_absolute_error": 0.0,
+      "existing_internal_C_bound": 1.340351390838623e-05,
+      "organizer_tolerance": null
+    },
+    "proof": "native/optimization/work/full-model-measurements-v5/summary.json"
+  },
+  "vector_pipeline_prototype": {
+    "status": "COMPLETE_FIRST_IMAGE_FINAL_PPA_AND_SCOPED_22_COMMAND_GATE_PASS_FULL20_OFFICIAL_OPEN",
+    "session": 15779,
+    "variant_directory": "native/optimization/variants/vecpipe_v1",
+    "arithmetic_cases": 148987,
+    "arithmetic_proof": "native/optimization/work/vecpipe-arithmetic-v1/summary.json",
+    "protocol_proof": "native/optimization/work/vecpipe-protocol-v1/summary.json",
+    "axi_case": "native/optimization/work/vecpipe-axi-v1",
+    "unchanged_original_RTL": true,
+    "unchanged_firmware_and_ABI": true,
+    "full_model_accepted": false,
+    "area_timing_accepted": true,
+    "official_accuracy_accepted": false,
+    "final_ADP_accepted": false,
+    "motivation": {
+      "observed_vector_engine_cycles": 433598261,
+      "observed_full_cycles": 1000484499,
+      "fraction": 0.4333882848093981
+    },
+    "scope": "Exact original FP32 rounding points; scalar DIV fallback; stream arithmetic and two-slot SRAM operand FIFO. Existing running jobs retained.",
+    "axi_proof": "native/optimization/work/vecpipe-axi-v1/summary.json",
+    "axi_session_terminal_exit_code": 0,
+    "axi_comparisons": [
+      {
+        "banks": 128,
+        "identical_reference_commands": 120,
+        "scalar_reference_cycles": 631046,
+        "pipeline_reference_cycles": 230226,
+        "reference_workload_speedup": 2.7409849452277326
+      },
+      {
+        "banks": 256,
+        "identical_reference_commands": 120,
+        "scalar_reference_cycles": 628688,
+        "pipeline_reference_cycles": 227192,
+        "reference_workload_speedup": 2.767210113032149
+      },
+      {
+        "banks": 512,
+        "identical_reference_commands": 120,
+        "scalar_reference_cycles": 627853,
+        "pipeline_reference_cycles": 226281,
+        "reference_workload_speedup": 2.7746607094718514
+      }
+    ],
+    "RV32_integration_session": 25356,
+    "RV32_integration_case": "native/optimization/work/vecpipe-soc-v1",
+    "backend_synthesis_session": 82531,
+    "backend_synthesis_case": "native/optimization/work/vecpipe-backend-synthesis-v1",
+    "full_model_fixture_prepared": "native/optimization/work/vecpipe-full-rv32-v1/preparation.json",
+    "full_model_fixture_source_guards": 151,
+    "full_SoC_control_prepared": "native/optimization/work/vecpipe-full-soc-synthesis-v1/preparation.json",
+    "observed_at": "2026-11-11T05:33:00.445570+08:00",
+    "shared_AXI_proof": "native/optimization/work/vecpipe-shared-axi-v1/summary.json",
+    "shared_AXI_session_terminal_exit_code": 0,
+    "RV32_integration_proof": "native/optimization/work/vecpipe-soc-v1/summary.json",
+    "RV32_integration_session_terminal_exit_code": 0,
+    "vector_RV32_command_comparisons": [
+      {
+        "command": 4,
+        "scalar_cycles": 480,
+        "pipeline_cycles": 192
+      },
+      {
+        "command": 10,
+        "scalar_cycles": 480,
+        "pipeline_cycles": 192
+      },
+      {
+        "command": 11,
+        "scalar_cycles": 1707,
+        "pipeline_cycles": 1611
+      },
+      {
+        "command": 12,
+        "scalar_cycles": 2377,
+        "pipeline_cycles": 353
+      },
+      {
+        "command": 14,
+        "scalar_cycles": 2377,
+        "pipeline_cycles": 353
+      },
+      {
+        "command": 15,
+        "scalar_cycles": 582,
+        "pipeline_cycles": 192
+      },
+      {
+        "command": 17,
+        "scalar_cycles": 684,
+        "pipeline_cycles": 192
+      },
+      {
+        "command": 18,
+        "scalar_cycles": 841,
+        "pipeline_cycles": 247
+      }
+    ],
+    "full_model_status": "RUNNING_REAL_RV32_ALL8_SAME_BINARY_AND_IMAGE_NO_COMPLETE_RESULT",
+    "finite_continuation_session": 96399,
+    "finite_continuation_case": "native/optimization/work/vecpipe-continuation-v1",
+    "full_model_PID": 293803,
+    "full_SoC_mapping_status": "WAITING_FOR_QUALIFICATION",
+    "independent_stage_review": "native/optimization/work/vecpipe-evidence-review-v2/summary.json",
+    "backend_synthesis_session_terminal_exit_code": 0,
+    "backend_area": 1866453.06715,
+    "backend_setup_slack_ns": 0.000562668,
+    "backend_hold_slack_ns": 0.094101772,
+    "backend_synthesis_proof": "native/optimization/work/vecpipe-backend-synthesis-v1/summary.json",
+    "raw_complete_SoC_synthesis": {
+      "proof": "native/optimization/work/vecpipe-full-soc-synthesis-v1/summary.json",
+      "status": "VECPIPE_FULL_ALL8_SOC_MAPPED_TIMING_FAIL",
+      "setup_slack_ns": -0.10091114,
+      "hold_slack_ns": -0.004823886
+    },
+    "complete_SoC_timing_closure_proof": "native/optimization/work/vecpipe-full-soc-timing-v1/summary.json",
+    "final_complete_SoC_mapped_proof": "native/optimization/work/vecpipe-full-soc-loads-v1/summary.json",
+    "complete_SoC_conditions_proof": "native/optimization/work/vecpipe-soc-conditions-v2/summary.json",
+    "complete_SoC_area": 2114649.956611,
+    "complete_SoC_setup_slack_ns": 0.003800392,
+    "complete_SoC_hold_slack_ns": 4.7974e-05,
+    "area_ratio_to_scalar_primary": 1.012125164556526,
+    "inserted_D_path_buffers": 18112,
+    "inserted_output_load_buffers": 24,
+    "physical_SRAMs": 128,
+    "physical_leaves": 701283,
+    "selected_MAXIMUM_IOPATH_entries_scanned": 5334352,
+    "negative_MAXIMUM_IOPATH_entries": 0,
+    "SDF_clamped": false,
+    "gate_workflow_session": 55033,
+    "gate_workflow_case": "native/optimization/work/vecpipe-gate-workflow-v1",
+    "gate_case": "native/optimization/work/vecpipe-full-soc-gate/v1",
+    "gate_preparation_status": "FULL_SOC_GATE_FIXTURES_AND_SDF_READY_EXECUTION_PENDING",
+    "gate_compile_status": "PASS",
+    "gate_function_accepted": false,
+    "image_suite_proof": "native/optimization/work/vecpipe-image-suite-v1/summary.json",
+    "actual_VCS_image_loader_proof": "native/optimization/work/vecpipe-image-loader-v1/summary.json",
+    "dataset_scope": {
+      "provided_images": 20,
+      "public_reference_images": 5,
+      "private_reference_images": 15,
+      "existing_original_preprocess_reproduced_byte_exact_images": 20,
+      "frozen_C_equals_existing_fused_outputs_images": 20,
+      "canonical_RAM_images_prepared": 20,
+      "VCS_RAM_images_loaded_and_all_sections_checked": 20,
+      "VCS_RAM_sections_checked": 160,
+      "VCS_RAM_bytes_checked": 730528720,
+      "pipeline_completed_full_inference_images": 0,
+      "pipeline_first_image_actual_RTL_running": true,
+      "scalar_primary_completed_full_inference_images": 1,
+      "frozen_C_public_top1_matches": 3,
+      "private_organizer_references_available": false,
+      "official_accuracy_accepted": false,
+      "preprocess_origin_certified": false,
+      "scope": "Input/reference/loader preparation is separate from complete RV32 inference; official_preprocess.py remains unchanged with unresolved provenance."
+    },
+    "Verilator_crosscheck": {
+      "status": "VECPIPE_REAL_CPU_RTL_OUTPUT_AND_CYCLE_VERILATOR_VCS_CROSSCHECK_PASS",
+      "proof": "native/optimization/work/vecpipe-verilator-crosscheck-v1/summary.json",
+      "terminal_exit_code": 0,
+      "actual_RV32_commands": 22,
+      "engine_CPU_and_call_cycles_equal_to_VCS": true,
+      "VCS_normal_wall_s": 661.9739681490028,
+      "Verilator_normal_wall_s": 661.9390496200067,
+      "no_material_observed_simulator_speedup": true,
+      "second_full_Verilator_run_launched": false
+    },
+    "gate_script_initial_failure": {
+      "session": 35729,
+      "terminal_exit_code": 1,
+      "scope": "Syntax error before any gate preparation or compilation; exact sources/manifest/log archived. Fixed and all31 current Python drivers parsed before new launch.",
+      "archive": "native/optimization/variants/vecpipe_v1/gate-driver-failed-syntax-v1/failure.json"
+    },
+    "gate_annotation_proof": "native/optimization/work/vecpipe-full-soc-gate/v1/annotation-review.json",
+    "gate_annotation_status": "ALL_PHYSICAL_SDF_ANNOTATION_AND_SOURCE_DIAGNOSTICS_PASS_RUNTIME_PENDING",
+    "gate_annotation_counts": {
+      "IOPATH Delays": 5334352,
+      "INTERCONNECT(MIPD)": 1843423,
+      "Timing Checks": 379120,
+      "Negative Tchecks": 54446,
+      "Annotated instances": 701283,
+      "Total instances": 703779
+    },
+    "gate_source_proven_diagnostic_counts": {
+      "LINX_KRNL": 1,
+      "TFIPC": 28202,
+      "SDFCOM_SWC": 9686,
+      "SDFCOM_IWSBA": 7188
+    },
+    "gate_timing_negative_proof": "native/optimization/work/vecpipe-full-soc-gate/v1/timing-probe-ucli-v1/summary.json",
+    "gate_actual_data_after_clock_fs": 100,
+    "gate_actual_setup_limit_fs": 9000,
+    "gate_actual_hold_limit_fs": 1000,
+    "gate_actual_timing_violations": 1,
+    "gate_actual_SRAM_notifier_events": 1,
+    "gate_normal_stage": "RUNNING",
+    "gate_corrupt_stage": "FULL_SOC_GATE_CORRUPTED_OUTPUT_CPU_DETECTION_PASS",
+    "gate_parallel_processes": {
+      "normal": {
+        "status": "RUNNING",
+        "pid": 303705,
+        "argv": [
+          "/home/zhz/miniforge3/bin/python3",
+          "-B",
+          "/workspace/native/optimization/variants/vecpipe_v1/run_gate.py",
+          "--stage",
+          "normal",
+          "--revision",
+          "v1"
+        ]
+      },
+      "corrupt": {
+        "status": "TERMINAL",
+        "pid": 303706,
+        "argv": [
+          "/home/zhz/miniforge3/bin/python3",
+          "-B",
+          "/workspace/native/optimization/variants/vecpipe_v1/run_gate_corrupt.py",
+          "--stage",
+          "corrupt",
+          "--revision",
+          "v1"
+        ],
+        "returncode": 0
+      }
+    },
+    "live_gate_source_guard_manifest": "native/optimization/work/vecpipe-full-soc-gate/v1/execution-preparation.json",
+    "live_gate_source_freeze_note": "Do not edit any paths in gate compile/source guards, including generation manifest and its original/copied gate drivers, while workflow55033 runs. Reviewer logic formerly editable may now be frozen through gate-drivers-generation.json. Use fresh filenames/revisions for corrections.",
+    "dataset20_execution": {
+      "status": "FOUR_IMAGES_REAL_RV32_RUNNING_REMAINING15_QUEUED_PRIMARY_REUSED",
+      "session": 72817,
+      "case": "native/optimization/work/vecpipe-images-rv32-v1",
+      "source_conditions_proof": "native/optimization/work/vecpipe-suite-conditions-v1/summary.json",
+      "one_separate_runtime_compiled_from_exact_primary_sources": true,
+      "compiler_differences_only_three_output_paths": true,
+      "first_image_restarted": false,
+      "initial_parallel_cap": 2,
+      "maximum_parallel_cap": 4,
+      "resource_policy": "Increase only as original shortlist full VCS cases complete; reserve4GiB MemAvailable and defer new launches above80% logical-CPU load. No existing job stopped.",
+      "active_images": [
+        "ILSVRC2012_val_00004937.JPEG",
+        "ILSVRC2012_val_00008350.JPEG",
+        "ILSVRC2012_val_00000914.JPEG",
+        "ILSVRC2012_val_00004628.JPEG"
+      ],
+      "active_native_processes": [
+        {
+          "image": "ILSVRC2012_val_00004937.JPEG",
+          "pid": 307057,
+          "elapsed_s": 5672.621603383988
+        },
+        {
+          "image": "ILSVRC2012_val_00008350.JPEG",
+          "pid": 307195,
+          "elapsed_s": 5672.236242972009
+        },
+        {
+          "image": "ILSVRC2012_val_00000914.JPEG",
+          "pid": 322050,
+          "elapsed_s": 2431.0368955039885
+        },
+        {
+          "image": "ILSVRC2012_val_00004628.JPEG",
+          "pid": 325879,
+          "elapsed_s": 450.1260128859867
+        }
+      ],
+      "pending_images": [
+        "ILSVRC2012_val_00000759.JPEG",
+        "ILSVRC2012_val_00001559.JPEG",
+        "ILSVRC2012_val_00002951.JPEG",
+        "ILSVRC2012_val_00004239.JPEG",
+        "ILSVRC2012_val_00007089.JPEG",
+        "ILSVRC2012_val_00009086.JPEG",
+        "ILSVRC2012_val_00012874.JPEG",
+        "ILSVRC2012_val_00013609.JPEG",
+        "ILSVRC2012_val_00015860.JPEG",
+        "ILSVRC2012_val_00025654.JPEG",
+        "ILSVRC2012_val_00028082.JPEG",
+        "ILSVRC2012_val_00028858.JPEG",
+        "ILSVRC2012_val_00035110.JPEG",
+        "ILSVRC2012_val_00035219.JPEG",
+        "ILSVRC2012_val_00038042.JPEG"
+      ],
+      "completed_images": 0,
+      "full_inference_accepted_images": 0,
+      "official_accuracy_accepted": false,
+      "final_ADP_accepted": false,
+      "scope": "Actual same firmware/RTL/defines/clock/RAM/monitor; public mismatch cases first, all19 remaining images included. Node execution observed in both active cases; partial execution is not complete-model correctness.",
+      "observed_at": "2026-11-11T06:16:36.994751+08:00",
+      "source_freeze": "Do not edit run_image_suite.py, runtime artifacts or anything in its master/per-image source guards while session72817 runs. The original primary and all existing source freezes still apply.",
+      "current_parallel_cap": 4
+    },
+    "gate_corruption_proof": "native/optimization/work/vecpipe-full-soc-gate/v1/corrupt-review.json",
+    "gate_corruption_detected_byte_index_zero_based": 7,
+    "gate_corruption_completed_commands": 4,
+    "gate_corruption_unexpected_diagnostics": 0,
+    "benchmark_synthesis_source_binding_proof": "native/optimization/work/vecpipe-synthesis-binding-v1/summary.json",
+    "first_image_frozen_C_accepted": true,
+    "gate_proof": "native/optimization/work/vecpipe-full-soc-gate/v1/summary.json"
+  },
+  "dataset20_coverage": {
+    "provided_images": 20,
+    "public_reference_images": 5,
+    "private_reference_images": 15,
+    "existing_original_preprocess_reproduced_byte_exact_images": 20,
+    "frozen_C_equals_existing_fused_outputs_images": 20,
+    "canonical_RAM_images_prepared": 20,
+    "VCS_RAM_images_loaded_and_all_sections_checked": 20,
+    "VCS_RAM_sections_checked": 160,
+    "VCS_RAM_bytes_checked": 730528720,
+    "pipeline_completed_full_inference_images": 0,
+    "pipeline_first_image_actual_RTL_running": true,
+    "scalar_primary_completed_full_inference_images": 1,
+    "frozen_C_public_top1_matches": 3,
+    "private_organizer_references_available": false,
+    "official_accuracy_accepted": false,
+    "preprocess_origin_certified": false,
+    "scope": "Input/reference/loader preparation is separate from complete RV32 inference; official_preprocess.py remains unchanged with unresolved provenance."
+  },
+  "current_primary_control_ADP_bound": {
+    "status": "DERIVED_CURRENT_SCALAR_PRIMARY_CONTROL_ADP_BOUND_NOT_PERFORMANCE_ACCEPTANCE",
+    "scalar_primary_area": "2089316.648438",
+    "pipeline_area": "2114649.956611",
+    "scalar_primary_full_inference_cycles": 1000484499,
+    "strict_cycle_threshold": "988498788.5252053521302035909",
+    "maximum_integer_cycles_for_strict_ADP_improvement": 988498788,
+    "required_cycle_reduction_fraction": "0.0119799062222098933986546543",
+    "clock_period_ns": 10,
+    "official_accuracy_accepted": false,
+    "final_ADP_accepted": false,
+    "scope": "Conditional ADP bound against the measured same-R8_C16 scalar-vector control only, not an actual pipeline latency or original16x16-PE before/after result. Accuracy, actual full cycles, gate function, other candidates and original baseline remain required."
+  },
+  "dataset20_execution": {
+    "status": "RECOVERY_QUEUE_ACTIVE_ORIGINAL_PARENT_EXITED",
+    "observed_at": "2026-11-11T17:28:00.215915+08:00",
+    "current_progress": "native/optimization/work/vecpipe-suite-recovery-v1/progress.json",
+    "original_progress_stale": true,
+    "controller_pid": 646500,
+    "active_native_processes": [
+      {
+        "image": "ILSVRC2012_val_00007089.JPEG",
+        "pid": 478529,
+        "adopted": true
+      },
+      {
+        "image": "ILSVRC2012_val_00009086.JPEG",
+        "pid": 480408,
+        "adopted": true
+      },
+      {
+        "image": "ILSVRC2012_val_00012874.JPEG",
+        "pid": 532276,
+        "adopted": true
+      },
+      {
+        "image": "ILSVRC2012_val_00013609.JPEG",
+        "pid": 571807,
+        "adopted": true
+      }
+    ],
+    "pending_images": [
+      "ILSVRC2012_val_00015860.JPEG",
+      "ILSVRC2012_val_00025654.JPEG",
+      "ILSVRC2012_val_00028082.JPEG",
+      "ILSVRC2012_val_00028858.JPEG",
+      "ILSVRC2012_val_00035110.JPEG",
+      "ILSVRC2012_val_00035219.JPEG",
+      "ILSVRC2012_val_00038042.JPEG"
+    ],
+    "completed_remaining19": 8,
+    "strict_byte_exact_passes_in_finished19": 7,
+    "first_image_complete": true,
+    "official_accuracy_accepted": false,
+    "final_ADP_accepted": false,
+    "source_freeze": "Keep original suite/hardware/firmware/runtime and completed artifacts unchanged; orphan exit statuses are unavailable, not fabricated."
+  },
+  "scalar_primary_complete_gate_acceptance": {
+    "status": "FULL_SOC_ALL8_GATE_SDF_22_COMMAND_ENGINEERING_CHECK_PASS",
+    "proof": "native/optimization/work/full-soc-gate/R8_C16_L4/shared/v5/summary.json",
+    "normal_session": 64804,
+    "normal_session_terminal_exit_code": 0,
+    "final_review_session": 59398,
+    "final_review_terminal_exit_code": 0,
+    "normal_hardware_commands": 22,
+    "normal_CPU_return_pass": true,
+    "engine_trace_and_CPU_call_report_equal_to_RTL": true,
+    "observed_SRAM_clock_to_output_ns": "1.353419000",
+    "observed_SWC_delay_ns": "0.008612000",
+    "observed_IWSBA_delay_ns": "0.010679000",
+    "normal_runtime_wall_s": 24292.344372632993,
+    "normal_runtime_is_verification_wall_not_model_latency": true,
+    "same_compiled_normal_corrupt_and_real_timing_negative_proofs_pass": true,
+    "scope": "Scalar-vector R8_C16 complete mapped SoC22-command engineering regression only. Does not accept the new vector pipeline gate, complete20-image inference, organizer accuracy or final ADP.",
+    "observed_at": "2026-11-11T05:05:13.943907+08:00"
+  },
+  "completed_R8_C32_Verilator_measurement": {
+    "status": "COMPLETED_REAL_RV32_CANDIDATE_FROZEN_C_BYTE_EXACT_COMMON_PPA_REVIEW_PASS",
+    "geometry": "R8_C32_L4",
+    "simulator": "verilator",
+    "image": "ILSVRC2012_val_00000274.JPEG",
+    "inference_cycles": 949222155,
+    "CPU_return_cycle": 951554220,
+    "inference_seconds": 9.49222155,
+    "source_files_checked": 265,
+    "complete_SoC_area": 3530648.246685,
+    "comparison_to_completed_R8_C16_control": {
+      "control_cycles": 1000484499,
+      "control_area": 2089316.648438,
+      "latency_ratio": 0.9487624805269472,
+      "area_ratio": 1.6898579013021116,
+      "ADP_ratio": 1.6032737741774525
+    },
+    "VCS_full_model_crosscheck": {
+      "status": "FULL_VCS_VERILATOR_OUTPUT_REPORT_AND_ALL_NODE_CYCLES_IDENTICAL",
+      "complete_cycle_equality_accepted": true,
+      "node_events": 1312
+    },
+    "official_accuracy_accepted": false,
+    "final_array_selection_accepted": false,
+    "proof": "native/optimization/work/completed-full-candidate/R8_C32_L4/v2/summary.json",
+    "session": 50664,
+    "terminal_exit_code": 0,
+    "prefix_proof": "native/optimization/work/inflight-cycle-crosscheck/R8_C32_L4/v3/summary.json",
+    "common_completed_node_events": 1242,
+    "full_crosscheck_accepted": true
+  },
+  "RTL_delivery_dependency_audit": {
+    "status": "RELOCATED_ALL106_RTL_FILES_BYTE_EXACT_NO_ORIGINAL_SOURCE_READ_COMPILE_PASS",
+    "source_dependency_proof": "native/optimization/work/compile-dependency-closure-v1/summary.json",
+    "relocated_compile_review": "native/optimization/work/rtl-replay-relocation-review-v1/summary.json",
+    "source_snapshot": "native/optimization/work/rtl-replay-relocation-v1",
+    "snapshot_files": 113,
+    "snapshot_bytes": 1890505,
+    "actual_parsed_RTL_files": 106,
+    "previously_unlisted_actual_dependencies": 5,
+    "original_guards_unchanged": true,
+    "supplemental_current_source_sha256": {
+      "/mnt/data/Ubuntu/qingruan/native/optimization/vendor/HardFloat-1/source/HardFloat_consts.vi": "53d4c22ee61b9b81bc763330959327914d8e1952e15f3f66361d1a4e34e2802f",
+      "/mnt/data/Ubuntu/qingruan/native/optimization/vendor/HardFloat-1/source/HardFloat_localFuncs.vi": "e6e8d53f362dc2c9fe14c9b0edbc73bc6367d8899276b3384e947a17029b5d50",
+      "/mnt/data/Ubuntu/qingruan/native/optimization/vendor/HardFloat-1/source/RISCV/HardFloat_specialize.vi": "c252f7e1638f63838f66e6f469bf86fdec0e4396f6b0be69172623a26519307c",
+      "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/my_design/project/snapshots/soc/pic_map_auto.h": "ddb724a2b11099a32e133927bceff311f03a5ed23e510a9a4285568a7dc8929e",
+      "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/my_design/project/tb/sram_reference_model.v": "e3e64ae67266d5aa451e26238c31fade272b0b46a8da18173fa2f96c0eedda09"
+    },
+    "retroactive_compile_time_hash_claimed": false,
+    "compile_session": 61640,
+    "compile_session_terminal_exit_code": 0,
+    "inference_restarted": false,
+    "final_delivery_accepted": false,
+    "observed_at": "2026-11-11T05:33:00.445570+08:00"
+  },
+  "completed_R8_C32_VCS_measurement": {
+    "geometry": "R8_C32_L4",
+    "logical_MACs": 4490566656,
+    "native_9bit_MAC_units": 1024,
+    "graph_derived_tiles_not_observed_counter": 4473552,
+    "shape_padding_efficiency": 0.9802767465316151,
+    "area": 3530648.246685,
+    "setup_slack_ns": 0.01927948,
+    "hold_slack_ns": 4.7974e-05,
+    "complete_model_measurement": true,
+    "inference_cycles": 949222155,
+    "inference_ns": 9492221550,
+    "CPU_return_cycle": 951554220,
+    "engine_counters": {
+      "1": {
+        "commands": 52,
+        "cycles": 2060103,
+        "written_bytes": 12945408
+      },
+      "2": {
+        "commands": 12,
+        "cycles": 3190344,
+        "written_bytes": 5720064
+      },
+      "3": {
+        "commands": 1877,
+        "cycles": 83832106,
+        "written_bytes": 160816128
+      },
+      "4": {
+        "commands": 166,
+        "cycles": 28551516,
+        "written_bytes": 28503304
+      },
+      "5": {
+        "commands": 12,
+        "cycles": 243131378,
+        "written_bytes": 8758848
+      },
+      "6": {
+        "commands": 29,
+        "cycles": 80744640,
+        "written_bytes": 14902272
+      },
+      "7": {
+        "commands": 2369,
+        "cycles": 432315808,
+        "written_bytes": 172388832
+      },
+      "8": {
+        "commands": 123,
+        "cycles": 30273018,
+        "written_bytes": 57953280
+      }
+    },
+    "useful_MAC_utilization_during_GEMM_commands": 0.05231073402832084,
+    "useful_MAC_utilization_over_full_inference": 0.004619907970858518,
+    "area_times_full_inference_ns": 3.3513695372653076e+16,
+    "logits": {
+      "bytes": 4000,
+      "sha256": "65f82e72433f74815a4df147a6bfd8d1a985b83fa3c0c8ba83e7bea40c3f0ebc",
+      "byte_exact_to_frozen_C": true,
+      "top1": 607,
+      "maximum_absolute_error": 0.0,
+      "existing_internal_C_bound": 1.340351390838623e-05,
+      "organizer_tolerance": null
+    },
+    "most_expensive_node_regions": [
+      [
+        480,
+        53523327
+      ],
+      [
+        557,
+        50934713
+      ],
+      [
+        646,
+        26983361
+      ],
+      [
+        723,
+        23618263
+      ],
+      [
+        503,
+        16443969
+      ],
+      [
+        586,
+        16434567
+      ],
+      [
+        1114,
+        13582652
+      ],
+      [
+        963,
+        13535885
+      ],
+      [
+        812,
+        13516726
+      ],
+      [
+        533,
+        12344431
+      ],
+      [
+        459,
+        12344415
+      ],
+      [
+        1040,
+        11598430
+      ]
+    ],
+    "proof": "native/optimization/work/full-rv32/R8_C32_L4/ILSVRC2012_val_00000274.JPEG/summary.json",
+    "independent_PPA_review": "native/optimization/work/full-model-measurements-v7/summary.json",
+    "full_Verilator_crosscheck": "native/optimization/work/completed-full-candidate/R8_C32_L4/v2/summary.json",
+    "session": 17799,
+    "terminal_exit_code": 0,
+    "official_accuracy_accepted": false,
+    "final_ADP_selection_accepted": false,
+    "independent_supplemental_source_review": "native/optimization/work/completed-full-candidate/R8_C32_L4/v3/summary.json"
+  },
+  "reproducible_model_firmware_data_components": {
+    "status": "ORIGINAL_ONNX_CONVERSION_REBUILT_FIRMWARE_AND20_RAM_DATA_CHAIN_REVIEW_PASS",
+    "conversion_proof": "native/optimization/work/conversion-replay-review-v1/summary.json",
+    "firmware_ELF_preprocess_RAM_proof": "native/optimization/work/inference-replay-review-v1/summary.json",
+    "firmware_component": "native/optimization/work/inference-replay-relocation-v1",
+    "conversion_component": "native/optimization/work/conversion-replay-relocation-v1",
+    "original_model_sha256": "8a612b32e4837fa9ef96b8c84306575f0cdabd61348c15f4afaea884306cfb75",
+    "byte_exact_conversion_artifacts": 15,
+    "plans_equal_except_model_path": 3,
+    "firmware_bytes": 52592,
+    "firmware_binary_and_HEX_byte_exact": true,
+    "ELF_load_state_identical": true,
+    "ELF_entire_file_byte_exact": false,
+    "ELF_only_nonloaded_temporary_FILE_name_changed": true,
+    "ELF_symbols_checked": 372,
+    "monitor_symbol_addresses": 10,
+    "preprocessed_images_byte_exact": 20,
+    "canonical_RAM_image_hashes_exact": 20,
+    "RAM_sections": 160,
+    "RAM_payload_bytes": 730528720,
+    "source_ONNX_conversion_reproduced": true,
+    "hardware_images_executed_by_replay": 0,
+    "original_sources_unchanged": true,
+    "download_performed": false,
+    "firmware_build_session": 6815,
+    "firmware_build_terminal_exit_code": 0,
+    "RAM_generation_session": 90119,
+    "RAM_generation_terminal_exit_code": 0,
+    "model_conversion_session": 25373,
+    "model_conversion_terminal_exit_code": 0,
+    "official_accuracy_accepted": false,
+    "final_delivery_accepted": false,
+    "observed_at": "2026-11-11T05:59:33.695471+08:00"
+  },
+  "complete_three_control_comparison": {
+    "status": "THREE_COMPLETE_SINGLE_IMAGE_CONTROL_MEASUREMENTS_FINAL_SELECTION_OPEN",
+    "proof": "native/optimization/work/complete-three-controls-v1/summary.json",
+    "measurement_proof": "native/optimization/work/full-model-measurements-v7/summary.json",
+    "completed_controls": [
+      "R8_C16_L4",
+      "R8_C32_L4",
+      "R16_C8_L4"
+    ],
+    "engineering_minimum_single_image_ADP": "R8_C16_L4",
+    "final_selected_candidate": null,
+    "official_accuracy_accepted": false,
+    "final_ADP_selection_accepted": false,
+    "observed_at": "2026-11-11T06:16:36.994751+08:00"
+  },
+  "completed_R16_C8_VCS_measurement": {
+    "geometry": "R16_C8_L4",
+    "logical_MACs": 4490566656,
+    "native_9bit_MAC_units": 512,
+    "graph_derived_tiles_not_observed_counter": 8946960,
+    "shape_padding_efficiency": 0.9802925239410928,
+    "area": 2171889.432457,
+    "setup_slack_ns": 0.003299713,
+    "hold_slack_ns": 4.7974e-05,
+    "complete_model_measurement": true,
+    "inference_cycles": 1046957093,
+    "inference_ns": 10469570930,
+    "CPU_return_cycle": 1049289158,
+    "engine_counters": {
+      "1": {
+        "commands": 52,
+        "cycles": 2060103,
+        "written_bytes": 12945408
+      },
+      "2": {
+        "commands": 12,
+        "cycles": 4991112,
+        "written_bytes": 5720064
+      },
+      "3": {
+        "commands": 1877,
+        "cycles": 178423675,
+        "written_bytes": 106614048
+      },
+      "4": {
+        "commands": 166,
+        "cycles": 28551516,
+        "written_bytes": 28503304
+      },
+      "5": {
+        "commands": 12,
+        "cycles": 243131378,
+        "written_bytes": 8758848
+      },
+      "6": {
+        "commands": 29,
+        "cycles": 80862975,
+        "written_bytes": 14902272
+      },
+      "7": {
+        "commands": 2369,
+        "cycles": 433598261,
+        "written_bytes": 172388832
+      },
+      "8": {
+        "commands": 123,
+        "cycles": 30273018,
+        "written_bytes": 57953280
+      }
+    },
+    "useful_MAC_utilization_during_GEMM_commands": 0.049156245660784643,
+    "useful_MAC_utilization_over_full_inference": 0.008377265943982673,
+    "area_times_full_inference_ns": 2.2738750465226004e+16,
+    "logits": {
+      "bytes": 4000,
+      "sha256": "65f82e72433f74815a4df147a6bfd8d1a985b83fa3c0c8ba83e7bea40c3f0ebc",
+      "byte_exact_to_frozen_C": true,
+      "top1": 607,
+      "maximum_absolute_error": 0.0,
+      "existing_internal_C_bound": 1.340351390838623e-05,
+      "organizer_tolerance": null
+    },
+    "most_expensive_node_regions": [
+      [
+        480,
+        53523327
+      ],
+      [
+        557,
+        50934713
+      ],
+      [
+        646,
+        26983361
+      ],
+      [
+        723,
+        23618263
+      ],
+      [
+        503,
+        19471567
+      ],
+      [
+        586,
+        19462165
+      ],
+      [
+        533,
+        14622924
+      ],
+      [
+        459,
+        14622908
+      ],
+      [
+        1114,
+        13582652
+      ],
+      [
+        963,
+        13535885
+      ],
+      [
+        812,
+        13516726
+      ],
+      [
+        1040,
+        11598430
+      ]
+    ],
+    "proof": "native/optimization/work/full-rv32/R16_C8_L4/ILSVRC2012_val_00000274.JPEG/summary.json",
+    "independent_review": "native/optimization/work/completed-full-candidate/R16_C8_L4/v1/summary.json",
+    "session": 92416,
+    "terminal_exit_code": 0,
+    "official_accuracy_accepted": false,
+    "final_ADP_selection_accepted": false
+  },
+  "official_reference_additional_local_metadata_observation": {
+    "observed_at": "2026-11-11T06:26:02.737383+08:00",
+    "read_only_model_metadata_probe": {
+      "producer_name": "onnx.quantize",
+      "producer_version": "0.1.0",
+      "model_version": 0,
+      "domain": "",
+      "doc_string": "",
+      "metadata_props": [
+        {
+          "key": "onnx.infer",
+          "value": "onnxruntime.quant"
+        }
+      ],
+      "graph_doc_string": "",
+      "input_doc_string": "",
+      "output_doc_string": ""
+    },
+    "metadata_contains_additional_preprocess_instructions": false,
+    "reference_package_explicit_environment": {
+      "runtime": "ONNX Runtime1.23.2",
+      "provider": "CUDAExecutionProvider",
+      "device": "A100",
+      "TF32": false,
+      "graph_optimization": "ORT_DISABLE_ALL",
+      "execution": "ORT_SEQUENTIAL",
+      "intra_op_threads": 1,
+      "inter_op_threads": 1
+    },
+    "search_scope": "Read-only rg of .py/.md/.json/.txt in the two user-provided engineering folders, excluding vendor/work/runtime-like dependency directories, for reference_top1_5,official_preprocess,swin_tiny_patch4_window7_224. No matches. This is not proof that every possible script/archive lacks other names.",
+    "additional_reference_generator_found": false,
+    "new_model_inference_executed": false,
+    "preprocess_changed": false,
+    "reference_labels_or_tolerances_changed": false,
+    "source_sha256": {
+      "/mnt/data/Ubuntu/qingruan/competition/models/swin_tiny_patch4_window7_224_imagenet1k_int8.onnx": "8a612b32e4837fa9ef96b8c84306575f0cdabd61348c15f4afaea884306cfb75",
+      "/mnt/data/Ubuntu/qingruan/competition/README.md": "5627c01316b3ffb7f1907de87078bfe89914ee242627968b18970382036f954f",
+      "/mnt/data/Ubuntu/qingruan/competition/reference_top1_5.json": "da23b61862b569a41decfc7ad274664a7934ab55dfc2230e92f7dea282d833b2",
+      "/mnt/data/Ubuntu/qingruan/competition/official_preprocess.py": "2feecc31e782dcbdaaa3bfa62aa0e01f470628eef6b43c10393891a4fb5c6e1a"
+    },
+    "scope": "Current model metadata and existing package/source text only; no additional authoritative preprocessing rule or original A100 inputs/full logits discovered. Existing reference inconsistency remains open.",
+    "original_project_preprocess_scope_check": {
+      "observed_at": "2026-11-11T07:44:50.368061+08:00",
+      "scope": "Bounded filename/content search in the two user-provided unpacked original project folders; text .py/.md/.txt/.json only, excluding work/vendor/runtime dependency trees. Not an exhaustive archive/binary search.",
+      "original_image_flow_found": "AircraftDataset; RGB Resize((130,130)), ToTensor; conv1 preparation uses aircraft_cnn_quantized.npz and round/clip to0..127.",
+      "Swin_reference_generation_script_found_in_this_search": false,
+      "existing_CNN130_flow_is_not_evidence_for_Swin224_preprocessing": true,
+      "Swin_model_preprocessing_labels_and_tolerance_unchanged": true,
+      "official_accuracy_accepted": false,
+      "source_sha256": {
+        "RISC-V与PE完整工程_Linux/riscv_pe_contest/contest/task2/base/src/dataset_loader.py": "3a634de13c02cea1820dff11d504bd6ce23a0b4c7d9c9b48001cdadace260cff",
+        "RISC-V与PE完整工程_Linux/riscv_pe_contest/contest/task1/my_design/project/scripts/prepare_conv1_full.py": "67207e30a797fe6d79cef7d2e76b79d6a277e538460615794dcbfbf0085136ec"
+      }
+    }
+  },
+  "pipeline_benchmark_synthesis_source_binding": {
+    "status": "VECPIPE_BENCHMARK_RTL_AND_SYNTHESIS_INPUT_LINEAGE_AUDIT_PASS",
+    "proof": "native/optimization/work/vecpipe-synthesis-binding-v1/summary.json",
+    "CPU_snapshot_files_byte_exact": 56,
+    "backend_verbatim_snapshots": 30,
+    "additional_control_sources": 3,
+    "same_array_DDC_as_scalar_control": true,
+    "only_control_backend_callee_changed": true,
+    "gate_preparation_source_linked": true,
+    "full_model_accepted_by_this_audit": false,
+    "gate_function_accepted_by_this_audit": false,
+    "formal_equivalence_claimed": false,
+    "official_accuracy_accepted": false,
+    "final_ADP_accepted": false,
+    "observed_at": "2026-11-11T06:45:59.055633+08:00"
+  },
+  "original_RTL_simulator_option_qualification": {
+    "status": "ALL_PREFIX_FUNCTIONAL_REVIEWS_PASS_SAME_CORE_HOST_GAIN_BELOW_THRESHOLD_NOT_ADOPTED",
+    "observed_at": "2026-11-11T08:23:30.236255+08:00",
+    "micro_proof": "native/optimization/work/original-vcs-radiant-v2/micro-qualification.json",
+    "CPU_results": 75,
+    "MMIO_writes": 3705,
+    "MMIO_reads": 5376,
+    "normal_and_intentional_negative_traces_byte_exact": true,
+    "negative_detection_by_original_monitor": true,
+    "CPU_negative_detection_claimed": false,
+    "documented_simulator_option": "+rad",
+    "prefix_CPU_cycles_planned": 20000000,
+    "prefix_host_wall_comparison_complete": true,
+    "final_independent_review_executed": true,
+    "original_full_runs_preserved": true,
+    "new_full_inference_started": false,
+    "hardware_performance_accepted": false,
+    "official_accuracy_accepted": false,
+    "final_ADP_accepted": false,
+    "report": "native/optimization/原始RTL仿真编译选项核对_20261111.md",
+    "current_baseline_prefix": {
+      "status": "CURRENT_UNMODIFIED_RTL20M_CPU_PREFIX_BYTE_EXACT",
+      "CPU_cycles": 20000000,
+      "node_and_absolute_CPU_cycle_events": 385,
+      "report_byte_exact": true,
+      "observed_host_wall_s": 538.5334365720046,
+      "hardware_performance_claimed": false,
+      "radiant_comparison_pending": false
+    },
+    "current_phase": "closed-no-adoption",
+    "first_round_sample": {
+      "round": 1,
+      "baseline_wall_s": 538.5334365720046,
+      "radiant_wall_s": 411.9638090500084,
+      "observed_host_speedup": 1.3072348219467789
+    },
+    "first_round_node_and_report_exact": true,
+    "host_CPU_affinity_controlled": false,
+    "observed_host_speedup_causally_attributed_to_rad": false,
+    "same_core_host_comparison_required_before_adoption": true,
+    "new_full_run_adopted": false,
+    "host_topology_observation": "native/optimization/work/original-vcs-radiant-v2/host-topology-observation.json",
+    "same_core_workflow": {
+      "status": "FOUR_SAME_CORE_PREFIXES_AND_INDEPENDENT_REVIEW_COMPLETE_NOT_ADOPTED",
+      "observed_at": "2026-11-11T08:23:30.236255+08:00",
+      "session": 86215,
+      "prior_parent_pid": 361321,
+      "prior_process_start_ticks": "8630956",
+      "source_guards_verified": 422,
+      "preparation": "native/optimization/work/original-vcs-radiant-affinity-v1/preparation.json",
+      "maximum_new_simulators_at_once": 1,
+      "planned_prefix_runs": 4,
+      "prefix_CPU_cycles_each": 20000000,
+      "observed_comparison_results_available": true,
+      "existing_processes_modified": false,
+      "new_full_inference_started": false,
+      "hardware_performance_accepted": false,
+      "official_accuracy_accepted": false,
+      "selected_CPU": 22,
+      "current_native_child_pid": null,
+      "prior_independent_review_complete": true,
+      "prior_parent_terminal_exit_code": 0,
+      "first_round_sample": {
+        "round": 1,
+        "baseline_host_wall_s": 652.2145960319904,
+        "radiant_host_wall_s": 618.8740672489948,
+        "observed_host_speedup": 1.0538728806834645
+      },
+      "partial_observed_comparison_results_available": true,
+      "complete_both_orders": true,
+      "terminal_exit_code": 0,
+      "samples": [
+        {
+          "round": 1,
+          "baseline_host_wall_s": 652.2145960319904,
+          "radiant_host_wall_s": 618.8740672489948,
+          "observed_host_speedup": 1.0538728806834645
+        },
+        {
+          "round": 2,
+          "baseline_host_wall_s": 657.4326841779985,
+          "radiant_host_wall_s": 616.8015803669987,
+          "observed_host_speedup": 1.0658738646337842
+        }
+      ],
+      "final_independent_review_source_guards": 527,
+      "runtime_files_unchanged": {
+        "baseline": 38,
+        "radiant": 38
+      },
+      "eligible_for_separate_adoption_review": false
+    },
+    "independent_review_proof": "native/optimization/work/original-vcs-radiant-review-v1/summary.json",
+    "independent_review_source_guards_reverified": 476,
+    "original_runtime_files_unchanged": 38,
+    "all_unpinned_samples": [
+      {
+        "round": 1,
+        "baseline_wall_s": 538.5334365720046,
+        "radiant_wall_s": 411.9638090500084,
+        "observed_host_speedup": 1.3072348219467789
+      },
+      {
+        "round": 2,
+        "baseline_wall_s": 436.1025413629977,
+        "radiant_wall_s": 395.2794638899941,
+        "observed_host_speedup": 1.1032764947393388
+      }
+    ],
+    "uncontrolled_host_gain_eligible_for_adoption": false,
+    "same_core_independent_review": "native/optimization/work/original-vcs-radiant-affinity-review-v1/summary.json"
+  },
+  "Softmax_followup_domain_and_reuse_analysis": {
+    "status": "STATIC_SOFTMAX_FP32_BIAS_DOMAIN_AND_CAPTURED_EXP_INPUT_REUSE_ANALYSIS_COMPLETE",
+    "proof": "native/optimization/work/softmax-exp-reuse-v1/summary.json",
+    "static_Softmax_nodes": 12,
+    "all_have_FP32_bias_Add_after_DQ": true,
+    "captured_images": 1,
+    "captured_nodes": [
+      480,
+      557
+    ],
+    "128_entry_eligible_hit_fractions": [
+      0.031909899376417236,
+      0.006655499351460926
+    ],
+    "per_row_flush_hits_all_sizes": 0,
+    "direct_mapped_cache_added_to_candidate": false,
+    "current_decision": "Keep current frozen candidate; simple INT8-code LUT not justified, this captured direct-map reuse is low and hardware cost unmeasured.",
+    "dataset20_profile_complete": false,
+    "RTL_or_firmware_changed": false,
+    "hardware_performance_accepted": false,
+    "official_accuracy_accepted": false,
+    "source_guards_reverified": 11,
+    "observed_at": "2026-11-11T08:04:35.808620+08:00"
+  },
+  "complete_pipeline_candidate_review_workflow": {
+    "status": "VECPIPE_COMPLETE_FIRST_IMAGE_BYTE_EXACT_FINAL_PPA_ENGINEERING_REVIEW_PASS",
+    "observed_at": "2026-11-11T17:28:00.215915+08:00",
+    "proof": "native/optimization/work/vecpipe-complete-candidate-review-v1/summary.json",
+    "full_pipeline_result_reviewed": true,
+    "inference_cycles": 653393986,
+    "CPU_return_cycle": 655726051,
+    "complete_SoC_area": 2114649.956611,
+    "ADP_ratio_to_scalar_R8_C16": 0.6609962435814754,
+    "final_selection_accepted": false,
+    "official_accuracy_accepted": false
+  },
+  "updated_at": "2026-11-11T17:28:00.215915+08:00",
+  "handoff_20261111": {
+    "status": "DOCUMENTED_ACTUAL_EVIDENCE_AND_PENDING_VALIDATION",
+    "document": "交接材料_20261111/项目交接说明.md",
+    "files": "交接材料_20261111/文件逐项说明.md",
+    "live_status_command": "python3 交接材料_20261111/查看当前状态.py",
+    "whole_objective_complete": false,
+    "scope": "首图/门级已完成；批跑恢复继续，官方精度和原始全图基线未通过，交接不等于最终验收。"
+  },
+  "original_VCS_orphan_collection": {
+    "status": "WATCHING_EXISTING_ORIGINAL_VCS_WITHOUT_RESTART",
+    "case": "native/optimization/work/original-vcs-orphan-collection-v1",
+    "original_pid": 266680,
+    "exit_code_recoverable": false,
+    "no_simulator_restarted": true
+  },
+  "goal_blocker_audit": {
+    "current_goal_turn_classification": "PIPELINE_FULL_FIRST_IMAGE_AND_GATE_FINISHED_ORPHAN_QUEUE_RECOVERED_HANDOFF_PREPARED",
+    "current_progress": "交接材料记录已完成证据和未完成验收；真实运行继续，未将官方精度或原始基线写为通过。",
+    "consecutive_goal_turns_observed": 0
+  }
+}

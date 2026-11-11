@@ -1,0 +1,6 @@
+{
+  "project": "native/audits/20261107/riscv_pe_contest/contest/task1/my_design",
+  "verified_wave": "native/audits/20261107/gate-wave-replay/soc_gate_interfaces.vpd",
+  "competition": "competition",
+  "model": "swin_tiny_patch4_window7_224_imagenet1k_int8.onnx"
+}

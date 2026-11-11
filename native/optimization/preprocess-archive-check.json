@@ -1,0 +1,19 @@
+{
+  "archive": "/mnt/data/Ubuntu/qingruan/competition.zip",
+  "archive_bytes": 207438556,
+  "archive_preprocess_timestamp": [
+    2026,
+    11,
+    2,
+    16,
+    5,
+    6
+  ],
+  "preprocess_member_sha256": "2feecc31e782dcbdaaa3bfa62aa0e01f470628eef6b43c10393891a4fb5c6e1a",
+  "local_preprocess_sha256": "2feecc31e782dcbdaaa3bfa62aa0e01f470628eef6b43c10393891a4fb5c6e1a",
+  "identical": true,
+  "meaning": "The script is present in the existing ZIP and the extracted copy is unchanged; this does not independently authenticate the ZIP against the hosted attachment.",
+  "user_statement_20261110": "用户表示不确定来源，未对该文件做任何改动。",
+  "hosted_attachment_authenticated": false,
+  "accuracy_status": "公开参考尚未通过；不能仅据现有差异认定预处理脚本有误。"
+}

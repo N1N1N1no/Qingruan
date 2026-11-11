@@ -1,0 +1,65 @@
+{
+  "source_url": "https://xcnjdg7296m8.feishu.cn/wiki/YLkowzJAAifUCGkwOtpcVST1nnc",
+  "checked_on": "2026-11-07",
+  "document_last_modified_visible": "2026-11-02 19:03",
+  "task1": [
+    "指定工具与标准单元库下完整SoC逻辑综合",
+    "完善SDC，生成门级网表",
+    "取得面积与时序分析报告",
+    "综合SDF时序反标门级仿真",
+    "验证RISC-V程序、AXI访问和PE结果，检查反标和关键时序违规",
+    "对比RTL与SDF门级结果，确保功能一致"
+  ],
+  "task1_excludes": [
+    "不要求布局布线或物理设计",
+    "任务一不以完成CNN端到端部署为前提"
+  ],
+  "task2": {
+    "models": [
+      "ResNet-50",
+      "MobileNetV3-Large",
+      "Swin-Tiny",
+      "ViT-Base",
+      "DeiT-Base"
+    ],
+    "format": "ONNX",
+    "input": {
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "dtype": "float32",
+      "layout": "NCHW"
+    },
+    "output_shape": [
+      1,
+      1000
+    ],
+    "classes": "ImageNet-1K",
+    "images": 20,
+    "public_top1_images": 5,
+    "private_reference_images": 15,
+    "public_reference_files": [
+      "reference_top1_5.csv",
+      "reference_top1_5.json"
+    ],
+    "acceptance": [
+      "在实际RISC-V+OpenACM SoC完成指定模型端到端推理",
+      "与主办方参考一致并满足精度要求",
+      "可复现仿真、性能统计与优化前后对比",
+      "新增硬件纳入SoC综合并验证功能"
+    ],
+    "adp": "SoC综合总面积 × 单次端到端推理时间，含搬运、计算、软件调度和结果输出"
+  },
+  "submissions": [
+    "完整RTL工程",
+    "SoC综合网表、SDC与综合报告",
+    "基础任务门级日志、波形和功能结果",
+    "模型推理程序、权重转换文件和脚本",
+    "正确性测试与性能统计",
+    "优化前后周期、面积与关键路径对比报告"
+  ],
+  "frequency_note": "可见要求规定统一时钟约束，所读文字未给出具体数值；工程10ns是参考预算，需要确认正式口径。"
+}

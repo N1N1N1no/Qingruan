@@ -1,0 +1,9 @@
+{
+  "status": "VECPIPE_AXI_ENGINE_SOURCE_GENERATED_NOT_VERIFIED",
+  "original_source": "/mnt/data/Ubuntu/qingruan/native/optimization/rtl/axi_vector_engine.sv",
+  "original_sha256": "cd69a7c88f02f79d0e829347cfc5e873ddb4a8e4c5d2a1ca95d469a1d245e539",
+  "generated_source": "/mnt/data/Ubuntu/qingruan/native/optimization/variants/vecpipe_v1/axi_vector_engine_vecpipe.sv",
+  "generated_sha256": "95b8989e7ad34142b240ff77f62f0034b8c5be5314394073ce7fd56081e9ab9d",
+  "generator_sha256": "2ab9769e6b51e0190fe98427b804757478ffcfb45242b092f42db238624128a5",
+  "scope": "Original ABI, configuration validation, DMA load/row/block order and output packing preserved. Only SRAM operand read-ahead/two-slot FIFO and arithmetic streaming are introduced. No AXI/SoC/PPA acceptance from source generation."
+}

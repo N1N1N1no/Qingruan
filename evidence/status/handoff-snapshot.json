@@ -1,0 +1,156 @@
+{
+  "snapshot_at": "2026-11-11T17:34:10.275763+08:00",
+  "workspace": "/mnt/data/Ubuntu/qingruan",
+  "whole_objective_complete": false,
+  "official_accuracy_accepted": false,
+  "pipeline_first_image": {
+    "status": "VECPIPE_COMPLETE_FIRST_IMAGE_BYTE_EXACT_FINAL_PPA_ENGINEERING_REVIEW_PASS",
+    "image": "ILSVRC2012_val_00000274.JPEG",
+    "inference_cycles": 653393986,
+    "CPU_return_cycle": 655726051,
+    "complete_SoC_area": 2114649.956611,
+    "setup_slack_ns": 0.003800392,
+    "hold_slack_ns": 4.7974e-05,
+    "commands": 4640,
+    "evidence": "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-complete-candidate-review-v1/summary.json"
+  },
+  "pipeline_gate": {
+    "status": "FULL_SOC_ALL8_GATE_SDF_22_COMMAND_ENGINEERING_CHECK_PASS",
+    "commands": 22,
+    "normal_timing_violations": 0,
+    "evidence": "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-gate/v1/summary.json"
+  },
+  "twenty_images": {
+    "progress_file": "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-suite-recovery-v1/progress.json",
+    "progress_file_mtime": "2026-11-11T17:34:08.205881+08:00",
+    "first_image_finished": true,
+    "remaining19_finished": 8,
+    "strict_byte_exact_in_finished19": 7,
+    "active": [
+      {
+        "image": "ILSVRC2012_val_00007089.JPEG",
+        "pid": 478529,
+        "adopted": true
+      },
+      {
+        "image": "ILSVRC2012_val_00009086.JPEG",
+        "pid": 480408,
+        "adopted": true
+      },
+      {
+        "image": "ILSVRC2012_val_00012874.JPEG",
+        "pid": 532276,
+        "adopted": true
+      },
+      {
+        "image": "ILSVRC2012_val_00013609.JPEG",
+        "pid": 571807,
+        "adopted": true
+      }
+    ],
+    "pending": [
+      "ILSVRC2012_val_00015860.JPEG",
+      "ILSVRC2012_val_00025654.JPEG",
+      "ILSVRC2012_val_00028082.JPEG",
+      "ILSVRC2012_val_00028858.JPEG",
+      "ILSVRC2012_val_00035110.JPEG",
+      "ILSVRC2012_val_00035219.JPEG",
+      "ILSVRC2012_val_00038042.JPEG"
+    ],
+    "completed": [
+      {
+        "image": "ILSVRC2012_val_00004937.JPEG",
+        "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00004937.JPEG/summary.json",
+        "status": "ACTUAL_RV32_FULL_IMAGE_FROZEN_C_BYTE_EXACT_PASS_OFFICIAL_REFERENCE_OPEN",
+        "byte_exact": true,
+        "complete_graph": true,
+        "returncode": 0
+      },
+      {
+        "image": "ILSVRC2012_val_00008350.JPEG",
+        "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00008350.JPEG/summary.json",
+        "status": "ACTUAL_RV32_FULL_IMAGE_FROZEN_C_BYTE_EXACT_PASS_OFFICIAL_REFERENCE_OPEN",
+        "byte_exact": true,
+        "complete_graph": true,
+        "returncode": 0
+      },
+      {
+        "image": "ILSVRC2012_val_00000914.JPEG",
+        "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00000914.JPEG/summary.json",
+        "status": "ACTUAL_RV32_FULL_IMAGE_FROZEN_C_BYTE_EXACT_PASS_OFFICIAL_REFERENCE_OPEN",
+        "byte_exact": true,
+        "complete_graph": true,
+        "returncode": 0
+      },
+      {
+        "image": "ILSVRC2012_val_00004628.JPEG",
+        "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00004628.JPEG/summary.json",
+        "status": "ACTUAL_RV32_FULL_IMAGE_FROZEN_C_BYTE_EXACT_PASS_OFFICIAL_REFERENCE_OPEN",
+        "byte_exact": true,
+        "complete_graph": true,
+        "returncode": 0
+      },
+      {
+        "image": "ILSVRC2012_val_00000759.JPEG",
+        "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00000759.JPEG/failure.json",
+        "status": "ACTUAL_RV32_FULL_IMAGE_DIAGNOSTIC_NOT_ACCEPTED",
+        "byte_exact": false,
+        "complete_graph": true,
+        "returncode": 0
+      },
+      {
+        "image": "ILSVRC2012_val_00001559.JPEG",
+        "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00001559.JPEG/summary.json",
+        "status": "ACTUAL_RV32_FULL_IMAGE_FROZEN_C_BYTE_EXACT_PASS_OFFICIAL_REFERENCE_OPEN",
+        "byte_exact": true,
+        "complete_graph": true,
+        "returncode": 0
+      },
+      {
+        "image": "ILSVRC2012_val_00002951.JPEG",
+        "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00002951.JPEG/summary.json",
+        "status": "ACTUAL_RV32_FULL_IMAGE_FROZEN_C_BYTE_EXACT_PASS_OFFICIAL_REFERENCE_OPEN",
+        "byte_exact": true,
+        "complete_graph": true,
+        "returncode": 0
+      },
+      {
+        "image": "ILSVRC2012_val_00004239.JPEG",
+        "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00004239.JPEG/summary.json",
+        "status": "ACTUAL_RV32_FULL_IMAGE_FROZEN_C_BYTE_EXACT_PASS_OFFICIAL_REFERENCE_OPEN",
+        "byte_exact": true,
+        "complete_graph": true,
+        "returncode": 0
+      }
+    ],
+    "warning": "队列状态文件必须结合进程和日志确认，旧队列 progress.json 已停止更新。"
+  },
+  "original_baseline": {
+    "VCS": {
+      "terminal_summary": null,
+      "failure": null,
+      "tail": [
+        "ORIGINAL_BASELINE_PROGRESS CPU_cycle=2400000000 last_node=441 PE_writes=305642 PE_reads=2159104",
+        "ORIGINAL_BASELINE_PROGRESS CPU_cycle=2500000000 last_node=441 PE_writes=322229 PE_reads=2277113",
+        "ORIGINAL_BASELINE_PROGRESS CPU_cycle=2600000000 last_node=441 PE_writes=338850 PE_reads=2395264"
+      ],
+      "evidence_directory": "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-full-vcs/v1"
+    },
+    "Verilator": {
+      "terminal_summary": null,
+      "failure": null,
+      "tail": [
+        "ORIGINAL_BASELINE_PROGRESS CPU_cycle=3100000000 last_node=441 PE_writes=422043 PE_reads=2983424",
+        "ORIGINAL_BASELINE_PROGRESS CPU_cycle=3200000000 last_node=441 PE_writes=438907 PE_reads=3099904",
+        "ORIGINAL_BASELINE_PROGRESS CPU_cycle=3300000000 last_node=441 PE_writes=455464 PE_reads=3217559"
+      ],
+      "evidence_directory": "/mnt/data/Ubuntu/qingruan/native/optimization/work/original-baseline-rtl/verilator/v1"
+    }
+  },
+  "image759_diagnostic": {
+    "actual_RV32_equals_archived_Newlib_logits": true,
+    "actual_sha256": "a7450614f3be80e456e420c2ac89432c028d3e0ed58f79c35cdf1a3a42bef3a9",
+    "frozen_C_pass": false,
+    "scope": "相同最终输出支持已知数学库差异诊断，不能替代逐节点定位或主办方精度验收。"
+  }
+}

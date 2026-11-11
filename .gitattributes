@@ -1,0 +1,7 @@
+# Preserve exact source/input bytes: replay manifests bind SHA256 to those bytes.
+* -text
+*.onnx binary
+*.bin binary
+*.JPEG binary
+*.zip binary
+*.gz binary

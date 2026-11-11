@@ -1,0 +1,15 @@
+[
+  "/workspace/native/optimization/vendor/HardFloat-1/source/HardFloat_primitives.v",
+  "/workspace/native/optimization/vendor/HardFloat-1/source/HardFloat_rawFN.v",
+  "/workspace/native/optimization/vendor/HardFloat-1/source/RISCV/HardFloat_specialize.v",
+  "/workspace/native/optimization/vendor/HardFloat-1/source/fNToRecFN.v",
+  "/workspace/native/optimization/vendor/HardFloat-1/source/recFNToFN.v",
+  "/workspace/native/optimization/vendor/HardFloat-1/source/isSigNaNRecFN.v",
+  "/workspace/native/optimization/vendor/HardFloat-1/source/addRecFN.v",
+  "/workspace/native/optimization/vendor/HardFloat-1/source/mulRecFN.v",
+  "/workspace/native/optimization/vendor/HardFloat-1/source/divSqrtRecFN_small.v",
+  "/workspace/native/optimization/vendor/HardFloat-1/source/iNToRecFN.v",
+  "/workspace/native/optimization/vendor/HardFloat-1/source/recFNToIN.v",
+  "/workspace/native/optimization/vendor/HardFloat-1/source/compareRecFN.v",
+  "/workspace/native/optimization/rtl/fp32_alu.v"
+]

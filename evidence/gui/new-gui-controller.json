@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "project": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/my_design",
+  "task_count": 53,
+  "diagnosis": {
+    "status": "PASS",
+    "tools": {
+      "综合工具 DC": "/mnt/data/Ubuntu/qingruan/native/rootfs/home/zhz/contest/runtime/bin/dc_shell",
+      "仿真工具 VCS": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/tools/bin/vcs",
+      "波形查看器 DVE": "/mnt/data/Ubuntu/qingruan/native/rootfs/home/zhz/eda/synopsys/vcs-mx/L-2016.06/bin/dve",
+      "构建工具 make": "/usr/bin/make",
+      "C 编译器 GCC": "/mnt/data/Ubuntu/qingruan/native/rootfs/home/zhz/rtl_tools/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-gcc",
+      "转换工具 sv2v": "/mnt/data/Ubuntu/qingruan/native/rootfs/home/zhz/rtl_tools/sv2v-source-0.0.13/bin/sv2v",
+      "通用综合 Yosys": "/mnt/data/Ubuntu/qingruan/native/rootfs/home/zhz/miniforge3/envs/rtl-yosys/bin/yosys"
+    },
+    "libraries": {
+      "standard.db": true,
+      "sram.db": true
+    },
+    "environment": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/env.sh",
+    "python": "/mnt/data/Ubuntu/qingruan/native/rootfs/home/zhz/miniforge3/bin/python3",
+    "message": "工具和本机库检测；缺失的扩展工程步骤已在左侧标注。商业工具运行时自动连接许可服务。",
+    "missing_task_scripts": {}
+  },
+  "prepare": {
+    "type": "finished",
+    "task_id": "prepare",
+    "path": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/prepare.btlamzzi",
+    "gui_run_path": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/gui_runs/prepare.oox9e08w",
+    "status": "PASS",
+    "returncode": 0,
+    "summary": {
+      "status": "PASS",
+      "scope": "prepare",
+      "baseline": false,
+      "source": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/my_design",
+      "commands": [
+        {
+          "command": [
+            "/usr/bin/make",
+            "prepare",
+            "PREPARE_ARGS=--skip-config",
+            "RV_ROOT=/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/prepare.btlamzzi/source/vendor/Cores-VeeR-EL2",
+            "PYTHON=/mnt/data/Ubuntu/qingruan/native/rootfs/home/zhz/miniforge3/bin/python3",
+            "RISCV_PREFIX=/mnt/data/Ubuntu/qingruan/native/rootfs/home/zhz/rtl_tools/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf-",
+            "ISA=rv32imc_zicsr",
+            "VCS=/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/scripts/vcs_vm.py",
+            "SV2V=/mnt/data/Ubuntu/qingruan/native/rootfs/home/zhz/rtl_tools/sv2v-source-0.0.13/bin/sv2v",
+            "YOSYS=/mnt/data/Ubuntu/qingruan/native/rootfs/home/zhz/miniforge3/envs/rtl-yosys/bin/yosys",
+            "VCS_ARGS=",
+            "RUN_ARGS=+WAVE"
+          ],
+          "exit_code": 0,
+          "log": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/prepare.btlamzzi/prepare.log",
+          "seconds": 0.064
+        }
+      ],
+      "cases": []
+    }
+  }
+}

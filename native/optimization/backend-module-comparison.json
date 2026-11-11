@@ -1,0 +1,104 @@
+{
+  "status": "MODULE_COMPARISON_READY_FOR_PHASE1_ENGINEERING_REVIEW",
+  "completed": [
+    {
+      "id": "R8_C16_L4",
+      "area": 1862638.095018,
+      "setup_slack_ns": 0.005052567,
+      "hold_slack_ns": 0.094101772,
+      "SRAMs": 128,
+      "FP32_instances_before_mapping": 3,
+      "shared_FP32": false,
+      "module_test_cycles_12": 5623670,
+      "module_testset_area_cycle_product": 10474861975809.877,
+      "proof": "/mnt/data/Ubuntu/qingruan/native/optimization/work/backend-synthesis/R8_C16_L4/private/summary.json",
+      "source_hashes_match_current": true
+    },
+    {
+      "id": "R8_C16_L4",
+      "area": 1841282.550973,
+      "setup_slack_ns": 0.000454903,
+      "hold_slack_ns": 0.094101772,
+      "SRAMs": 128,
+      "FP32_instances_before_mapping": 1,
+      "shared_FP32": true,
+      "module_test_cycles_12": 5623670,
+      "module_testset_area_cycle_product": 10354765443430.33,
+      "proof": "/mnt/data/Ubuntu/qingruan/native/optimization/work/backend-synthesis/R8_C16_L4/shared/summary.json",
+      "source_hashes_match_current": true
+    },
+    {
+      "id": "R8_C32_L4",
+      "area": 3288524.935701,
+      "setup_slack_ns": 0.001990318,
+      "hold_slack_ns": 0.094101772,
+      "SRAMs": 256,
+      "FP32_instances_before_mapping": 3,
+      "shared_FP32": false,
+      "module_test_cycles_12": 3932542,
+      "module_testset_area_cycle_product": 12932262427691.482,
+      "proof": "/mnt/data/Ubuntu/qingruan/native/optimization/work/backend-synthesis/R8_C32_L4/private/summary.json",
+      "source_hashes_match_current": true
+    },
+    {
+      "id": "R8_C32_L4",
+      "area": 3267286.69766,
+      "setup_slack_ns": 0.00255394,
+      "hold_slack_ns": 0.094101772,
+      "SRAMs": 256,
+      "FP32_instances_before_mapping": 1,
+      "shared_FP32": true,
+      "module_test_cycles_12": 3932542,
+      "module_testset_area_cycle_product": 12848742164589.252,
+      "proof": "/mnt/data/Ubuntu/qingruan/native/optimization/work/backend-synthesis/R8_C32_L4/shared/summary.json",
+      "source_hashes_match_current": true
+    },
+    {
+      "id": "R16_C8_L4",
+      "area": 1944642.437047,
+      "setup_slack_ns": 0.000745773,
+      "hold_slack_ns": 0.094101772,
+      "SRAMs": 128,
+      "FP32_instances_before_mapping": 3,
+      "shared_FP32": false,
+      "module_test_cycles_12": 7236475,
+      "module_testset_area_cycle_product": 14072356379629.69,
+      "proof": "/mnt/data/Ubuntu/qingruan/native/optimization/work/backend-synthesis/R16_C8_L4/private/summary.json",
+      "source_hashes_match_current": true
+    },
+    {
+      "id": "R16_C8_L4",
+      "area": 1923446.759003,
+      "setup_slack_ns": 0.005102158,
+      "hold_slack_ns": 0.094101772,
+      "SRAMs": 128,
+      "FP32_instances_before_mapping": 1,
+      "shared_FP32": true,
+      "module_test_cycles_12": 7236475,
+      "module_testset_area_cycle_product": 13918974385356.234,
+      "proof": "/mnt/data/Ubuntu/qingruan/native/optimization/work/backend-synthesis/R16_C8_L4/shared/summary.json",
+      "source_hashes_match_current": true
+    }
+  ],
+  "pending": [],
+  "FP32_area_savings": [
+    {
+      "id": "R8_C16_L4",
+      "area_saved": 21355.544045000104,
+      "area_saved_percent": 1.146521382877318
+    },
+    {
+      "id": "R8_C32_L4",
+      "area_saved": 21238.238040999975,
+      "area_saved_percent": 0.6458287060691762
+    },
+    {
+      "id": "R16_C8_L4",
+      "area_saved": 21195.678043999942,
+      "area_saved_percent": 1.0899524581077351
+    }
+  ],
+  "FP32_cycles_equal_in_recorded_module_and_RV32_suites": true,
+  "selection": "PENDING_PHASE1_REVIEW_FINAL_SOC_ADP_IS_PHASE2",
+  "scope": "mapped complete accelerator backend with all8 engines and fixed mapped array; 10ns/1ns IO; excludes CPU/MMIO/router and nonMAC/CPU/full-inference latency. Twelve MAC module samples are a finite engineering proxy, never complete SoC ADP."
+}

@@ -1,0 +1,302 @@
+{
+  "status": "ACTUAL_RV32_FULL_IMAGE_DIAGNOSTIC_NOT_ACCEPTED",
+  "image": "ILSVRC2012_val_00000759.JPEG",
+  "actual_RV32_execution_observed": true,
+  "complete_graph_execution_observed": true,
+  "geometry": "R8_C16_L4",
+  "CPU_internal_C_criterion_pass": false,
+  "logits_byte_exact_to_frozen_C": false,
+  "all1000_logits_finite": true,
+  "actual_top1": 617,
+  "public_reference_top1": null,
+  "public_reference_top1_matches": null,
+  "measured": {
+    "code": 3134193814,
+    "requested": 4640,
+    "completed": 4640,
+    "inference_cycles": 656003418,
+    "CPU_return_cycle": 658576645,
+    "top1": 617,
+    "expected_top1": 617,
+    "max_error_bits": 1067137464,
+    "logit_mismatched_words": 917,
+    "error_node": 0,
+    "node_events": 1312
+  },
+  "logits_sha256": "a7450614f3be80e456e420c2ac89432c028d3e0ed58f79c35cdf1a3a42bef3a9",
+  "report": "NODE 0 cycles=680\nNODE 1 cycles=672\nNODE 2 cycles=672\nNODE 3 cycles=663\nNODE 4 cycles=663\nNODE 5 cycles=663\nNODE 6 cycles=663\nNODE 7 cycles=663\nNODE 8 cycles=663\nNODE 9 cycles=663\nNODE 10 cycles=663\nNODE 11 cycles=663\nNODE 12 cycles=663\nNODE 13 cycles=663\nNODE 14 cycles=663\nNODE 15 cycles=663\nNODE 16 cycles=663\nNODE 17 cycles=663\nNODE 18 cycles=663\nNODE 19 cycles=663\nNODE 20 cycles=663\nNODE 21 cycles=663\nNODE 22 cycles=663\nNODE 23 cycles=663\nNODE 24 cycles=663\nNODE 25 cycles=663\nNODE 26 cycles=663\nNODE 27 cycles=663\nNODE 28 cycles=663\nNODE 29 cycles=663\nNODE 30 cycles=663\nNODE 31 cycles=663\nNODE 32 cycles=663\nNODE 33 cycles=663\nNODE 34 cycles=663\nNODE 35 cycles=663\nNODE 36 cycles=663\nNODE 37 cycles=663\nNODE 38 cycles=663\nNODE 39 cycles=663\nNODE 40 cycles=663\nNODE 41 cycles=663\nNODE 42 cycles=663\nNODE 43 cycles=663\nNODE 44 cycles=663\nNODE 45 cycles=663\nNODE 46 cycles=663\nNODE 47 cycles=663\nNODE 48 cycles=663\nNODE 49 cycles=663\nNODE 50 cycles=663\nNODE 51 cycles=663\nNODE 52 cycles=663\nNODE 53 cycles=663\nNODE 54 cycles=663\nNODE 55 cycles=663\nNODE 56 cycles=663\nNODE 57 cycles=663\nNODE 58 cycles=663\nNODE 59 cycles=663\nNODE 60 cycles=663\nNODE 61 cycles=663\nNODE 62 cycles=663\nNODE 63 cycles=663\nNODE 64 cycles=663\nNODE 65 cycles=663\nNODE 66 cycles=663\nNODE 67 cycles=663\nNODE 68 cycles=663\nNODE 69 cycles=663\nNODE 70 cycles=663\nNODE 71 cycles=663\nNODE 72 cycles=663\nNODE 73 cycles=663\nNODE 74 cycles=663\nNODE 75 cycles=663\nNODE 76 cycles=663\nNODE 77 cycles=663\nNODE 78 cycles=663\nNODE 79 cycles=663\nNODE 80 cycles=663\nNODE 81 cycles=663\nNODE 82 cycles=663\nNODE 83 cycles=663\nNODE 84 cycles=663\nNODE 85 cycles=663\nNODE 86 cycles=663\nNODE 87 cycles=663\nNODE 88 cycles=663\nNODE 89 cycles=663\nNODE 90 cycles=663\nNODE 91 cycles=663\nNODE 92 cycles=663\nNODE 93 cycles=663\nNODE 94 cycles=663\nNODE 95 cycles=663\nNODE 96 cycles=663\nNODE 97 cycles=663\nNODE 98 cycles=663\nNODE 99 cycles=663\nNODE 100 cycles=663\nNODE 101 cycles=663\nNODE 102 cycles=663\nNODE 103 cycles=663\nNODE 104 cycles=663\nNODE 105 cycles=663\nNODE 106 cycles=663\nNODE 107 cycles=663\nNODE 108 cycles=663\nNODE 109 cycles=663\nNODE 110 cycles=663\nNODE 111 cycles=663\nNODE 112 cycles=663\nNODE 113 cycles=663\nNODE 114 cycles=663\nNODE 115 cycles=663\nNODE 116 cycles=663\nNODE 117 cycles=663\nNODE 118 cycles=663\nNODE 119 cycles=663\nNODE 120 cycles=663\nNODE 121 cycles=663\nNODE 122 cycles=663\nNODE 123 cycles=663\nNODE 124 cycles=663\nNODE 125 cycles=663\nNODE 126 cycles=663\nNODE 127 cycles=663\nNODE 128 cycles=663\nNODE 129 cycles=663\nNODE 130 cycles=663\nNODE 131 cycles=663\nNODE 132 cycles=663\nNODE 133 cycles=663\nNODE 134 cycles=663\nNODE 135 cycles=663\nNODE 136 cycles=663\nNODE 137 cycles=663\nNODE 138 cycles=663\nNODE 139 cycles=663\nNODE 140 cycles=663\nNODE 141 cycles=663\nNODE 142 cycles=663\nNODE 143 cycles=663\nNODE 144 cycles=663\nNODE 145 cycles=663\nNODE 146 cycles=663\nNODE 147 cycles=663\nNODE 148 cycles=663\nNODE 149 cycles=663\nNODE 150 cycles=663\nNODE 151 cycles=663\nNODE 152 cycles=663\nNODE 153 cycles=663\nNODE 154 cycles=663\nNODE 155 cycles=663\nNODE 156 cycles=663\nNODE 157 cycles=663\nNODE 158 cycles=663\nNODE 159 cycles=663\nNODE 160 cycles=663\nNODE 161 cycles=663\nNODE 162 cycles=663\nNODE 163 cycles=663\nNODE 164 cycles=663\nNODE 165 cycles=663\nNODE 166 cycles=663\nNODE 167 cycles=663\nNODE 168 cycles=663\nNODE 169 cycles=663\nNODE 170 cycles=663\nNODE 171 cycles=663\nNODE 172 cycles=663\nNODE 173 cycles=663\nNODE 174 cycles=663\nNODE 175 cycles=663\nNODE 176 cycles=663\nNODE 177 cycles=663\nNODE 178 cycles=663\nNODE 179 cycles=663\nNODE 180 cycles=663\nNODE 181 cycles=663\nNODE 182 cycles=663\nNODE 183 cycles=663\nNODE 184 cycles=663\nNODE 185 cycles=663\nNODE 186 cycles=663\nNODE 187 cycles=663\nNODE 188 cycles=663\nNODE 189 cycles=663\nNODE 190 cycles=663\nNODE 191 cycles=663\nNODE 192 cycles=663\nNODE 193 cycles=663\nNODE 194 cycles=663\nNODE 195 cycles=663\nNODE 196 cycles=663\nNODE 197 cycles=663\nNODE 198 cycles=663\nNODE 199 cycles=663\nNODE 200 cycles=663\nNODE 201 cycles=663\nNODE 202 cycles=663\nNODE 203 cycles=663\nNODE 204 cycles=663\nNODE 205 cycles=663\nNODE 206 cycles=663\nNODE 207 cycles=663\nNODE 208 cycles=663\nNODE 209 cycles=663\nNODE 210 cycles=663\nNODE 211 cycles=663\nNODE 212 cycles=663\nNODE 213 cycles=663\nNODE 214 cycles=663\nNODE 215 cycles=663\nNODE 216 cycles=663\nNODE 217 cycles=663\nNODE 218 cycles=663\nNODE 219 cycles=663\nNODE 220 cycles=663\nNODE 221 cycles=663\nNODE 222 cycles=663\nNODE 223 cycles=663\nNODE 224 cycles=663\nNODE 225 cycles=663\nNODE 226 cycles=663\nNODE 227 cycles=663\nNODE 228 cycles=663\nNODE 229 cycles=663\nNODE 230 cycles=663\nNODE 231 cycles=663\nNODE 232 cycles=663\nNODE 233 cycles=663\nNODE 234 cycles=663\nNODE 235 cycles=663\nNODE 236 cycles=663\nNODE 237 cycles=663\nNODE 238 cycles=663\nNODE 239 cycles=663\nNODE 240 cycles=663\nNODE 241 cycles=663\nNODE 242 cycles=663\nNODE 243 cycles=663\nNODE 244 cycles=663\nNODE 245 cycles=663\nNODE 246 cycles=663\nNODE 247 cycles=663\nNODE 248 cycles=663\nNODE 249 cycles=663\nNODE 250 cycles=663\nNODE 251 cycles=663\nNODE 252 cycles=663\nNODE 253 cycles=663\nNODE 254 cycles=663\nNODE 255 cycles=663\nNODE 256 cycles=663\nNODE 257 cycles=663\nNODE 258 cycles=663\nNODE 259 cycles=663\nNODE 260 cycles=663\nNODE 261 cycles=663\nNODE 262 cycles=663\nNODE 263 cycles=663\nNODE 264 cycles=663\nNODE 265 cycles=663\nNODE 266 cycles=663\nNODE 267 cycles=663\nNODE 268 cycles=663\nNODE 269 cycles=663\nNODE 270 cycles=663\nNODE 271 cycles=663\nNODE 272 cycles=663\nNODE 273 cycles=663\nNODE 274 cycles=663\nNODE 275 cycles=663\nNODE 276 cycles=663\nNODE 277 cycles=663\nNODE 278 cycles=663\nNODE 279 cycles=663\nNODE 280 cycles=663\nNODE 281 cycles=663\nNODE 282 cycles=663\nNODE 283 cycles=663\nNODE 284 cycles=663\nNODE 285 cycles=663\nNODE 286 cycles=663\nNODE 287 cycles=663\nNODE 288 cycles=663\nNODE 289 cycles=663\nNODE 290 cycles=663\nNODE 291 cycles=663\nNODE 292 cycles=663\nNODE 293 cycles=663\nNODE 294 cycles=663\nNODE 295 cycles=663\nNODE 296 cycles=663\nNODE 297 cycles=663\nNODE 298 cycles=663\nNODE 299 cycles=663\nNODE 300 cycles=663\nNODE 301 cycles=663\nNODE 302 cycles=663\nNODE 303 cycles=663\nNODE 304 cycles=663\nNODE 305 cycles=663\nNODE 306 cycles=663\nNODE 307 cycles=663\nNODE 308 cycles=663\nNODE 309 cycles=663\nNODE 310 cycles=663\nNODE 311 cycles=663\nNODE 312 cycles=663\nNODE 313 cycles=663\nNODE 314 cycles=663\nNODE 315 cycles=663\nNODE 316 cycles=663\nNODE 317 cycles=663\nNODE 318 cycles=663\nNODE 319 cycles=663\nNODE 320 cycles=663\nNODE 321 cycles=663\nNODE 322 cycles=663\nNODE 323 cycles=663\nNODE 324 cycles=663\nNODE 325 cycles=663\nNODE 326 cycles=663\nNODE 327 cycles=663\nNODE 328 cycles=663\nNODE 329 cycles=663\nNODE 330 cycles=663\nNODE 331 cycles=663\nNODE 332 cycles=663\nNODE 333 cycles=663\nNODE 334 cycles=663\nNODE 335 cycles=663\nNODE 336 cycles=663\nNODE 337 cycles=663\nNODE 338 cycles=663\nNODE 339 cycles=663\nNODE 340 cycles=663\nNODE 341 cycles=663\nNODE 342 cycles=663\nNODE 343 cycles=663\nNODE 344 cycles=663\nNODE 345 cycles=663\nNODE 346 cycles=663\nNODE 347 cycles=663\nNODE 348 cycles=663\nNODE 349 cycles=663\nNODE 350 cycles=663\nNODE 351 cycles=663\nNODE 352 cycles=663\nNODE 353 cycles=663\nNODE 354 cycles=663\nNODE 355 cycles=663\nNODE 356 cycles=663\nNODE 357 cycles=663\nNODE 358 cycles=663\nNODE 359 cycles=663\nNODE 360 cycles=663\nNODE 361 cycles=663\nNODE 362 cycles=663\nNODE 363 cycles=663\nNODE 364 cycles=663\nNODE 365 cycles=663\nNODE 366 cycles=663\nNODE 367 cycles=663\nNODE 368 cycles=663\nNODE 369 cycles=663\nNODE 370 cycles=663\nNODE 371 cycles=663\nNODE 372 cycles=663\nNODE 373 cycles=663\nNODE 374 cycles=663\nNODE 375 cycles=663\nNODE 376 cycles=663\nNODE 377 cycles=663\nNODE 378 cycles=663\nNODE 379 cycles=663\nNODE 380 cycles=663\nNODE 381 cycles=663\nNODE 382 cycles=663\nNODE 383 cycles=179576\nNODE 384 cycles=672\nNODE 385 cycles=152971\nNODE 386 cycles=672\nNODE 387 cycles=663\nNODE 388 cycles=663\nNODE 389 cycles=663\nNODE 390 cycles=663\nNODE 391 cycles=663\nNODE 392 cycles=663\nNODE 393 cycles=663\nNODE 394 cycles=663\nNODE 395 cycles=663\nNODE 396 cycles=663\nNODE 397 cycles=663\nNODE 398 cycles=663\nNODE 399 cycles=663\nNODE 400 cycles=663\nNODE 401 cycles=663\nNODE 402 cycles=663\nNODE 403 cycles=663\nNODE 404 cycles=663\nNODE 405 cycles=663\nNODE 406 cycles=663\nNODE 407 cycles=663\nNODE 408 cycles=663\nNODE 409 cycles=663\nNODE 410 cycles=663\nNODE 411 cycles=663\nNODE 412 cycles=663\nNODE 413 cycles=663\nNODE 414 cycles=663\nNODE 415 cycles=663\nNODE 416 cycles=663\nNODE 417 cycles=663\nNODE 418 cycles=663\nNODE 419 cycles=663\nNODE 420 cycles=663\nNODE 421 cycles=663\nNODE 422 cycles=663\nNODE 423 cycles=663\nNODE 424 cycles=663\nNODE 425 cycles=663\nNODE 426 cycles=663\nNODE 427 cycles=663\nNODE 428 cycles=663\nNODE 429 cycles=663\nNODE 430 cycles=663\nNODE 431 cycles=663\nNODE 432 cycles=663\nNODE 433 cycles=663\nNODE 434 cycles=663\nNODE 435 cycles=663\nNODE 436 cycles=663\nNODE 437 cycles=663\nNODE 438 cycles=663\nNODE 439 cycles=21923\nNODE 440 cycles=663\nNODE 441 cycles=663\nNODE 442 cycles=4862617\nNODE 443 cycles=303489\nNODE 444 cycles=407789\nNODE 445 cycles=2470\nNODE 446 cycles=4435\nNODE 447 cycles=3404\nNODE 448 cycles=670\nNODE 449 cycles=3018292\nNODE 450 cycles=6715514\nNODE 451 cycles=6715861\nNODE 452 cycles=670\nNODE 453 cycles=663\nNODE 454 cycles=199803\nNODE 455 cycles=670\nNODE 456 cycles=663\nNODE 457 cycles=303479\nNODE 458 cycles=663\nNODE 459 cycles=4196604\nNODE 460 cycles=905628\nNODE 461 cycles=1218822\nNODE 462 cycles=4078516\nNODE 463 cycles=679\nNODE 464 cycles=716523\nNODE 465 cycles=679\nNODE 466 cycles=663\nNODE 467 cycles=663\nNODE 468 cycles=539718\nNODE 469 cycles=3021786\nNODE 470 cycles=303488\nNODE 471 cycles=303488\nNODE 472 cycles=303479\nNODE 473 cycles=663\nNODE 474 cycles=663\nNODE 475 cycles=663\nNODE 476 cycles=4144733\nNODE 477 cycles=463433\nNODE 478 cycles=625666\nNODE 479 cycles=1151651\nNODE 480 cycles=54359183\nNODE 481 cycles=463424\nNODE 482 cycles=670\nNODE 483 cycles=3462401\nNODE 484 cycles=303488\nNODE 485 cycles=407747\nNODE 486 cycles=244882\nNODE 487 cycles=670\nNODE 488 cycles=303488\nNODE 489 cycles=670\nNODE 490 cycles=1406318\nNODE 491 cycles=303488\nNODE 492 cycles=407745\nNODE 493 cycles=2659242\nNODE 494 cycles=679\nNODE 495 cycles=663\nNODE 496 cycles=199708\nNODE 497 cycles=679\nNODE 498 cycles=663\nNODE 499 cycles=733120\nNODE 500 cycles=6715619\nNODE 501 cycles=303488\nNODE 502 cycles=663\nNODE 503 cycles=5551066\nNODE 504 cycles=1206698\nNODE 505 cycles=920508\nNODE 513 cycles=663\nNODE 514 cycles=3577505\nNODE 515 cycles=303488\nNODE 516 cycles=407753\nNODE 517 cycles=2583980\nNODE 518 cycles=733114\nNODE 519 cycles=6714310\nNODE 520 cycles=670\nNODE 521 cycles=191010\nNODE 522 cycles=23397\nNODE 523 cycles=202194\nNODE 524 cycles=192033\nNODE 525 cycles=23266\nNODE 526 cycles=202662\nNODE 527 cycles=670\nNODE 528 cycles=199706\nNODE 529 cycles=670\nNODE 530 cycles=663\nNODE 531 cycles=303488\nNODE 532 cycles=663\nNODE 533 cycles=4196620\nNODE 534 cycles=905637\nNODE 535 cycles=1219330\nNODE 536 cycles=4078544\nNODE 537 cycles=679\nNODE 538 cycles=716528\nNODE 539 cycles=679\nNODE 540 cycles=663\nNODE 541 cycles=663\nNODE 542 cycles=539728\nNODE 543 cycles=3021803\nNODE 544 cycles=303488\nNODE 545 cycles=303479\nNODE 546 cycles=303479\nNODE 547 cycles=663\nNODE 548 cycles=663\nNODE 549 cycles=663\nNODE 550 cycles=4144764\nNODE 551 cycles=463433\nNODE 552 cycles=625689\nNODE 553 cycles=1153277\nNODE 554 cycles=670\nNODE 555 cycles=1635035\nNODE 556 cycles=670\nNODE 557 cycles=51429158\nNODE 558 cycles=463424\nNODE 559 cycles=670\nNODE 560 cycles=3460888\nNODE 561 cycles=303488\nNODE 562 cycles=407767\nNODE 563 cycles=244887\nNODE 564 cycles=670\nNODE 565 cycles=303479\nNODE 566 cycles=670\nNODE 567 cycles=1406320\nNODE 568 cycles=303488\nNODE 569 cycles=407740\nNODE 570 cycles=2659246\nNODE 571 cycles=670\nNODE 572 cycles=663\nNODE 573 cycles=199706\nNODE 574 cycles=670\nNODE 575 cycles=23388\nNODE 576 cycles=190987\nNODE 577 cycles=202184\nNODE 578 cycles=23243\nNODE 579 cycles=192056\nNODE 580 cycles=202655\nNODE 581 cycles=670\nNODE 582 cycles=733125\nNODE 583 cycles=6714548\nNODE 584 cycles=303480\nNODE 585 cycles=663\nNODE 586 cycles=5541664\nNODE 587 cycles=1206698\nNODE 588 cycles=920506\nNODE 596 cycles=663\nNODE 597 cycles=3577509\nNODE 598 cycles=303488\nNODE 599 cycles=407757\nNODE 600 cycles=2583991\nNODE 601 cycles=733144\nNODE 602 cycles=670\nNODE 603 cycles=111928\nNODE 604 cycles=108166\nNODE 605 cycles=64138\nNODE 606 cycles=64147\nNODE 607 cycles=63986\nNODE 608 cycles=64098\nNODE 609 cycles=214149\nNODE 610 cycles=670\nNODE 611 cycles=6398366\nNODE 612 cycles=303488\nNODE 613 cycles=663\nNODE 614 cycles=1822349\nNODE 615 cycles=152953\nNODE 616 cycles=205596\nNODE 617 cycles=3258209\nNODE 618 cycles=670\nNODE 619 cycles=663\nNODE 620 cycles=102842\nNODE 621 cycles=670\nNODE 622 cycles=663\nNODE 623 cycles=152944\nNODE 624 cycles=663\nNODE 625 cycles=3557060\nNODE 626 cycles=454023\nNODE 627 cycles=609894\nNODE 628 cycles=1543362\nNODE 629 cycles=670\nNODE 630 cycles=360724\nNODE 631 cycles=670\nNODE 632 cycles=663\nNODE 633 cycles=663\nNODE 634 cycles=272897\nNODE 635 cycles=1513236\nNODE 636 cycles=152962\nNODE 637 cycles=152953\nNODE 638 cycles=152944\nNODE 639 cycles=663\nNODE 640 cycles=663\nNODE 641 cycles=663\nNODE 642 cycles=2072891\nNODE 643 cycles=232921\nNODE 644 cycles=312638\nNODE 645 cycles=553902\nNODE 646 cycles=27063924\nNODE 647 cycles=232912\nNODE 648 cycles=670\nNODE 649 cycles=1732777\nNODE 650 cycles=152953\nNODE 651 cycles=205611\nNODE 652 cycles=123625\nNODE 653 cycles=670\nNODE 654 cycles=152954\nNODE 655 cycles=670\nNODE 656 cycles=1197248\nNODE 657 cycles=152962\nNODE 658 cycles=205587\nNODE 659 cycles=845779\nNODE 660 cycles=670\nNODE 661 cycles=663\nNODE 662 cycles=102601\nNODE 663 cycles=670\nNODE 664 cycles=663\nNODE 665 cycles=369210\nNODE 666 cycles=3258448\nNODE 667 cycles=152962\nNODE 668 cycles=663\nNODE 669 cycles=4733126\nNODE 670 cycles=604558\nNODE 671 cycles=484133\nNODE 679 cycles=670\nNODE 680 cycles=3405881\nNODE 681 cycles=152962\nNODE 682 cycles=205588\nNODE 683 cycles=826967\nNODE 684 cycles=369476\nNODE 685 cycles=3258082\nNODE 686 cycles=670\nNODE 687 cycles=96869\nNODE 688 cycles=22952\nNODE 689 cycles=107518\nNODE 690 cycles=97418\nNODE 691 cycles=23418\nNODE 692 cycles=108243\nNODE 693 cycles=670\nNODE 694 cycles=100930\nNODE 695 cycles=670\nNODE 696 cycles=663\nNODE 697 cycles=152944\nNODE 698 cycles=663\nNODE 699 cycles=3559453\nNODE 700 cycles=454032\nNODE 701 cycles=609928\nNODE 702 cycles=1543363\nNODE 703 cycles=670\nNODE 704 cycles=360722\nNODE 705 cycles=670\nNODE 706 cycles=663\nNODE 707 cycles=663\nNODE 708 cycles=272898\nNODE 709 cycles=1513236\nNODE 710 cycles=152962\nNODE 711 cycles=152944\nNODE 712 cycles=152944\nNODE 713 cycles=663\nNODE 714 cycles=663\nNODE 715 cycles=663\nNODE 716 cycles=2072892\nNODE 717 cycles=232921\nNODE 718 cycles=312638\nNODE 719 cycles=554616\nNODE 720 cycles=670\nNODE 721 cycles=733697\nNODE 722 cycles=670\nNODE 723 cycles=23981451\nNODE 724 cycles=232921\nNODE 725 cycles=670\nNODE 726 cycles=1732792\nNODE 727 cycles=152953\nNODE 728 cycles=205480\nNODE 729 cycles=123984\nNODE 730 cycles=670\nNODE 731 cycles=152944\nNODE 732 cycles=670\nNODE 733 cycles=1197230\nNODE 734 cycles=152953\nNODE 735 cycles=205459\nNODE 736 cycles=846260\nNODE 737 cycles=670\nNODE 738 cycles=670\nNODE 739 cycles=101174\nNODE 740 cycles=670\nNODE 741 cycles=22954\nNODE 742 cycles=96851\nNODE 743 cycles=107534\nNODE 744 cycles=23398\nNODE 745 cycles=97563\nNODE 746 cycles=108132\nNODE 747 cycles=670\nNODE 748 cycles=369203\nNODE 749 cycles=3257716\nNODE 750 cycles=152954\nNODE 751 cycles=663\nNODE 752 cycles=4730743\nNODE 753 cycles=604558\nNODE 754 cycles=484133\nNODE 762 cycles=663\nNODE 763 cycles=3405897\nNODE 764 cycles=152962\nNODE 765 cycles=205596\nNODE 766 cycles=826977\nNODE 767 cycles=369464\nNODE 768 cycles=670\nNODE 769 cycles=62826\nNODE 770 cycles=62811\nNODE 771 cycles=38049\nNODE 772 cycles=37917\nNODE 773 cycles=38044\nNODE 774 cycles=37925\nNODE 775 cycles=116923\nNODE 776 cycles=670\nNODE 777 cycles=3175965\nNODE 778 cycles=152962\nNODE 779 cycles=663\nNODE 780 cycles=1816386\nNODE 781 cycles=77754\nNODE 782 cycles=103096\nNODE 783 cycles=1602681\nNODE 784 cycles=670\nNODE 785 cycles=663\nNODE 786 cycles=54171\nNODE 787 cycles=670\nNODE 788 cycles=663\nNODE 789 cycles=77736\nNODE 790 cycles=663\nNODE 791 cycles=2903673\nNODE 792 cycles=228280\nNODE 793 cycles=306413\nNODE 794 cycles=649602\nNODE 795 cycles=670\nNODE 796 cycles=182819\nNODE 797 cycles=670\nNODE 798 cycles=663\nNODE 799 cycles=663\nNODE 800 cycles=137459\nNODE 801 cycles=759014\nNODE 802 cycles=77754\nNODE 803 cycles=77745\nNODE 804 cycles=77736\nNODE 805 cycles=663\nNODE 806 cycles=663\nNODE 807 cycles=663\nNODE 808 cycles=1036955\nNODE 809 cycles=117729\nNODE 810 cycles=156172\nNODE 811 cycles=276508\nNODE 812 cycles=13522676\nNODE 813 cycles=117720\nNODE 814 cycles=670\nNODE 815 cycles=866505\nNODE 816 cycles=77745\nNODE 817 cycles=103096\nNODE 818 cycles=64005\nNODE 819 cycles=670\nNODE 820 cycles=77746\nNODE 821 cycles=670\nNODE 822 cycles=977077\nNODE 823 cycles=77754\nNODE 824 cycles=103087\nNODE 825 cycles=300934\nNODE 826 cycles=670\nNODE 827 cycles=663\nNODE 828 cycles=54168\nNODE 829 cycles=670\nNODE 830 cycles=663\nNODE 831 cycles=184616\nNODE 832 cycles=1603039\nNODE 833 cycles=77754\nNODE 834 cycles=663\nNODE 835 cycles=3867653\nNODE 836 cycles=303488\nNODE 837 cycles=288854\nNODE 845 cycles=670\nNODE 846 cycles=3490709\nNODE 847 cycles=77754\nNODE 848 cycles=103088\nNODE 849 cycles=296234\nNODE 850 cycles=184764\nNODE 851 cycles=1602792\nNODE 852 cycles=670\nNODE 853 cycles=51641\nNODE 854 cycles=23420\nNODE 855 cycles=62782\nNODE 856 cycles=51603\nNODE 857 cycles=23418\nNODE 858 cycles=62547\nNODE 859 cycles=670\nNODE 860 cycles=54163\nNODE 861 cycles=670\nNODE 862 cycles=663\nNODE 863 cycles=77736\nNODE 864 cycles=663\nNODE 865 cycles=2903678\nNODE 866 cycles=228280\nNODE 867 cycles=306438\nNODE 868 cycles=649610\nNODE 869 cycles=670\nNODE 870 cycles=182817\nNODE 871 cycles=670\nNODE 872 cycles=663\nNODE 873 cycles=663\nNODE 874 cycles=137459\nNODE 875 cycles=759014\nNODE 876 cycles=77754\nNODE 877 cycles=77745\nNODE 878 cycles=77736\nNODE 879 cycles=663\nNODE 880 cycles=663\nNODE 881 cycles=663\nNODE 882 cycles=1036956\nNODE 883 cycles=117729\nNODE 884 cycles=156172\nNODE 885 cycles=276151\nNODE 886 cycles=670\nNODE 887 cycles=346185\nNODE 888 cycles=670\nNODE 889 cycles=11391251\nNODE 890 cycles=117729\nNODE 891 cycles=670\nNODE 892 cycles=866912\nNODE 893 cycles=77745\nNODE 894 cycles=103096\nNODE 895 cycles=64008\nNODE 896 cycles=670\nNODE 897 cycles=77745\nNODE 898 cycles=670\nNODE 899 cycles=976483\nNODE 900 cycles=77754\nNODE 901 cycles=103087\nNODE 902 cycles=300939\nNODE 903 cycles=670\nNODE 904 cycles=663\nNODE 905 cycles=54169\nNODE 906 cycles=670\nNODE 907 cycles=23430\nNODE 908 cycles=51631\nNODE 909 cycles=62798\nNODE 910 cycles=23398\nNODE 911 cycles=51748\nNODE 912 cycles=62436\nNODE 913 cycles=670\nNODE 914 cycles=184621\nNODE 915 cycles=1603021\nNODE 916 cycles=77746\nNODE 917 cycles=663\nNODE 918 cycles=3867642\nNODE 919 cycles=303488\nNODE 920 cycles=288854\nNODE 928 cycles=670\nNODE 929 cycles=3491311\nNODE 930 cycles=77754\nNODE 931 cycles=103087\nNODE 932 cycles=296244\nNODE 933 cycles=184763\nNODE 934 cycles=1602792\nNODE 935 cycles=670\nNODE 936 cycles=663\nNODE 937 cycles=54182\nNODE 938 cycles=670\nNODE 939 cycles=663\nNODE 940 cycles=77745\nNODE 941 cycles=663\nNODE 942 cycles=2903672\nNODE 943 cycles=228280\nNODE 944 cycles=306438\nNODE 945 cycles=649601\nNODE 946 cycles=670\nNODE 947 cycles=182810\nNODE 948 cycles=670\nNODE 949 cycles=663\nNODE 950 cycles=663\nNODE 951 cycles=137458\nNODE 952 cycles=759007\nNODE 953 cycles=77754\nNODE 954 cycles=77745\nNODE 955 cycles=77736\nNODE 956 cycles=663\nNODE 957 cycles=663\nNODE 958 cycles=663\nNODE 959 cycles=1036956\nNODE 960 cycles=117729\nNODE 961 cycles=156172\nNODE 962 cycles=276151\nNODE 963 cycles=13536837\nNODE 964 cycles=117720\nNODE 965 cycles=670\nNODE 966 cycles=866505\nNODE 967 cycles=77745\nNODE 968 cycles=103096\nNODE 969 cycles=64007\nNODE 970 cycles=670\nNODE 971 cycles=77746\nNODE 972 cycles=670\nNODE 973 cycles=977077\nNODE 974 cycles=77754\nNODE 975 cycles=103087\nNODE 976 cycles=300934\nNODE 977 cycles=670\nNODE 978 cycles=663\nNODE 979 cycles=54170\nNODE 980 cycles=670\nNODE 981 cycles=663\nNODE 982 cycles=184615\nNODE 983 cycles=1602801\nNODE 984 cycles=77754\nNODE 985 cycles=663\nNODE 986 cycles=3868248\nNODE 987 cycles=303488\nNODE 988 cycles=288854\nNODE 996 cycles=670\nNODE 997 cycles=3490709\nNODE 998 cycles=77754\nNODE 999 cycles=103088\nNODE 1000 cycles=296234\nNODE 1001 cycles=184764\nNODE 1002 cycles=1602673\nNODE 1003 cycles=670\nNODE 1004 cycles=51643\nNODE 1005 cycles=23421\nNODE 1006 cycles=62782\nNODE 1007 cycles=51603\nNODE 1008 cycles=23418\nNODE 1009 cycles=62547\nNODE 1010 cycles=670\nNODE 1011 cycles=54163\nNODE 1012 cycles=670\nNODE 1013 cycles=663\nNODE 1014 cycles=77736\nNODE 1015 cycles=663\nNODE 1016 cycles=2903678\nNODE 1017 cycles=228280\nNODE 1018 cycles=306438\nNODE 1019 cycles=649610\nNODE 1020 cycles=670\nNODE 1021 cycles=182817\nNODE 1022 cycles=670\nNODE 1023 cycles=663\nNODE 1024 cycles=663\nNODE 1025 cycles=137459\nNODE 1026 cycles=759014\nNODE 1027 cycles=77754\nNODE 1028 cycles=77745\nNODE 1029 cycles=77736\nNODE 1030 cycles=663\nNODE 1031 cycles=663\nNODE 1032 cycles=663\nNODE 1033 cycles=1036956\nNODE 1034 cycles=117729\nNODE 1035 cycles=156172\nNODE 1036 cycles=276508\nNODE 1037 cycles=670\nNODE 1038 cycles=346185\nNODE 1039 cycles=670\nNODE 1040 cycles=11974113\nNODE 1041 cycles=117729\nNODE 1042 cycles=670\nNODE 1043 cycles=866912\nNODE 1044 cycles=77745\nNODE 1045 cycles=103096\nNODE 1046 cycles=64008\nNODE 1047 cycles=670\nNODE 1048 cycles=77745\nNODE 1049 cycles=670\nNODE 1050 cycles=977078\nNODE 1051 cycles=77754\nNODE 1052 cycles=103087\nNODE 1053 cycles=300939\nNODE 1054 cycles=670\nNODE 1055 cycles=663\nNODE 1056 cycles=54169\nNODE 1057 cycles=670\nNODE 1058 cycles=23430\nNODE 1059 cycles=51631\nNODE 1060 cycles=62798\nNODE 1061 cycles=23398\nNODE 1062 cycles=51748\nNODE 1063 cycles=62436\nNODE 1064 cycles=670\nNODE 1065 cycles=184621\nNODE 1066 cycles=1602902\nNODE 1067 cycles=77746\nNODE 1068 cycles=663\nNODE 1069 cycles=3867642\nNODE 1070 cycles=303488\nNODE 1071 cycles=288854\nNODE 1079 cycles=670\nNODE 1080 cycles=3490716\nNODE 1081 cycles=77754\nNODE 1082 cycles=103087\nNODE 1083 cycles=296244\nNODE 1084 cycles=184763\nNODE 1085 cycles=1602792\nNODE 1086 cycles=670\nNODE 1087 cycles=663\nNODE 1088 cycles=54182\nNODE 1089 cycles=670\nNODE 1090 cycles=663\nNODE 1091 cycles=77745\nNODE 1092 cycles=663\nNODE 1093 cycles=2903672\nNODE 1094 cycles=228280\nNODE 1095 cycles=306438\nNODE 1096 cycles=649601\nNODE 1097 cycles=670\nNODE 1098 cycles=182810\nNODE 1099 cycles=670\nNODE 1100 cycles=663\nNODE 1101 cycles=663\nNODE 1102 cycles=137458\nNODE 1103 cycles=759007\nNODE 1104 cycles=77754\nNODE 1105 cycles=77745\nNODE 1106 cycles=77736\nNODE 1107 cycles=663\nNODE 1108 cycles=663\nNODE 1109 cycles=663\nNODE 1110 cycles=1036956\nNODE 1111 cycles=117729\nNODE 1112 cycles=156172\nNODE 1113 cycles=276151\nNODE 1114 cycles=13552664\nNODE 1115 cycles=117720\nNODE 1116 cycles=670\nNODE 1117 cycles=866505\nNODE 1118 cycles=77745\nNODE 1119 cycles=103096\nNODE 1120 cycles=64007\nNODE 1121 cycles=670\nNODE 1122 cycles=77746\nNODE 1123 cycles=670\nNODE 1124 cycles=976482\nNODE 1125 cycles=77754\nNODE 1126 cycles=103087\nNODE 1127 cycles=300934\nNODE 1128 cycles=670\nNODE 1129 cycles=663\nNODE 1130 cycles=54170\nNODE 1131 cycles=670\nNODE 1132 cycles=663\nNODE 1133 cycles=184615\nNODE 1134 cycles=1603039\nNODE 1135 cycles=77754\nNODE 1136 cycles=663\nNODE 1137 cycles=3867653\nNODE 1138 cycles=303488\nNODE 1139 cycles=288854\nNODE 1147 cycles=670\nNODE 1148 cycles=3491304\nNODE 1149 cycles=77754\nNODE 1150 cycles=103088\nNODE 1151 cycles=296234\nNODE 1152 cycles=184764\nNODE 1153 cycles=1602673\nNODE 1154 cycles=670\nNODE 1155 cycles=51643\nNODE 1156 cycles=23421\nNODE 1157 cycles=62782\nNODE 1158 cycles=51603\nNODE 1159 cycles=23418\nNODE 1160 cycles=62547\nNODE 1161 cycles=670\nNODE 1162 cycles=54163\nNODE 1163 cycles=670\nNODE 1164 cycles=663\nNODE 1165 cycles=77736\nNODE 1166 cycles=663\nNODE 1167 cycles=2903678\nNODE 1168 cycles=228280\nNODE 1169 cycles=306438\nNODE 1170 cycles=649610\nNODE 1171 cycles=670\nNODE 1172 cycles=182817\nNODE 1173 cycles=670\nNODE 1174 cycles=663\nNODE 1175 cycles=663\nNODE 1176 cycles=137459\nNODE 1177 cycles=759014\nNODE 1178 cycles=77754\nNODE 1179 cycles=77745\nNODE 1180 cycles=77736\nNODE 1181 cycles=663\nNODE 1182 cycles=663\nNODE 1183 cycles=663\nNODE 1184 cycles=1036956\nNODE 1185 cycles=117729\nNODE 1186 cycles=156172\nNODE 1187 cycles=276508\nNODE 1188 cycles=670\nNODE 1189 cycles=346185\nNODE 1190 cycles=670\nNODE 1191 cycles=11413385\nNODE 1192 cycles=117729\nNODE 1193 cycles=670\nNODE 1194 cycles=866912\nNODE 1195 cycles=77745\nNODE 1196 cycles=103096\nNODE 1197 cycles=64008\nNODE 1198 cycles=670\nNODE 1199 cycles=77745\nNODE 1200 cycles=670\nNODE 1201 cycles=977078\nNODE 1202 cycles=77754\nNODE 1203 cycles=103087\nNODE 1204 cycles=300939\nNODE 1205 cycles=670\nNODE 1206 cycles=663\nNODE 1207 cycles=54169\nNODE 1208 cycles=670\nNODE 1209 cycles=23430\nNODE 1210 cycles=51631\nNODE 1211 cycles=62798\nNODE 1212 cycles=23398\nNODE 1213 cycles=51748\nNODE 1214 cycles=62436\nNODE 1215 cycles=670\nNODE 1216 cycles=184621\nNODE 1217 cycles=1602902\nNODE 1218 cycles=77746\nNODE 1219 cycles=663\nNODE 1220 cycles=3868237\nNODE 1221 cycles=303488\nNODE 1222 cycles=288854\nNODE 1230 cycles=670\nNODE 1231 cycles=3490716\nNODE 1232 cycles=77754\nNODE 1233 cycles=103087\nNODE 1234 cycles=296244\nNODE 1235 cycles=184763\nNODE 1236 cycles=670\nNODE 1237 cycles=37114\nNODE 1238 cycles=37107\nNODE 1239 cycles=25554\nNODE 1240 cycles=25541\nNODE 1241 cycles=25549\nNODE 1242 cycles=25549\nNODE 1243 cycles=68252\nNODE 1244 cycles=670\nNODE 1245 cycles=1583626\nNODE 1246 cycles=77754\nNODE 1247 cycles=663\nNODE 1248 cycles=2183563\nNODE 1249 cycles=40150\nNODE 1250 cycles=51867\nNODE 1251 cycles=797170\nNODE 1252 cycles=670\nNODE 1253 cycles=663\nNODE 1254 cycles=28266\nNODE 1255 cycles=670\nNODE 1256 cycles=663\nNODE 1257 cycles=40132\nNODE 1258 cycles=663\nNODE 1259 cycles=3400457\nNODE 1260 cycles=115349\nNODE 1261 cycles=153051\nNODE 1262 cycles=295957\nNODE 1263 cycles=670\nNODE 1264 cycles=93569\nNODE 1265 cycles=670\nNODE 1266 cycles=663\nNODE 1267 cycles=663\nNODE 1268 cycles=69520\nNODE 1269 cycles=381900\nNODE 1270 cycles=40141\nNODE 1271 cycles=40141\nNODE 1272 cycles=40132\nNODE 1273 cycles=663\nNODE 1274 cycles=663\nNODE 1275 cycles=663\nNODE 1276 cycles=518410\nNODE 1277 cycles=60142\nNODE 1278 cycles=76620\nNODE 1279 cycles=139462\nNODE 1280 cycles=6779662\nNODE 1281 cycles=60133\nNODE 1282 cycles=670\nNODE 1283 cycles=433154\nNODE 1284 cycles=40150\nNODE 1285 cycles=51885\nNODE 1286 cycles=34255\nNODE 1287 cycles=670\nNODE 1288 cycles=40133\nNODE 1289 cycles=670\nNODE 1290 cycles=1140757\nNODE 1291 cycles=40141\nNODE 1292 cycles=51867\nNODE 1293 cycles=121508\nNODE 1294 cycles=670\nNODE 1295 cycles=670\nNODE 1296 cycles=28264\nNODE 1297 cycles=670\nNODE 1298 cycles=663\nNODE 1299 cycles=92800\nNODE 1300 cycles=797298\nNODE 1301 cycles=40150\nNODE 1302 cycles=663\nNODE 1303 cycles=4530258\nNODE 1304 cycles=152953\nNODE 1305 cycles=236851\nNODE 1313 cycles=663\nNODE 1314 cycles=4269506\nNODE 1315 cycles=40150\nNODE 1316 cycles=51859\nNODE 1317 cycles=121507\nNODE 1318 cycles=92821\nNODE 1319 cycles=797162\nNODE 1320 cycles=670\nNODE 1321 cycles=663\nNODE 1322 cycles=28280\nNODE 1323 cycles=670\nNODE 1324 cycles=663\nNODE 1325 cycles=40141\nNODE 1326 cycles=663\nNODE 1327 cycles=3400448\nNODE 1328 cycles=115349\nNODE 1329 cycles=153066\nNODE 1330 cycles=295966\nNODE 1331 cycles=670\nNODE 1332 cycles=93560\nNODE 1333 cycles=670\nNODE 1334 cycles=663\nNODE 1335 cycles=663\nNODE 1336 cycles=69518\nNODE 1337 cycles=381896\nNODE 1338 cycles=40141\nNODE 1339 cycles=40141\nNODE 1340 cycles=40132\nNODE 1341 cycles=663\nNODE 1342 cycles=663\nNODE 1343 cycles=663\nNODE 1344 cycles=518412\nNODE 1345 cycles=60142\nNODE 1346 cycles=76620\nNODE 1347 cycles=139462\nNODE 1348 cycles=6788705\nNODE 1349 cycles=60133\nNODE 1350 cycles=670\nNODE 1351 cycles=433154\nNODE 1352 cycles=40150\nNODE 1353 cycles=51884\nNODE 1354 cycles=34257\nNODE 1355 cycles=670\nNODE 1356 cycles=40133\nNODE 1357 cycles=670\nNODE 1358 cycles=1140988\nNODE 1359 cycles=40141\nNODE 1360 cycles=51866\nNODE 1361 cycles=121508\nNODE 1362 cycles=670\nNODE 1363 cycles=670\nNODE 1364 cycles=28265\nNODE 1365 cycles=670\nNODE 1366 cycles=663\nNODE 1367 cycles=92799\nNODE 1368 cycles=797169\nNODE 1369 cycles=40150\nNODE 1370 cycles=663\nNODE 1371 cycles=4530251\nNODE 1372 cycles=152953\nNODE 1373 cycles=236851\nNODE 1381 cycles=606\nNODE 1382 cycles=4269449\nNODE 1383 cycles=40092\nNODE 1384 cycles=51801\nNODE 1385 cycles=121449\nNODE 1386 cycles=92763\nNODE 1387 cycles=797104\nNODE 1388 cycles=381672\nNODE 1389 cycles=649876\nNODE 1390 cycles=612\nNODE 1391 cycles=3184\nNODE 1392 cycles=605\nNODE 1393 cycles=217718\nNODE 1394 cycles=3440\nNODE 1395 cycles=6732\nRESULT code=bad00096 requested=4640 completed=4640 inference_cycles=656003418 CPU_return_cycle=658576645 top1=617 expected_top1=617 max_error_bits=3f9b39b8 logit_mismatched_words=917 error_node=0 node_events=1312\nENGINE 1 commands=52 cycles=2060103 written_bytes=12945408\nENGINE 2 commands=12 cycles=4991112 written_bytes=5720064\nENGINE 3 commands=1877 cycles=131835743 written_bytes=160816128\nENGINE 4 commands=166 cycles=28551516 written_bytes=28503304\nENGINE 5 commands=12 cycles=245744539 written_bytes=8758848\nENGINE 6 commands=29 cycles=80859191 written_bytes=14902272\nENGINE 7 commands=2369 cycles=86496275 written_bytes=172388832\nENGINE 8 commands=123 cycles=30273018 written_bytes=57953280\n",
+  "source_sha256": {
+    "/workspace/native/optimization/work/vecpipe-image-suite-v1/images/ILSVRC2012_val_00000759.JPEG/data.hex": "29c051ed1b58f22083c1578ad1cbe37321f583902b3659d21a65495ab064ebeb",
+    "/workspace/native/optimization/work/fusion-proof/ILSVRC2012_val_00000759.JPEG.baseline": "e5017cbd326a30c0bfea27965bab08e0624e9b0315e24ecbb0dba9753fd85616",
+    "/workspace/native/optimization/work/vecpipe-images-rv32-v1/runtime/compile-summary.json": "65df9201d9d31163009d2942148b619ef57b5bfbc6a1ff4774e1b37d62865092",
+    "/workspace/native/optimization/work/vecpipe-images-rv32-v1/preparation.json": "3229a1e9b36008eb6a9302e30a30f64c2d9eb7600dbce7c939f3f5f45cd6f0ee"
+  },
+  "runtime_files": {
+    "simv": {
+      "size_bytes": 1064080,
+      "sha256": "70edcc7245ad9470183ec0db40a460c5a55241642209080c4c735d4e32c7166b",
+      "symlink_target": null
+    },
+    "simv.daidir/.daidir_complete": {
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "symlink_target": null
+    },
+    "simv.daidir/.vcs.timestamp": {
+      "size_bytes": 20150,
+      "sha256": "fa7a4b03a6a9f0e9069ebceafd20302539fb226c34af3ff975f3a03f0e1a0a2a",
+      "symlink_target": null
+    },
+    "simv.daidir/DPIFuncTaskList": {
+      "size_bytes": 22,
+      "sha256": "79ea1cece1803e1776b296ff7c9595d5009e6e8c47d47a3597f4b36493be8607",
+      "symlink_target": null
+    },
+    "simv.daidir/_306887_archive_1.so": {
+      "size_bytes": 9156248,
+      "sha256": "94e5750a1f8d783d4c5a2d1bcb6bd44c0a0f76870b3425392f440af58612aa20",
+      "symlink_target": null
+    },
+    "simv.daidir/binmap.sdb": {
+      "size_bytes": 243963,
+      "sha256": "0eb187e0a74a7f0e92bcb7af16031fa597bd18b2c22e180d996ad6ee28e9861d",
+      "symlink_target": null
+    },
+    "simv.daidir/build_db": {
+      "size_bytes": 3528,
+      "sha256": "43568cbfcab041ed7c972b734d35799c2ea14f63f6df9c48d43586e668ac5771",
+      "symlink_target": null
+    },
+    "simv.daidir/cc/cc_bcode.db": {
+      "size_bytes": 642538,
+      "sha256": "04abd91cf9b0195a1743d6a140d07d8326afe6f721c3d66e2eef7a434ac1440b",
+      "symlink_target": null
+    },
+    "simv.daidir/cc/cc_dummy_file": {
+      "size_bytes": 34,
+      "sha256": "711d776b0c7a1a123800e977dbe519820ba28922f1fcb6d3f78977c6541d337d",
+      "symlink_target": null
+    },
+    "simv.daidir/cgname.json": {
+      "size_bytes": 10681,
+      "sha256": "e3fca883c03f28917afdd5078e9c1dd04f1bc21ce75c96a73c3ff9bcce64af1e",
+      "symlink_target": null
+    },
+    "simv.daidir/covg_defs": {
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "symlink_target": null
+    },
+    "simv.daidir/debug_dump/.version": {
+      "size_bytes": 143,
+      "sha256": "0561b886ab89693b755f07692060141736cf9aa965d7bff44825c5b3a4e36f6a",
+      "symlink_target": null
+    },
+    "simv.daidir/debug_dump/HsimSigOptDb.sdb": {
+      "size_bytes": 1306491,
+      "sha256": "7741b548e720058b6466b6cd00a8b1a4c9f1b8ed4501e2c86c805d5c6df16234",
+      "symlink_target": null
+    },
+    "simv.daidir/debug_dump/dumpcheck.db": {
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "symlink_target": null
+    },
+    "simv.daidir/debug_dump/topmodules": {
+      "size_bytes": 15,
+      "sha256": "62a0b2d418c0f98b8d28f04d5d11cdda2d8c98d22372aa87672dfd9c39c82af5",
+      "symlink_target": null
+    },
+    "simv.daidir/debug_dump/vir.sdb": {
+      "size_bytes": 1909639,
+      "sha256": "651debf14a0c33bab7ee1612a4fd19a0a6d355bf2e755f1e62231ec1bc37c34d",
+      "symlink_target": null
+    },
+    "simv.daidir/eblklvl.db": {
+      "size_bytes": 32172,
+      "sha256": "ecd3eb01fdee586680d9b7afa834eed4d7e6aa1f643a3af03c79138abc3f26f1",
+      "symlink_target": null
+    },
+    "simv.daidir/elabmoddb.sdb": {
+      "size_bytes": 1557488,
+      "sha256": "e138753a05876a406dab2faead08c6e07e86b31dad1ac25118be049c156cb1ee",
+      "symlink_target": null
+    },
+    "simv.daidir/hslevel_callgraph.sdb": {
+      "size_bytes": 322988,
+      "sha256": "f537067a9f0baf7d7c1e9848c647264f69e0006c53fa6f11cdc39698c629f0e1",
+      "symlink_target": null
+    },
+    "simv.daidir/hslevel_level.sdb": {
+      "size_bytes": 526804,
+      "sha256": "c58c145dfe49eca1a0db701d92d553a352424cc2856bbb70758d59ce70f903df",
+      "symlink_target": null
+    },
+    "simv.daidir/hslevel_rtime_level.sdb": {
+      "size_bytes": 7896,
+      "sha256": "d35ad2d02cda84b313db280eda20dd719b78d9aca8c8c9f6a02aecf564eaf44b",
+      "symlink_target": null
+    },
+    "simv.daidir/nsparam.dat": {
+      "size_bytes": 56,
+      "sha256": "6bffc9ff4c5e9a85576dad849a13e3c223ef5d343ea854ef1a2837a641adb7b0",
+      "symlink_target": null
+    },
+    "simv.daidir/pcc.sdb": {
+      "size_bytes": 33422,
+      "sha256": "3ff547a0b6804836e85ea93335d01d53fd648354d5b02c5ebbb8c3522881b7d7",
+      "symlink_target": null
+    },
+    "simv.daidir/pcxpxmr.dat": {
+      "size_bytes": 222,
+      "sha256": "7025ec1f77fb4afe65bb2c9bde0776e59059d04567d83d6f5f91b8a52d472f84",
+      "symlink_target": null
+    },
+    "simv.daidir/prof.sdb": {
+      "size_bytes": 379942,
+      "sha256": "49dac25e8688b68b9af8719547ddb6a336a159240bc8dd7b9665b6df3a93faed",
+      "symlink_target": null
+    },
+    "simv.daidir/rmapats.dat": {
+      "size_bytes": 17708,
+      "sha256": "17b182d4bfb1e368016c09245824c80afc753c5a9c15a3aa6d73e913365e3755",
+      "symlink_target": null
+    },
+    "simv.daidir/rmapats.so": {
+      "size_bytes": 74168,
+      "sha256": "d33b9894524572c05d590a44476f06099ed76dd1513e9193b828cd50f574771f",
+      "symlink_target": null
+    },
+    "simv.daidir/saifNetInfo.db": {
+      "size_bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "symlink_target": null
+    },
+    "simv.daidir/stitch_nsparam.dat": {
+      "size_bytes": 4,
+      "sha256": "6e1ae50c2c807c6630b5a02ea29761a723e422e503100fc2ee23f2d715d3a001",
+      "symlink_target": null
+    },
+    "simv.daidir/tt.sdb": {
+      "size_bytes": 398572,
+      "sha256": "3d0f49913f0c981b0b54ca02ecd08600808a06718c04ffc35137b9faa752724c",
+      "symlink_target": null
+    },
+    "simv.daidir/vc_hdrs.c": {
+      "size_bytes": 3432,
+      "sha256": "3c1ed541e8844cfe9fba3cd4e8a78478e5162241db2fc11d9f97575ec0c40fbe",
+      "symlink_target": null
+    },
+    "simv.daidir/vc_hdrs.o": {
+      "size_bytes": 3736,
+      "sha256": "ed8e58307be04361d379f2f2a0b7a8e30a3938b6b34e072581ec5a12be3feb2a",
+      "symlink_target": null
+    },
+    "simv.daidir/vcs_rebuild": {
+      "size_bytes": 3497,
+      "sha256": "1f1bc3c57f133c33dfc6fd4685d3ecb1f85d92081c5fb70e8e1e92b36176e845",
+      "symlink_target": null
+    },
+    "simv.daidir/vcselab_master_hsim_elabout.db": {
+      "size_bytes": 17665,
+      "sha256": "0020481c72651b25c58637380bdad6bbfa0fbcc5053d87296aa05cbf75548d7d",
+      "symlink_target": null
+    },
+    "simv.daidir/vcselab_misc_hsdef.db": {
+      "size_bytes": 456,
+      "sha256": "b960fb5cb94682dfc4a873035d65f8befdcb9bed0e7db0feb905f0dcf437b38c",
+      "symlink_target": null
+    },
+    "simv.daidir/vcselab_misc_hsim_elab.db": {
+      "size_bytes": 33550,
+      "sha256": "0e1bf6048c50e54314daf4672af96faa0f0fd3936fe2cee6f7589af026c76124",
+      "symlink_target": null
+    },
+    "simv.daidir/vcselab_misc_hsim_fegate.db": {
+      "size_bytes": 1467364,
+      "sha256": "44a58d5e9a4d8eaef2fe49d0ec47d3ac64a933ed0d1b7912e6c147855693e3ef",
+      "symlink_target": null
+    },
+    "simv.daidir/vcselab_misc_hsim_lvl.db": {
+      "size_bytes": 551008,
+      "sha256": "2b75b1ef8f03f62af8fb46bf08ad6d93a8e87034b3822bf387bd1b0b16e9722f",
+      "symlink_target": null
+    },
+    "simv.daidir/vcselab_misc_hsim_name.db": {
+      "size_bytes": 5658,
+      "sha256": "519cafb57c1f2514e81ef09d7998e8e0260c9a1498d4b462b8954a91db5c0e0a",
+      "symlink_target": null
+    },
+    "simv.daidir/vcselab_misc_hsim_uds.db": {
+      "size_bytes": 86,
+      "sha256": "29b5c53d0b6ea92dcae6309951f4b7da3db2e4ea64033fa3a3d95b5ab4651922",
+      "symlink_target": null
+    },
+    "simv.daidir/vcselab_misc_midd.db": {
+      "size_bytes": 27440,
+      "sha256": "807231726d41ca24f1e874cbb7769939e4834600a47688b170e952e9c88a4b18",
+      "symlink_target": null
+    },
+    "simv.daidir/vcselab_misc_mnmn.db": {
+      "size_bytes": 2243,
+      "sha256": "ad9d603c8c2cbd541c0f38ea9ef015b35f62d2ea242b217db1e05c77b1a7d21e",
+      "symlink_target": null
+    },
+    "simv.daidir/vcselab_misc_partition.db": {
+      "size_bytes": 1247180,
+      "sha256": "0fc8d3916d0293a864b6ef2ab06bcb7f9fe5755c32f6ca071ef0c38869e30e91",
+      "symlink_target": null
+    },
+    "simv.daidir/vcselab_misc_partitionDbg.db": {
+      "size_bytes": 102055,
+      "sha256": "a03efad318b288791689ce106305cd0079a72ab9e0c742ce15912548af7af508",
+      "symlink_target": null
+    },
+    "simv.daidir/vcselab_misc_vcselabref.db": {
+      "size_bytes": 1,
+      "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "symlink_target": null
+    },
+    "simv.daidir/vcselab_misc_vpdnodenums": {
+      "size_bytes": 66620,
+      "sha256": "59d075a2fe1df6b518f9f301d652de92a5eba38d9357fa8c4f3018e4f01d13ca",
+      "symlink_target": null
+    }
+  },
+  "simulator_sha256": "70edcc7245ad9470183ec0db40a460c5a55241642209080c4c735d4e32c7166b",
+  "command": {
+    "argv": [
+      "/workspace/native/optimization/work/vecpipe-images-rv32-v1/runtime/simv",
+      "+MEM_HEX=/workspace/native/optimization/work/vecpipe-image-suite-v1/images/ILSVRC2012_val_00000759.JPEG/data.hex",
+      "+MAX_CYCLES=6000000000",
+      "+REPORT=/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00000759.JPEG/report.txt",
+      "+LOGITS=/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00000759.JPEG/logits.bin",
+      "+NODE_CYCLES=8000cda0",
+      "+INFERENCE_CYCLES=8000cd80",
+      "+ERROR_NODE=8000cd78",
+      "+MAC_JOBS=8000cd88",
+      "+FUSIONS=8000cd8c",
+      "+MAC_COMMANDS=8000cd70",
+      "+QUANT_COMMANDS=8000cd74",
+      "+TOP1=8000cd90",
+      "+EXPECTED_TOP1=8000cd94",
+      "+MAX_ERROR=8000cd98",
+      "+ARENA_LO=81e6e980",
+      "+ARENA_HI=8297d540",
+      "+OUTPUT_ADDR=81e6e980",
+      "+EXPECTED_ADDR=83fff000",
+      "+EXPECTED_COMMANDS=4640",
+      "+NODES=1396",
+      "+EXPECTED_FUSIONS=12",
+      "+EXPECTED_NODE_EVENTS=1312"
+    ],
+    "returncode": 0,
+    "elapsed_s": 16956.344674049004,
+    "timed_out": false
+  },
+  "normal_log_sha256": "5db463d968a2ab5b3001779906a7746222679cea01e1846f631be256e18770f3",
+  "official_accuracy_accepted": false,
+  "final_ADP_accepted": false,
+  "organizer_numeric_tolerance": null,
+  "scope": "Actual complete RV32+all8 execution with original full monitor, immutable firmware and input/reference RAM. Records raw logits even on CPU diagnostic returns when available. Frozen-C criterion, bit equality and supplied public labels are distinct; private organizer labels are unavailable."
+}

@@ -1,0 +1,5 @@
+RV_ROOT=/workspace/native/audits/20261107/riscv_pe_contest/contest/task1/my_design/vendor/Cores-VeeR-EL2
+revision=not a Git checkout
+reset=0x80000000
+PE_BASE=0x90000000
+ICCM=DCCM=ICACHE=0

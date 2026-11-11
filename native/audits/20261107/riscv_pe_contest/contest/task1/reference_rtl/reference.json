@@ -1,0 +1,34 @@
+{
+  "scope": "Verified VM RTL reference; not GLS",
+  "source_run_name": "task1-frontend.lmflp24t",
+  "original_source_manifest_sha256": "368aa0275657533449917d9adaf3da1ed9b2545a967f444fc2fb521d4d445f30",
+  "core_source_matches_public_starter": true,
+  "cases": [
+    {
+      "case": "delay0",
+      "wave": "delay0/soc.vpd",
+      "sha256": "337ed93ecd5542c8fa6d7450cc48b8abcbf2e8455afbcf1fe29fc0ee95c235bc",
+      "markers": [
+        "SOC_SMOKE_PASS: CPU checked all 64 PE output words",
+        "AXI_RESPONSE_DELAY_NS=0.000 instance=tb_soc.imem",
+        "AXI_RX_SETUP_CHECK_ENABLED setup_ns=1.000 hold_ns=0.000 instance=tb_soc.imem",
+        "AXI_RESPONSE_DELAY_NS=0.000 instance=tb_soc.dmem",
+        "AXI_RX_SETUP_CHECK_ENABLED setup_ns=1.000 hold_ns=0.000 instance=tb_soc.dmem"
+      ],
+      "sram_instances": 256
+    },
+    {
+      "case": "delay1",
+      "wave": "delay1/soc.vpd",
+      "sha256": "8f79c2c01a03e3bea5649ff16cfd49a20f0d61a096739e5f1809a008be9ceca2",
+      "markers": [
+        "SOC_SMOKE_PASS: CPU checked all 64 PE output words",
+        "AXI_RESPONSE_DELAY_NS=1.000 instance=tb_soc.imem",
+        "AXI_RX_SETUP_CHECK_ENABLED setup_ns=1.000 hold_ns=0.000 instance=tb_soc.imem",
+        "AXI_RESPONSE_DELAY_NS=1.000 instance=tb_soc.dmem",
+        "AXI_RX_SETUP_CHECK_ENABLED setup_ns=1.000 hold_ns=0.000 instance=tb_soc.dmem"
+      ],
+      "sram_instances": 256
+    }
+  ]
+}

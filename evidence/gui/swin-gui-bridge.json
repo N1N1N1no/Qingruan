@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "finished": {
+    "type": "finished",
+    "task_id": "swin_analyze",
+    "path": "/mnt/data/Ubuntu/qingruan/native/swin-tiny/work/analyze.gcljw6bg",
+    "gui_run_path": "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/work/gui_runs/swin_analyze.h_vs27da",
+    "status": "PASS",
+    "returncode": 0,
+    "summary": {
+      "status": "PASS",
+      "action": "analyze",
+      "started_at": "2026-11-07T23:49:39+0800",
+      "model": "swin_tiny_patch4_window7_224_imagenet1k_int8.onnx",
+      "model_sha256": "8a612b32e4837fa9ef96b8c84306575f0cdabd61348c15f4afaea884306cfb75",
+      "nodes": 1396,
+      "MAC_nodes": 77,
+      "MACs": 4490566656,
+      "all_MACs_mapped": true
+    }
+  }
+}

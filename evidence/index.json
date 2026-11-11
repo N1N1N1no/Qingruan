@@ -1,0 +1,141 @@
+{
+  "captured_at": "2026-11-11T09:47:44.844377+00:00",
+  "entries": [
+    {
+      "original_path": "native/optimization/work/vecpipe-complete-candidate-review-v1/summary.json",
+      "archived_path": "evidence/optimization/work/vecpipe-complete-candidate-review-v1/summary.json",
+      "sha256": "85179f5f70cca6026b4b226c6b2c2cbb4dffc4eaf620cad1e9a42db5573c58b0"
+    },
+    {
+      "original_path": "native/optimization/work/vecpipe-full-soc-gate/v1/summary.json",
+      "archived_path": "evidence/optimization/work/vecpipe-full-soc-gate/v1/summary.json",
+      "sha256": "3903199450cd6e2ab16b5e923cc4535cf6ac34e2d6b1469ad19aff72609ae80b"
+    },
+    {
+      "original_path": "native/optimization/work/vecpipe-full-soc-loads-v1/summary.json",
+      "archived_path": "evidence/optimization/work/vecpipe-full-soc-loads-v1/summary.json",
+      "sha256": "7d43362f919988b1ab4c77c4c2d52b47ae89ffd7a3ec900d8e0b5a735b1f3674"
+    },
+    {
+      "original_path": "native/optimization/work/vecpipe-soc-conditions-v2/summary.json",
+      "archived_path": "evidence/optimization/work/vecpipe-soc-conditions-v2/summary.json",
+      "sha256": "322cf0ef8d3e483960cbeab7878f77bc6f8ce8c258455ffd5b4518e759517de0"
+    },
+    {
+      "original_path": "native/optimization/work/vecpipe-synthesis-binding-v1/summary.json",
+      "archived_path": "evidence/optimization/work/vecpipe-synthesis-binding-v1/summary.json",
+      "sha256": "4cc8c494476f11602236e8fbdc0230c3c41c0bbbb1b020eba868f9cc8070966d"
+    },
+    {
+      "original_path": "native/optimization/work/complete-three-controls-v1/summary.json",
+      "archived_path": "evidence/optimization/work/complete-three-controls-v1/summary.json",
+      "sha256": "ab5e10591fb7b74d276398509c437527b7852000939aa5179b1371b001663b4e"
+    },
+    {
+      "original_path": "native/optimization/phase1-review.json",
+      "archived_path": "evidence/optimization/phase1-review.json",
+      "sha256": "bea62154dbaa92247f614e4b58ff1da9d48fb2c4f706086e90eb7cf63fb71761"
+    },
+    {
+      "original_path": "native/optimization/phase1-selection.json",
+      "archived_path": "evidence/optimization/phase1-selection.json",
+      "sha256": "526b66ea7eecd51bddeb0735e24d8758163da815ea5536692c02fcf3b45575f4"
+    },
+    {
+      "original_path": "native/optimization/work/vecpipe-arithmetic-v1/summary.json",
+      "archived_path": "evidence/optimization/work/vecpipe-arithmetic-v1/summary.json",
+      "sha256": "dc2750389e36e0cf612d814b940079cd22b90b40a08257c38d23e75f452c8381"
+    },
+    {
+      "original_path": "native/optimization/work/vecpipe-protocol-v1/summary.json",
+      "archived_path": "evidence/optimization/work/vecpipe-protocol-v1/summary.json",
+      "sha256": "efef1b4f095cb00c2945e321e22656ec562805dff0100720b783ec5979d498ca"
+    },
+    {
+      "original_path": "native/optimization/work/vecpipe-axi-v1/summary.json",
+      "archived_path": "evidence/optimization/work/vecpipe-axi-v1/summary.json",
+      "sha256": "07d520e045798c6c2c71b040a090cf1af42b5dbfaa5cadd3658cc2c53d783e70"
+    },
+    {
+      "original_path": "native/optimization/work/vecpipe-shared-axi-v1/summary.json",
+      "archived_path": "evidence/optimization/work/vecpipe-shared-axi-v1/summary.json",
+      "sha256": "143f98ffb8ef3ba41e381877e63b1266a73c5dd71f61181fbc151331a6cda0b9"
+    },
+    {
+      "original_path": "native/optimization/work/vecpipe-soc-v1/summary.json",
+      "archived_path": "evidence/optimization/work/vecpipe-soc-v1/summary.json",
+      "sha256": "636631d2abeb6bbc06e8a10a37d185b778646966c7495b85816ee2bd48d21738"
+    },
+    {
+      "original_path": "native/optimization/work/rtl-replay-relocation-review-v1/summary.json",
+      "archived_path": "evidence/optimization/work/rtl-replay-relocation-review-v1/summary.json",
+      "sha256": "72b6eaf86ffb8c450ffa30a5f634aef979cfd5a39d5ee5d6acad6b049ab5f5cf"
+    },
+    {
+      "original_path": "native/optimization/work/inference-replay-review-v1/summary.json",
+      "archived_path": "evidence/optimization/work/inference-replay-review-v1/summary.json",
+      "sha256": "a9ecda15a1ad314abab47c38a7998557b2e6672c3abc80c471193c1016685059"
+    },
+    {
+      "original_path": "native/optimization/work/conversion-replay-review-v1/summary.json",
+      "archived_path": "evidence/optimization/work/conversion-replay-review-v1/summary.json",
+      "sha256": "98122a207106232c62ab3fc0aeac7820c05d1a86b005988cf238336ee9b6ae43"
+    },
+    {
+      "original_path": "native/optimization/work/newlib-difference/summary.json",
+      "archived_path": "evidence/optimization/work/newlib-difference/summary.json",
+      "sha256": "c3f751916e683782dafaaa3be93ea518f943d74079415c4b0ac0519c18301264"
+    },
+    {
+      "original_path": "native/optimization/work/newlib-model/summary.json",
+      "archived_path": "evidence/optimization/work/newlib-model/summary.json",
+      "sha256": "5b19a26210cd46575760e0b607ee52ebb1d1f774f928005ee9e91fa515ef696b"
+    },
+    {
+      "original_path": "native/optimization/work/softmax-exp-reuse-v1/summary.json",
+      "archived_path": "evidence/optimization/work/softmax-exp-reuse-v1/summary.json",
+      "sha256": "dfa12e486cb2e1f2657ba10aed77ebe02c5d88967f7955956a5c15c3cdddb580"
+    },
+    {
+      "original_path": "native/optimization/work/original-vcs-radiant-affinity-review-v1/summary.json",
+      "archived_path": "evidence/optimization/work/original-vcs-radiant-affinity-review-v1/summary.json",
+      "sha256": "582db9e87325dd6966c81d31ed761e92e6c72ceb70a497b31d828462f0134736"
+    },
+    {
+      "original_path": "native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00000759.JPEG/failure.json",
+      "archived_path": "evidence/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00000759.JPEG/failure.json",
+      "sha256": "6cfc85ce138e398a5b2f7329cb4974b43417aee2c34f95cc15cdd58b471d7422"
+    },
+    {
+      "original_path": "native/audits/20261107/audit-summary.json",
+      "archived_path": "evidence/task1/audit-summary.json",
+      "sha256": "229fed92879d217756d86a8bb885b1ebd22830a88203708d3285dc25d1b7d2fc"
+    },
+    {
+      "original_path": "native/audits/20261107/independent-evidence-check.json",
+      "archived_path": "evidence/task1/independent-evidence-check.json",
+      "sha256": "d1c1962fa1178a76836f5914c147a4595b2508fb4eecaf5b686747510efa3663"
+    },
+    {
+      "original_path": "native/audits/20261107/requirements.json",
+      "archived_path": "evidence/task1/requirements.json",
+      "sha256": "dc71082b214c176f174864e249f64ac4c4d2a8df2fc27085ec8c9d17ccc4523c"
+    },
+    {
+      "original_path": "native/validation/new-gui-controller.json",
+      "archived_path": "evidence/gui/new-gui-controller.json",
+      "sha256": "8c2524a17d02395a743ebc854e4342567712b24f6b88a06301497a25f1876337"
+    },
+    {
+      "original_path": "native/validation/new-gui-window.json",
+      "archived_path": "evidence/gui/new-gui-window.json",
+      "sha256": "e637da466649133096279a09bc5df38db656f2bc50706e5d041a7f961fec261a"
+    },
+    {
+      "original_path": "native/validation/swin-gui-bridge.json",
+      "archived_path": "evidence/gui/swin-gui-bridge.json",
+      "sha256": "5c8549f8d286c40302982966d5814ab59bbc313de641b591c386d0a785908a2c"
+    }
+  ],
+  "note": "原始验证记录按字节保存；大工件/完整日志在本机，记录内绝对路径和哈希用于溯源，不能声称仅凭仓库快照完成了重新执行。"
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "affine16",
+    "area": 20967.104854,
+    "macro_area": 7051.84668,
+    "setup_slack_ns": 6.02,
+    "scope": "one PE cell, 10ns + 1ns IO; full-array/SoC not measured"
+  },
+  {
+    "name": "affine4",
+    "area": 10616.246725,
+    "macro_area": 7051.84668,
+    "setup_slack_ns": 6.02,
+    "scope": "one PE cell, 10ns + 1ns IO; full-array/SoC not measured"
+  },
+  {
+    "name": "affine8",
+    "area": 14044.454768,
+    "macro_area": 7051.84668,
+    "setup_slack_ns": 6.02,
+    "scope": "one PE cell, 10ns + 1ns IO; full-array/SoC not measured"
+  },
+  {
+    "name": "legacy",
+    "area": 11108.612712,
+    "macro_area": 7051.84668,
+    "setup_slack_ns": 6.55,
+    "scope": "one PE cell, 10ns + 1ns IO; full-array/SoC not measured"
+  }
+]

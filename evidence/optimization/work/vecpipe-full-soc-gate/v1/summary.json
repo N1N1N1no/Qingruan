@@ -1,0 +1,89 @@
+{
+  "status": "FULL_SOC_ALL8_GATE_SDF_22_COMMAND_ENGINEERING_CHECK_PASS",
+  "geometry": "R8_C16_L4",
+  "mode": "shared",
+  "clock_period_ns": 10,
+  "SDF_selection": "MAXIMUM",
+  "commands": 22,
+  "RTL_gate_engine_and_CPU_call_cycles_equal": true,
+  "complete_SDF_annotation": {
+    "source": {
+      "IOPATH": 5334352,
+      "INTERCONNECT": 1843423,
+      "SETUP": 135226,
+      "HOLD": 135226,
+      "RECREM": 54334,
+      "TIMINGCHECK(ALL)": 324786
+    },
+    "applied": {
+      "IOPATH Delays": 5334352,
+      "INTERCONNECT(MIPD)": 1843423,
+      "Timing Checks": 379120,
+      "Negative Tchecks": 54446,
+      "Annotated instances": 701283,
+      "Total instances": 703779
+    },
+    "library": {
+      "IOPATH Delays": 5334352,
+      "Timing Checks": 567296
+    },
+    "expected_limits": 379120,
+    "expected_negative_limits": 54446,
+    "report": "/workspace/native/optimization/work/vecpipe-full-soc-gate/v1/sdfAnnotateInfo",
+    "report_sha256": "d8cba9cda127a70624726a0589a325e0f29920a0c9a17eeb1c5a3e4bb59daef6",
+    "annotation_log": "/workspace/native/optimization/work/vecpipe-full-soc-gate/v1/sdf_annotation.log",
+    "annotation_log_sha256": "094df600f7eed193ec92a9af892236cd4e5b3f27feb7c0ba29058b816ca2523c",
+    "annotation_errors": 0,
+    "reviewed_annotation_warnings": 16874,
+    "reviewed_warning_codes": {
+      "SDFCOM_SWC": 9686,
+      "SDFCOM_IWSBA": 7188
+    }
+  },
+  "normal_timing_violations": 0,
+  "functional_corruption_detected_by_actual_CPU": true,
+  "timing_negative_control": "/workspace/native/optimization/work/vecpipe-full-soc-gate/v1/timing-probe-ucli-v1/summary.json",
+  "actual_warned_interconnect_delay_observations": {
+    "SDFCOM_SWC": {
+      "events": 97,
+      "first_measured_ns": "0.008612000",
+      "SDF_MAXIMUM_rise_fall_ns": [
+        "0.008916901",
+        "0.008612210"
+      ],
+      "entry": "(INTERCONNECT u_backend/u_reorder/writer/U1511/ZN u_backend/u_reorder/writer/sll_66/U320/A1 (0.008916901:0.008916901:0.008916901) (0.008612210:0.008612210:0.008612210))"
+    },
+    "SDFCOM_IWSBA": {
+      "events": 201,
+      "first_measured_ns": "0.010679000",
+      "SDF_MAXIMUM_rise_fall_ns": [
+        "0.012137312",
+        "0.010678703"
+      ],
+      "entry": "(INTERCONNECT u_backend/u_reorder/writer/sll_66/U224/ZN u_backend/u_reorder/writer/U1268/A1 (0.012137312:0.012137312:0.012137312) (0.010678703:0.010678703:0.010678703))"
+    }
+  },
+  "SRAM_clock_to_output_first_delay_ns": "1.353419000",
+  "source_sha256": {
+    "/workspace/native/optimization/variants/vecpipe_v1/review_gate.py": "f9144be841ecf78200eccd3c34a29f0d0c369fec7e6738f10774d7cdefe28a85",
+    "/workspace/native/optimization/work/vecpipe-full-soc-gate/v1/preparation.json": "5c21cfa73533271b5a5d12ad4a6c4ff828bf711dec0f0472c266314a334b59bc",
+    "/workspace/native/optimization/work/vecpipe-full-soc-gate/v1/compile-result.json": "1859941d23f8a68057550d82dcc604988fb9d02e5cfbe356300af500d9621b6b",
+    "/workspace/native/optimization/gate_runtime_diagnostics.py": "52cc20297cd925af62964ebbaa02f820945b77f0d97b3f9bbd10837a6770182a",
+    "/workspace/native/optimization/work/vecpipe-full-soc-gate/v1/annotation-review.json": "c8c587dc9a2ead80dcc6a223a94f14014dc739bd05dd501df6da2de97e5cea49",
+    "/workspace/native/optimization/work/vecpipe-full-soc-gate/v1/normal-result.json": "8552ebbb86213975a5055f62e690a37ceaa6570f34b75aef8e84f58d84e38425",
+    "/workspace/native/optimization/work/vecpipe-full-soc-gate/v1/corrupt-result.json": "1bb5a727955e348ee04ba8190637632994afb9229621c26c14ab48f857c43233",
+    "/workspace/native/optimization/work/vecpipe-full-soc-gate/v1/normal.log": "dd729b336ea0ee11f874c7626959bcd6f672e7749571032246c4a07601c9b956",
+    "/workspace/native/optimization/work/vecpipe-full-soc-gate/v1/corrupt.log": "ddbcdc62ed1bd796280796c076016d0aaa1f7b4f6fa122b33907b7a879371df5",
+    "/workspace/native/optimization/work/vecpipe-full-soc-gate/v1/normal-report.txt": "47d5fd0e4cb3d7b0370b8512faada596f247c1a11e284b3e7bfea672ab57d9e6",
+    "/workspace/native/optimization/work/vecpipe-full-soc-gate/v1/wire-connectivity-review.json": "72a4ca53a8a89b5be8f50a3d70785669d28fdc68bdc6365a486a9f69cf8fc3a3",
+    "/workspace/native/optimization/work/vecpipe-full-soc-gate/v1/unused-output-review.json": "fb1fe3af677af41c50de5277e31c89f939caed6b4c17ae1cfed49a6771852178",
+    "/workspace/native/optimization/work/vecpipe-full-soc-gate/v1/timing-probe-ucli-v1/summary.json": "c34b0dadd64b581247ced1b77adb0d0a2a9ff5c53f5583c347af268a59175da1",
+    "/workspace/native/optimization/work/vecpipe-full-soc-gate/v1/timing-probe-ucli-v1/run.log": "a8c57cc9442eee9ca353a876c550e285ff7a505b48ac7c35a6d582a6848d2078",
+    "/workspace/native/optimization/variants/vecpipe_v1/run_gate.py": "a668718ba5c196dbd5693ac493244a0ea3f9194a3ac0ec0475e42df7401c8f05"
+  },
+  "full_model_inference_accepted": false,
+  "official_accuracy_accepted": false,
+  "final_ADP_accepted": false,
+  "formal_equivalence_claimed": false,
+  "scope": "Complete mapped CPU/MMIO/router/all8 SoC running the fixed 22-command engineering firmware: all bytes, measured CPU call cycles and engine cycles match RTL, complete synthesis MAXIMUM SDF, nonzero pin delays, CPU corruption detection and one genuine scoped SRAM hold negative control. This is not full-image Swin inference, its full latency, multicorner/physical signoff, organizer accuracy or final ADP."
+}

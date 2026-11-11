@@ -1,0 +1,144 @@
+{
+  "status": "UNCHANGED_MODEL_CONVERSION_SOURCE_COMPONENT_PREPARED_EXECUTION_PENDING",
+  "model_sha256": "8a612b32e4837fa9ef96b8c84306575f0cdabd61348c15f4afaea884306cfb75",
+  "files_sha256": {
+    "competition/models/swin_tiny_patch4_window7_224_imagenet1k_int8.onnx": "8a612b32e4837fa9ef96b8c84306575f0cdabd61348c15f4afaea884306cfb75",
+    "native/swin-tiny/swin/__init__.py": "fdbd0de8196bd80121bbf13fb1db65cd20f5b6d1a8b8199403bbe43ddebb61fe",
+    "native/swin-tiny/swin/model.py": "6005210daa445dd2f1c390b7ab8766c0af53bf0dc81c140d8d52f69c35aefabe",
+    "native/swin-tiny/swin/plan.py": "e5c4618ac865a1e7ca9f9b81b2c8b4fe08e0cc788f1408233978c4c71abc9d2b",
+    "native/swin-tiny/swin/compile.py": "707ee0a886a699539903e5110fe05e7a082f771bd3328e35e10ab3d9320483e1",
+    "native/optimization/compile_luts.py": "7891f1184e23a4c7b160bfcbf85ca5b7b2a407768c2ce20b4ea7528dd50d05ad",
+    "native/optimization/lower_views.py": "ade894950045cc0e9b7b893dca0f4dd58b34d43accf33dadff83edf46a534f14",
+    "native/optimization/lower_fused_plan.py": "fccc3b0af62bff00daae774eb592a0e0da2c52a4eb7ceaae836636f4d8728da4",
+    "native/optimization/c/gelu_tables.c": "7fb34e9d1db3632d46e66d0bde8d1e61fe4a2cbdffb147d106012596e835e228",
+    "replay_conversion.py": "14146f39344616ba711c2bad3dd24dc41de45365bcc45d56e03e026a63616070",
+    "expected/base-plan.json": "53a8a057730afa2689cda05c7b4c83d04dc485d360fc66a237df94a654afe80c",
+    "expected/views-plan.json": "b951651217ca49829ef91cb3bb6c3a370b07b56db74a4c84de0948471e019570",
+    "expected/fused-plan.json": "ad295126e8bf32b10dd3e4d70135ee9149208d5f9a0997b8ba73a4cf7b3a170c",
+    "README.md": "d56e5a4a3d1b45561dc4b628369897caa902d69e6c56b65df02cf58b1487886f"
+  },
+  "original_to_snapshot": {
+    "/mnt/data/Ubuntu/qingruan/competition/models/swin_tiny_patch4_window7_224_imagenet1k_int8.onnx": {
+      "path": "competition/models/swin_tiny_patch4_window7_224_imagenet1k_int8.onnx",
+      "sha256": "8a612b32e4837fa9ef96b8c84306575f0cdabd61348c15f4afaea884306cfb75"
+    },
+    "/mnt/data/Ubuntu/qingruan/native/swin-tiny/swin/__init__.py": {
+      "path": "native/swin-tiny/swin/__init__.py",
+      "sha256": "fdbd0de8196bd80121bbf13fb1db65cd20f5b6d1a8b8199403bbe43ddebb61fe"
+    },
+    "/mnt/data/Ubuntu/qingruan/native/swin-tiny/swin/model.py": {
+      "path": "native/swin-tiny/swin/model.py",
+      "sha256": "6005210daa445dd2f1c390b7ab8766c0af53bf0dc81c140d8d52f69c35aefabe"
+    },
+    "/mnt/data/Ubuntu/qingruan/native/swin-tiny/swin/plan.py": {
+      "path": "native/swin-tiny/swin/plan.py",
+      "sha256": "e5c4618ac865a1e7ca9f9b81b2c8b4fe08e0cc788f1408233978c4c71abc9d2b"
+    },
+    "/mnt/data/Ubuntu/qingruan/native/swin-tiny/swin/compile.py": {
+      "path": "native/swin-tiny/swin/compile.py",
+      "sha256": "707ee0a886a699539903e5110fe05e7a082f771bd3328e35e10ab3d9320483e1"
+    },
+    "/mnt/data/Ubuntu/qingruan/native/optimization/compile_luts.py": {
+      "path": "native/optimization/compile_luts.py",
+      "sha256": "7891f1184e23a4c7b160bfcbf85ca5b7b2a407768c2ce20b4ea7528dd50d05ad"
+    },
+    "/mnt/data/Ubuntu/qingruan/native/optimization/lower_views.py": {
+      "path": "native/optimization/lower_views.py",
+      "sha256": "ade894950045cc0e9b7b893dca0f4dd58b34d43accf33dadff83edf46a534f14"
+    },
+    "/mnt/data/Ubuntu/qingruan/native/optimization/lower_fused_plan.py": {
+      "path": "native/optimization/lower_fused_plan.py",
+      "sha256": "fccc3b0af62bff00daae774eb592a0e0da2c52a4eb7ceaae836636f4d8728da4"
+    },
+    "/mnt/data/Ubuntu/qingruan/native/optimization/c/gelu_tables.c": {
+      "path": "native/optimization/c/gelu_tables.c",
+      "sha256": "7fb34e9d1db3632d46e66d0bde8d1e61fe4a2cbdffb147d106012596e835e228"
+    },
+    "/mnt/data/Ubuntu/qingruan/native/optimization/conversion_replay_template.py": {
+      "path": "replay_conversion.py",
+      "sha256": "14146f39344616ba711c2bad3dd24dc41de45365bcc45d56e03e026a63616070"
+    },
+    "/mnt/data/Ubuntu/qingruan/native/swin-tiny/work/verify.ylnpqxth/plan.json": {
+      "path": "expected/base-plan.json",
+      "sha256": "53a8a057730afa2689cda05c7b4c83d04dc485d360fc66a237df94a654afe80c"
+    },
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/view-plan/plan.json": {
+      "path": "expected/views-plan.json",
+      "sha256": "b951651217ca49829ef91cb3bb6c3a370b07b56db74a4c84de0948471e019570"
+    },
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/fused-plan/plan.json": {
+      "path": "expected/fused-plan.json",
+      "sha256": "ad295126e8bf32b10dd3e4d70135ee9149208d5f9a0997b8ba73a4cf7b3a170c"
+    }
+  },
+  "expected_artifacts": {
+    "native/swin-tiny/work/verify.ylnpqxth/constants.bin": {
+      "bytes": 30861636,
+      "sha256": "1ff66e6b85cdf6da89c53321d89f5a402ad43609dfe83c593a9c905d01917683"
+    },
+    "native/swin-tiny/work/verify.ylnpqxth/graph.bin": {
+      "bytes": 302216,
+      "sha256": "2bcee6d0a4687975130008467648f7e1c25972af0fc6769f472ac6db939c9d40"
+    },
+    "native/swin-tiny/work/verify.ylnpqxth/graph_manifest.json": {
+      "bytes": 421,
+      "sha256": "6b4efd14f8ef03b98274ae063843941f6567f86dd89c0522991fde6fcd2d4248"
+    },
+    "native/optimization/work/view-plan/constants.bin": {
+      "bytes": 30861636,
+      "sha256": "1ff66e6b85cdf6da89c53321d89f5a402ad43609dfe83c593a9c905d01917683"
+    },
+    "native/optimization/work/view-plan/graph.bin": {
+      "bytes": 302216,
+      "sha256": "584fd4db5eaba780bfd7f7640faf2e5b52cd31c551b78747a109a194876964c5"
+    },
+    "native/optimization/work/view-plan/graph_manifest.json": {
+      "bytes": 421,
+      "sha256": "33e0eb358dd38ded2dc69bda33e0f6e9b3eb8a387a9098ae2a287a04616fca55"
+    },
+    "native/optimization/work/lookup-tables/gelu.bin": {
+      "bytes": 4521984,
+      "sha256": "35e75589e3f09a3ba456a4bed386413e3a1f4a5e03dbba7636ea3929aabdf3f1"
+    },
+    "native/optimization/work/lookup-tables/gelu-fusions.bin": {
+      "bytes": 336,
+      "sha256": "3cc598ace55ca76f5f411367e7806c1ddb4af1c6754497639300a4aefb05ce6a"
+    },
+    "native/optimization/work/lookup-tables/gelu-fusions.json": {
+      "bytes": 4855,
+      "sha256": "7529bc3ae1df3ffe3d0b2a8f090d67946675ba148192e92581dd08f6e870de6a"
+    },
+    "native/optimization/work/lookup-tables/quant-thresholds.bin": {
+      "bytes": 181560,
+      "sha256": "c557336ea4170b7c9fb93addca37423af9f067d4277e8e2dfc28e76b2899f26f"
+    },
+    "native/optimization/work/lookup-tables/quant-thresholds.json": {
+      "bytes": 48563,
+      "sha256": "7d14219d813288c1c0bf1777920c05192138e2cf43acacfc2b0cf9668acc5760"
+    },
+    "native/optimization/work/fused-plan/constants.bin": {
+      "bytes": 30861636,
+      "sha256": "1ff66e6b85cdf6da89c53321d89f5a402ad43609dfe83c593a9c905d01917683"
+    },
+    "native/optimization/work/fused-plan/graph.bin": {
+      "bytes": 302216,
+      "sha256": "61c23227c1412510f2aca2caac3cc959b3590b76a868452571c3dd52d49d4f1c"
+    },
+    "native/optimization/work/fused-plan/gelu-fusions.bin": {
+      "bytes": 336,
+      "sha256": "3cc598ace55ca76f5f411367e7806c1ddb4af1c6754497639300a4aefb05ce6a"
+    },
+    "native/optimization/work/fused-plan/graph_manifest.json": {
+      "bytes": 457,
+      "sha256": "425ef7d1fce0ffab920083cf0194c59a2a43170dd7a3fd4b65b69eedd7765fe1"
+    }
+  },
+  "plan_paths": {
+    "base": "native/swin-tiny/work/verify.ylnpqxth/plan.json",
+    "views": "native/optimization/work/view-plan/plan.json",
+    "fused": "native/optimization/work/fused-plan/plan.json"
+  },
+  "actual_RV32_inference_executed": false,
+  "official_accuracy_accepted": false,
+  "final_delivery_accepted": false
+}

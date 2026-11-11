@@ -1,0 +1,102 @@
+{
+  "status": "VECPIPE_POINTWISE_BITS_FLAGS_ORDERING_AND_ONE_PER_CYCLE_POST_UNIT_PASS",
+  "cases": 148987,
+  "all_S8_U8_byte_zero_pairs_checked": 131072,
+  "POST_256_outputs_one_per_cycle": true,
+  "flags_errors_and_all32_result_bits_equal": true,
+  "mixed_DIV_ordering_and_randomized_output_stalls": true,
+  "source_sha256": {
+    "/workspace/native/optimization/variants/vecpipe_v1/run_arithmetic.py": "3b6706714661ad88e077411431ff3c288719ec7fec0b09754922ef839b8f431f",
+    "/workspace/native/optimization/hardfloat-files.json": "70fc51ee48dcd3fb5fb188ea642c4cf6f63f1b914527f6ea852341e77a4aa577",
+    "/workspace/native/optimization/work/vecpipe-arithmetic-v1/vectors.hex": "8ba638d9c0bb7ce7fb9c34ddbe96c21621c8855462bacf375f23aabf45f154c3",
+    "/workspace/native/optimization/vendor/HardFloat-1/source/HardFloat_primitives.v": "5a1d0823a066395eda8191b3a556c414e6120b8085ff43ce383980d84af47f9f",
+    "/workspace/native/optimization/vendor/HardFloat-1/source/HardFloat_rawFN.v": "353cad0b733c601f5c2449dc75f1ddefa34dc5c2466ac82540302303899fe355",
+    "/workspace/native/optimization/vendor/HardFloat-1/source/RISCV/HardFloat_specialize.v": "de4442606d2c51bf30c0476d289fa7f955273c8bb58c1484f0e745b76bc8d316",
+    "/workspace/native/optimization/vendor/HardFloat-1/source/fNToRecFN.v": "7aca940370a4ecf1b52774cec62e90252d090f20a4acd5f577cf88565266426c",
+    "/workspace/native/optimization/vendor/HardFloat-1/source/recFNToFN.v": "62d42a8f004f00f9a688c5e45302ceff22148313b3602840e5d05a13e9391e96",
+    "/workspace/native/optimization/vendor/HardFloat-1/source/isSigNaNRecFN.v": "77e37250ec9c18c4484c23eda48bfcf7df8dec1a3d3b2c1a1e5804386a25de8b",
+    "/workspace/native/optimization/vendor/HardFloat-1/source/addRecFN.v": "15fb5387ab0deff63670ed144189e9f263c61ffc909d06697974c49d11ba5dc3",
+    "/workspace/native/optimization/vendor/HardFloat-1/source/mulRecFN.v": "5a6a263dcde9f38f0fabef87ceb41e1bdff63c46d151c7c65e404467354bee43",
+    "/workspace/native/optimization/vendor/HardFloat-1/source/divSqrtRecFN_small.v": "f76feb5557faa8bcb2868e51bf2ce7d1297be46dd67ae51d509b1ae91066a522",
+    "/workspace/native/optimization/vendor/HardFloat-1/source/iNToRecFN.v": "bb7a5cd239ebc2f95a7eb9047534f1e530f148f5d017dd664c3f252bccb25f1c",
+    "/workspace/native/optimization/vendor/HardFloat-1/source/recFNToIN.v": "881c05985ee57e1006988661236708c74269352957d94f65c88696c1a7928877",
+    "/workspace/native/optimization/vendor/HardFloat-1/source/compareRecFN.v": "b88d572db1cea8d5275aeb1db7dcdfabad74281fdc29378940fd4b20f7326d69",
+    "/workspace/native/optimization/rtl/fp32_alu.v": "13898a9ad0b909bf8efb9d6cf799d0cb78fd56e8e3cfc94b728b2dc28b6b93ed",
+    "/workspace/native/optimization/rtl/fp32_vector.sv": "39af6d8a9c3c2a8f88acdad2bf28a4b5bc6c1f6b632ee29acf82396dc9d3c398",
+    "/workspace/native/optimization/variants/vecpipe_v1/fp32_vector_pipeline.sv": "9710cde3282a468007b97d4b3e0c99143cf329512732ef20a35e77842d5f42d0",
+    "/workspace/native/optimization/variants/vecpipe_v1/tb_vecpipe_arithmetic.sv": "a740a32df814ad9e8d83ff19b5cbf9bbbe7d9f27c361f54815a84d4d7a782405"
+  },
+  "simulator_sha256": "f77913035e807ba4cc551bdc200a6b63d1313f951c834152188fefc8c0746c17",
+  "commands": [
+    {
+      "phase": "compat",
+      "argv": [
+        "/usr/bin/gcc",
+        "-fPIC",
+        "-c",
+        "/workspace/native/audits/20261107/riscv_pe_contest/contest/task1/my_design/compat/pthread_yield_compat.c",
+        "-o",
+        "/workspace/native/optimization/work/vecpipe-arithmetic-v1/compat.o"
+      ],
+      "returncode": 0,
+      "elapsed_s": 0.034462964002159424
+    },
+    {
+      "phase": "compile",
+      "argv": [
+        "/home/zhz/miniforge3/bin/python3",
+        "/workspace/native/audits/20261107/riscv_pe_contest/contest/task1/scripts/vcs_vm.py",
+        "-full64",
+        "-sverilog",
+        "-timescale=1ns/1ps",
+        "-assert",
+        "svaext",
+        "+define+VCS",
+        "+define+VECPIPE_CASES=148987",
+        "+incdir+/workspace/native/optimization/vendor/HardFloat-1/source",
+        "+incdir+/workspace/native/optimization/vendor/HardFloat-1/source/RISCV",
+        "/workspace/native/optimization/vendor/HardFloat-1/source/HardFloat_primitives.v",
+        "/workspace/native/optimization/vendor/HardFloat-1/source/HardFloat_rawFN.v",
+        "/workspace/native/optimization/vendor/HardFloat-1/source/RISCV/HardFloat_specialize.v",
+        "/workspace/native/optimization/vendor/HardFloat-1/source/fNToRecFN.v",
+        "/workspace/native/optimization/vendor/HardFloat-1/source/recFNToFN.v",
+        "/workspace/native/optimization/vendor/HardFloat-1/source/isSigNaNRecFN.v",
+        "/workspace/native/optimization/vendor/HardFloat-1/source/addRecFN.v",
+        "/workspace/native/optimization/vendor/HardFloat-1/source/mulRecFN.v",
+        "/workspace/native/optimization/vendor/HardFloat-1/source/divSqrtRecFN_small.v",
+        "/workspace/native/optimization/vendor/HardFloat-1/source/iNToRecFN.v",
+        "/workspace/native/optimization/vendor/HardFloat-1/source/recFNToIN.v",
+        "/workspace/native/optimization/vendor/HardFloat-1/source/compareRecFN.v",
+        "/workspace/native/optimization/rtl/fp32_alu.v",
+        "/workspace/native/optimization/rtl/fp32_vector.sv",
+        "/workspace/native/optimization/variants/vecpipe_v1/fp32_vector_pipeline.sv",
+        "/workspace/native/optimization/variants/vecpipe_v1/tb_vecpipe_arithmetic.sv",
+        "-top",
+        "tb_vecpipe_arithmetic",
+        "-Mdir=/workspace/native/optimization/work/vecpipe-arithmetic-v1/csrc",
+        "-o",
+        "/workspace/native/optimization/work/vecpipe-arithmetic-v1/simv",
+        "-LDFLAGS",
+        "/workspace/native/optimization/work/vecpipe-arithmetic-v1/compat.o"
+      ],
+      "returncode": 0,
+      "elapsed_s": 2.0202052950044163
+    },
+    {
+      "phase": "normal",
+      "argv": [
+        "/workspace/native/optimization/work/vecpipe-arithmetic-v1/simv",
+        "+VECTORS=/workspace/native/optimization/work/vecpipe-arithmetic-v1/vectors.hex"
+      ],
+      "returncode": 0,
+      "elapsed_s": 4.27541632700013
+    }
+  ],
+  "cancel_and_reset_inflight_accepted": false,
+  "AXI_integration_accepted": false,
+  "full_model_inference_accepted": false,
+  "SoC_area_timing_accepted": false,
+  "official_accuracy_accepted": false,
+  "final_ADP_accepted": false,
+  "scope": "Arithmetic unit only. Same original HardFloat RNE operations and every rounding point, with scalar DIV fallback. Exact scalar-RTL transaction equivalence, exhaustive byte/zero differences, float/int corners, random operands, output stalls, mixed-op ordering and sustained POST initiation1. Cancellation/reset, SRAM read-ahead, AXI/CPU integration, full inference and mapped PPA remain required."
+}

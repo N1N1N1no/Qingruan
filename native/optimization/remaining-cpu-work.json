@@ -1,0 +1,81 @@
+{
+  "status": "ANALYTICAL_PRIORITIZATION_ONLY",
+  "remaining_CPU_operators": [
+    {
+      "op": "Softmax",
+      "nodes": 12,
+      "elements": 2189712,
+      "representative_cycles_per_element": 17259.632653061224,
+      "illustrative_cycles_not_full_model_measurement": 37793624736.0
+    },
+    {
+      "op": "LayerNormalization",
+      "nodes": 29,
+      "elements": 3725568,
+      "representative_cycles_per_element": 4310.21875,
+      "illustrative_cycles_not_full_model_measurement": 16058013048.0
+    },
+    {
+      "op": "DequantizeLinear",
+      "nodes": 67,
+      "elements": 11336384,
+      "representative_cycles_per_element": 1357.9609375,
+      "illustrative_cycles_not_full_model_measurement": 15394366644.5
+    },
+    {
+      "op": "Add",
+      "nodes": 77,
+      "elements": 13237056,
+      "representative_cycles_per_element": 1148.329861111111,
+      "illustrative_cycles_not_full_model_measurement": 15200506678.0
+    },
+    {
+      "op": "Transpose",
+      "nodes": 62,
+      "elements": 10348800,
+      "representative_cycles_per_element": 686.455078125,
+      "illustrative_cycles_not_full_model_measurement": 7103986312.5
+    },
+    {
+      "op": "Mul",
+      "nodes": 12,
+      "elements": 1430016,
+      "representative_cycles_per_element": 1064.9375,
+      "illustrative_cycles_not_full_model_measurement": 1522877664.0
+    },
+    {
+      "op": "Shape",
+      "nodes": 1,
+      "elements": 4,
+      "representative_cycles_per_element": null,
+      "illustrative_cycles_not_full_model_measurement": null
+    },
+    {
+      "op": "Slice",
+      "nodes": 59,
+      "elements": 3763202,
+      "representative_cycles_per_element": null,
+      "illustrative_cycles_not_full_model_measurement": null
+    },
+    {
+      "op": "Concat",
+      "nodes": 24,
+      "elements": 3236355,
+      "representative_cycles_per_element": null,
+      "illustrative_cycles_not_full_model_measurement": null
+    },
+    {
+      "op": "GlobalAveragePool",
+      "nodes": 1,
+      "elements": 768,
+      "representative_cycles_per_element": null,
+      "illustrative_cycles_not_full_model_measurement": null
+    }
+  ],
+  "MAC_postscale_elements_without_separate_cycle_probe": 17055352,
+  "scope": "microkernel rates extrapolated to counts; excludes CPU packing/dispatch, shape-dependent cost differences, contention and unprofiled operators; not complete latency, ADP or candidate selection",
+  "next_hardware": [
+    "exact FP32 Softmax/LayerNorm and arithmetic/DQ/postscale using shared HardFloat; preserve operation order",
+    "multidimensional stride copy for Transpose; existing 2D DMA for materialized Slice/Concat/Gather where valid"
+  ]
+}

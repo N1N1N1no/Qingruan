@@ -1,0 +1,197 @@
+{
+  "checked_at": "2026-11-11T09:58:16.394920+00:00",
+  "status": "PASS",
+  "offline_repository_check": {
+    "status": "PASS",
+    "repro_files": {
+      "rtl": 113,
+      "inference": 96,
+      "conversion": 14
+    },
+    "python_syntax_files": 276
+  },
+  "native_runtime_checkout_path_check": "PASS_NEW_CHECKOUT_COMPATIBILITY_WRAPPER",
+  "RTL_snapshot_hash_verification": "PASS_113_FILES",
+  "inference_snapshot_hash_verification": "PASS_96_FILES",
+  "actual_RV32_firmware_rebuild": {
+    "actual_RV32_inference_executed": false,
+    "official_accuracy_accepted": false,
+    "model_conversion_reproduced": false,
+    "final_delivery_accepted": false,
+    "status": "RELOCATED_RV32_FIRMWARE_REBUILD_BINARY_HEX_AND_SYMBOLS_EXACT_PASS",
+    "firmware_bytes": 52592,
+    "binary_sha256": "0346ad049ff7a1203d47ffbfbac7fcf5f4aabc6c0e54fca5accca6fab78cbe0a",
+    "hex_sha256": "19da40685c9d832b8607e9dcd3471f75d038c84a129609826ca2b7c19fdd8eca",
+    "ELF_byte_exact": false,
+    "compiler_sha256": "d50d61d911dd4dd8a3c393d775aa8adf42be6c52869ba3a9a5358a65f9e5434c",
+    "compiler_version": "riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "linked_libraries": {
+      "libc.a": {
+        "path": "/home/zhz/rtl_tools/xpack-riscv-none-elf-gcc-14.2.0-3/riscv-none-elf/lib/libc.a",
+        "sha256": "e93f9bb8ba68c417870f40e80e95317bb480adac91ef445c214221ed1d8ced89"
+      },
+      "libm.a": {
+        "path": "/home/zhz/rtl_tools/xpack-riscv-none-elf-gcc-14.2.0-3/riscv-none-elf/lib/libm.a",
+        "sha256": "54fe26bc030025540f9deb329a345cc65b2d46a32a7cb646c2055aa31c7fc972"
+      },
+      "libgcc.a": {
+        "path": "/home/zhz/rtl_tools/xpack-riscv-none-elf-gcc-14.2.0-3/lib/gcc/riscv-none-elf/14.2.0/libgcc.a",
+        "sha256": "44d870c2888563974529b033e7345464032e4050f0fe896eda2cad310ab15cef"
+      }
+    },
+    "checked_symbol_count": 10,
+    "manifest_sha256": "2b56af52a0ec45547d6c3cd9d38085b94ca91dbaa18631b90265c0ba29019e32"
+  },
+  "actual_original_ONNX_conversion_replay": {
+    "status": "RELOCATED_ORIGINAL_ONNX_TO_BASE_VIEW_FUSED_GRAPHS_WEIGHTS_AND_TABLES_EXACT_PASS",
+    "observed_at": "2026-11-11T09:54:42.719574+00:00",
+    "commands": [
+      {
+        "phase": "base-plan",
+        "implementation": "unchanged swin.model.Model+swin.plan.build+swin.compile.emit",
+        "returncode": 0,
+        "elapsed_s": 1.9477891900023678
+      },
+      {
+        "phase": "tables",
+        "argv": [
+          "/home/zhz/miniforge3/envs/task2-cnn/bin/python",
+          "/workspace/repro/conversion/runs/github-v2/native/optimization/compile_luts.py"
+        ],
+        "returncode": 0,
+        "elapsed_s": 0.6654187329986598
+      },
+      {
+        "phase": "views",
+        "argv": [
+          "/home/zhz/miniforge3/envs/task2-cnn/bin/python",
+          "/workspace/repro/conversion/runs/github-v2/native/optimization/lower_views.py"
+        ],
+        "returncode": 0,
+        "elapsed_s": 1.8176470210019033
+      },
+      {
+        "phase": "fused",
+        "argv": [
+          "/home/zhz/miniforge3/envs/task2-cnn/bin/python",
+          "/workspace/repro/conversion/runs/github-v2/native/optimization/lower_fused_plan.py"
+        ],
+        "returncode": 0,
+        "elapsed_s": 1.8676342190010473
+      }
+    ],
+    "manifest_sha256": "a4e906487a221549307121ec539a1625548ad6a877edf5f50a232b04d292d0db",
+    "model_sha256": "8a612b32e4837fa9ef96b8c84306575f0cdabd61348c15f4afaea884306cfb75",
+    "numpy_version": "1.26.4",
+    "onnx_version": "1.19.1",
+    "onnxruntime_version": "1.23.2",
+    "artifacts": [
+      {
+        "path": "native/swin-tiny/work/verify.ylnpqxth/constants.bin",
+        "bytes": 30861636,
+        "sha256": "1ff66e6b85cdf6da89c53321d89f5a402ad43609dfe83c593a9c905d01917683"
+      },
+      {
+        "path": "native/swin-tiny/work/verify.ylnpqxth/graph.bin",
+        "bytes": 302216,
+        "sha256": "2bcee6d0a4687975130008467648f7e1c25972af0fc6769f472ac6db939c9d40"
+      },
+      {
+        "path": "native/swin-tiny/work/verify.ylnpqxth/graph_manifest.json",
+        "bytes": 421,
+        "sha256": "6b4efd14f8ef03b98274ae063843941f6567f86dd89c0522991fde6fcd2d4248"
+      },
+      {
+        "path": "native/optimization/work/view-plan/constants.bin",
+        "bytes": 30861636,
+        "sha256": "1ff66e6b85cdf6da89c53321d89f5a402ad43609dfe83c593a9c905d01917683"
+      },
+      {
+        "path": "native/optimization/work/view-plan/graph.bin",
+        "bytes": 302216,
+        "sha256": "584fd4db5eaba780bfd7f7640faf2e5b52cd31c551b78747a109a194876964c5"
+      },
+      {
+        "path": "native/optimization/work/view-plan/graph_manifest.json",
+        "bytes": 421,
+        "sha256": "33e0eb358dd38ded2dc69bda33e0f6e9b3eb8a387a9098ae2a287a04616fca55"
+      },
+      {
+        "path": "native/optimization/work/lookup-tables/gelu.bin",
+        "bytes": 4521984,
+        "sha256": "35e75589e3f09a3ba456a4bed386413e3a1f4a5e03dbba7636ea3929aabdf3f1"
+      },
+      {
+        "path": "native/optimization/work/lookup-tables/gelu-fusions.bin",
+        "bytes": 336,
+        "sha256": "3cc598ace55ca76f5f411367e7806c1ddb4af1c6754497639300a4aefb05ce6a"
+      },
+      {
+        "path": "native/optimization/work/lookup-tables/gelu-fusions.json",
+        "bytes": 4855,
+        "sha256": "7529bc3ae1df3ffe3d0b2a8f090d67946675ba148192e92581dd08f6e870de6a"
+      },
+      {
+        "path": "native/optimization/work/lookup-tables/quant-thresholds.bin",
+        "bytes": 181560,
+        "sha256": "c557336ea4170b7c9fb93addca37423af9f067d4277e8e2dfc28e76b2899f26f"
+      },
+      {
+        "path": "native/optimization/work/lookup-tables/quant-thresholds.json",
+        "bytes": 48563,
+        "sha256": "7d14219d813288c1c0bf1777920c05192138e2cf43acacfc2b0cf9668acc5760"
+      },
+      {
+        "path": "native/optimization/work/fused-plan/constants.bin",
+        "bytes": 30861636,
+        "sha256": "1ff66e6b85cdf6da89c53321d89f5a402ad43609dfe83c593a9c905d01917683"
+      },
+      {
+        "path": "native/optimization/work/fused-plan/graph.bin",
+        "bytes": 302216,
+        "sha256": "61c23227c1412510f2aca2caac3cc959b3590b76a868452571c3dd52d49d4f1c"
+      },
+      {
+        "path": "native/optimization/work/fused-plan/gelu-fusions.bin",
+        "bytes": 336,
+        "sha256": "3cc598ace55ca76f5f411367e7806c1ddb4af1c6754497639300a4aefb05ce6a"
+      },
+      {
+        "path": "native/optimization/work/fused-plan/graph_manifest.json",
+        "bytes": 457,
+        "sha256": "425ef7d1fce0ffab920083cf0194c59a2a43170dd7a3fd4b65b69eedd7765fe1"
+      }
+    ],
+    "plans": [
+      {
+        "stage": "base",
+        "path": "native/swin-tiny/work/verify.ylnpqxth/plan.json",
+        "only_model_path_changed": true,
+        "model_sha256": "8a612b32e4837fa9ef96b8c84306575f0cdabd61348c15f4afaea884306cfb75",
+        "nodes": 1396
+      },
+      {
+        "stage": "views",
+        "path": "native/optimization/work/view-plan/plan.json",
+        "only_model_path_changed": true,
+        "model_sha256": "8a612b32e4837fa9ef96b8c84306575f0cdabd61348c15f4afaea884306cfb75",
+        "nodes": 1396
+      },
+      {
+        "stage": "fused",
+        "path": "native/optimization/work/fused-plan/plan.json",
+        "only_model_path_changed": true,
+        "model_sha256": "8a612b32e4837fa9ef96b8c84306575f0cdabd61348c15f4afaea884306cfb75",
+        "nodes": 1396
+      }
+    ],
+    "unchanged_original_scripts_and_modules": true,
+    "actual_RV32_inference_executed": false,
+    "official_accuracy_accepted": false,
+    "final_delivery_accepted": false,
+    "scope": "Original existing ONNX converted in an isolated relocated source workspace by unchanged Model/plan/compiler and original table/view/fusion scripts. All selected15 artifacts are byte-hash exact; all three full plans equal after removing only the ONNX path. No changed preprocessing,labels,tolerance,hardware inference or final delivery acceptance."
+  },
+  "staged_repro_dependencies_all_present": true,
+  "tracked_secret_pattern_findings": 0,
+  "scope": "发布目录离线完整性、路径兼容、实际固件重编和模型转换验证；未在发布副本重跑RTL仿真/综合/门级/20图，不扩充原工程验收结论。"
+}

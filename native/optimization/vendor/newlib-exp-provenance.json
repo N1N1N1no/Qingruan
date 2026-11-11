@@ -1,0 +1,25 @@
+{
+  "source": "https://sourceware.org/pub/newlib/newlib-4.4.0.20231231.tar.gz",
+  "release": "4.4.0.20231231",
+  "local_toolchain_header_version": "4.4.0",
+  "archive_sha256": "0c166a39e1bf0951dfafcd68949fe0e4b6d3658081d6282f39aeefc6310f2f13",
+  "selected": {
+    "newlib-4.4.0.20231231/COPYING.NEWLIB": {
+      "path": "native/optimization/vendor/newlib-exp-source/COPYING.NEWLIB",
+      "sha256": "9a59b4ee3af067045fe0ea78786201c42d54756fe48cbccf44f3dfc398474717"
+    },
+    "newlib-4.4.0.20231231/newlib/libm/common/math_config.h": {
+      "path": "native/optimization/vendor/newlib-exp-source/newlib/libm/common/math_config.h",
+      "sha256": "e34414b03657344538643bcafa3999ef2b8bbbce431e17490ac0c4d2a7f9dc7c"
+    },
+    "newlib-4.4.0.20231231/newlib/libm/common/sf_exp.c": {
+      "path": "native/optimization/vendor/newlib-exp-source/newlib/libm/common/sf_exp.c",
+      "sha256": "25871673f0afb92fa46be41c5d81a17d790e3f12fd0b27ff02d74764de990b58"
+    },
+    "newlib-4.4.0.20231231/newlib/libm/math/ef_exp.c": {
+      "path": "native/optimization/vendor/newlib-exp-source/newlib/libm/math/ef_exp.c",
+      "sha256": "a7bd3ce3494b7e0099e6f159736fbd1215224eea6600bab650db4654b1313efb"
+    }
+  },
+  "scope": "source audit only; exact binary algorithm identity and RTL proof pending"
+}

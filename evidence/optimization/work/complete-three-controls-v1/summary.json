@@ -1,0 +1,188 @@
+{
+  "status": "THREE_COMPLETE_SINGLE_IMAGE_CONTROL_MEASUREMENTS_FINAL_SELECTION_OPEN",
+  "observed_at": "2026-11-10T22:12:00.213350+00:00",
+  "image": "ILSVRC2012_val_00000274.JPEG",
+  "ranked_controls": [
+    {
+      "geometry": "R8_C16_L4",
+      "inference_cycles": 1000484499,
+      "inference_seconds_at_10ns": 10.00484499,
+      "complete_SoC_area": 2089316.648438,
+      "area_times_inference_ns": 2.0903289202648516e+16,
+      "ADP_ratio_to_R8_C16_control": 1.0,
+      "latency_ratio_to_R8_C16_control": 1.0,
+      "useful_MAC_utilization_during_GEMM_commands": 0.06652701157075437,
+      "useful_MAC_utilization_over_full_inference": 0.008766390692475886,
+      "all8_engine_counters": {
+        "1": {
+          "commands": 52,
+          "cycles": 2060103,
+          "written_bytes": 12945408
+        },
+        "2": {
+          "commands": 12,
+          "cycles": 4991112,
+          "written_bytes": 5720064
+        },
+        "3": {
+          "commands": 1877,
+          "cycles": 131835743,
+          "written_bytes": 160816128
+        },
+        "4": {
+          "commands": 166,
+          "cycles": 28551516,
+          "written_bytes": 28503304
+        },
+        "5": {
+          "commands": 12,
+          "cycles": 243131378,
+          "written_bytes": 8758848
+        },
+        "6": {
+          "commands": 29,
+          "cycles": 80862975,
+          "written_bytes": 14902272
+        },
+        "7": {
+          "commands": 2369,
+          "cycles": 433598261,
+          "written_bytes": 172388832
+        },
+        "8": {
+          "commands": 123,
+          "cycles": 30273018,
+          "written_bytes": 57953280
+        }
+      },
+      "logits_byte_exact": true,
+      "full_independent_Verilator_cycle_equality": false
+    },
+    {
+      "geometry": "R16_C8_L4",
+      "inference_cycles": 1046957093,
+      "inference_seconds_at_10ns": 10.469570930000001,
+      "complete_SoC_area": 2171889.432457,
+      "area_times_inference_ns": 2.2738750465226004e+16,
+      "ADP_ratio_to_R8_C16_control": 1.087807294095368,
+      "latency_ratio_to_R8_C16_control": 1.0464500889783401,
+      "useful_MAC_utilization_during_GEMM_commands": 0.049156245660784643,
+      "useful_MAC_utilization_over_full_inference": 0.008377265943982673,
+      "all8_engine_counters": {
+        "1": {
+          "commands": 52,
+          "cycles": 2060103,
+          "written_bytes": 12945408
+        },
+        "2": {
+          "commands": 12,
+          "cycles": 4991112,
+          "written_bytes": 5720064
+        },
+        "3": {
+          "commands": 1877,
+          "cycles": 178423675,
+          "written_bytes": 106614048
+        },
+        "4": {
+          "commands": 166,
+          "cycles": 28551516,
+          "written_bytes": 28503304
+        },
+        "5": {
+          "commands": 12,
+          "cycles": 243131378,
+          "written_bytes": 8758848
+        },
+        "6": {
+          "commands": 29,
+          "cycles": 80862975,
+          "written_bytes": 14902272
+        },
+        "7": {
+          "commands": 2369,
+          "cycles": 433598261,
+          "written_bytes": 172388832
+        },
+        "8": {
+          "commands": 123,
+          "cycles": 30273018,
+          "written_bytes": 57953280
+        }
+      },
+      "logits_byte_exact": true,
+      "full_independent_Verilator_cycle_equality": false
+    },
+    {
+      "geometry": "R8_C32_L4",
+      "inference_cycles": 949222155,
+      "inference_seconds_at_10ns": 9.49222155,
+      "complete_SoC_area": 3530648.246685,
+      "area_times_inference_ns": 3.3513695372653076e+16,
+      "ADP_ratio_to_R8_C16_control": 1.6032737741774523,
+      "latency_ratio_to_R8_C16_control": 0.9487624805269472,
+      "useful_MAC_utilization_during_GEMM_commands": 0.05231073402832084,
+      "useful_MAC_utilization_over_full_inference": 0.004619907970858518,
+      "all8_engine_counters": {
+        "1": {
+          "commands": 52,
+          "cycles": 2060103,
+          "written_bytes": 12945408
+        },
+        "2": {
+          "commands": 12,
+          "cycles": 3190344,
+          "written_bytes": 5720064
+        },
+        "3": {
+          "commands": 1877,
+          "cycles": 83832106,
+          "written_bytes": 160816128
+        },
+        "4": {
+          "commands": 166,
+          "cycles": 28551516,
+          "written_bytes": 28503304
+        },
+        "5": {
+          "commands": 12,
+          "cycles": 243131378,
+          "written_bytes": 8758848
+        },
+        "6": {
+          "commands": 29,
+          "cycles": 80744640,
+          "written_bytes": 14902272
+        },
+        "7": {
+          "commands": 2369,
+          "cycles": 432315808,
+          "written_bytes": 172388832
+        },
+        "8": {
+          "commands": 123,
+          "cycles": 30273018,
+          "written_bytes": 57953280
+        }
+      },
+      "logits_byte_exact": true,
+      "full_independent_Verilator_cycle_equality": true
+    }
+  ],
+  "engineering_minimum_single_image_ADP": "R8_C16_L4",
+  "ranking_scope": "Only these three completed scalar-vector controls,one same image,common reviewed full-SoC library/SDC/IO/memory conditions.",
+  "final_selected_candidate": null,
+  "official_accuracy_accepted": false,
+  "original_baseline_complete": false,
+  "new_vector_pipeline_complete": false,
+  "full20_images_accepted": false,
+  "final_ADP_selection_accepted": false,
+  "source_sha256": {
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/complete-three-controls-v1/review_driver.py": "e4da0cb26d0863bf5b0c19e4fd9a3a289d53f2c57202f9d782f4246187c8ea47",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/completed-full-candidate/R16_C8_L4/v1/summary.json": "7d67c41a4e71734dd4426107bf8ea430f0c809ad3191282fe9711b2f9c5f8752",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/completed-full-candidate/R8_C16_L4/v1/summary.json": "4ebb2be76b5cbb712bf7c58fa6039cae85143159dc9a1ae09f0427b2081c083f",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/completed-full-candidate/R8_C32_L4/v3/summary.json": "fc8051ff555ae610ac037e7c95e84fba0e7346236e165f14a1dcb2b8bab716f3",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-model-measurements-v7/summary.json": "0145223dc6e8f45a3efddb3e5763f97308d3154aa91b457cfb591d44562e9797"
+  },
+  "scope": "All three controls complete real-RV32+all8 VCS inference and1000 frozen-C byte equality. Rank measured area*complete time within this engineering set. New pipeline,original baseline,20 images,organizer accuracy,required gate and final delivery remain separate; no final optimum or original before-after result claimed."
+}

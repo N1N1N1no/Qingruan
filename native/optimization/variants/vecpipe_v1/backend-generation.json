@@ -1,0 +1,9 @@
+{
+  "status": "VECPIPE_SHARED_BACKEND_SOURCE_GENERATED_NOT_VERIFIED",
+  "original_source": "/mnt/data/Ubuntu/qingruan/native/optimization/rtl/axi_accel_shared_backend.sv",
+  "original_sha256": "85452a214bff23375aa4264a9e5b4803e28009908cf5efb0a35cde288f70101e",
+  "generated_source": "/mnt/data/Ubuntu/qingruan/native/optimization/variants/vecpipe_v1/axi_accel_backend_vecpipe.sv",
+  "generated_sha256": "f2e4deac39c30961ef3aefc0b3add63d267ec9925a0fe8d85db158c03f9c4a47",
+  "generator_sha256": "62c0ae8b2792da0df1f07ed5fc69e3b26e918a4e0ffce0ceadb1e6b81b834aec",
+  "scope": "Only top module name and vector engine type changed. Existing shared FP32 DIV path, ownership, all other engines and single physical array preserved."
+}

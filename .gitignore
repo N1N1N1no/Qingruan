@@ -1,0 +1,72 @@
+# Installed tools, Python environments and local machine configuration
+/native/rootfs
+/native/cache
+/native/tmp
+/native/run
+/native/logs
+/native/validation
+/native/swin-tiny/runtime
+/native/optimization/gpu-runtime
+/native/optimization/toolchain-cache
+/migration/
+/local-runtime.json
+.env
+.env.*
+*.pem
+*.key
+*.lic
+*.license
+.ssh/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.vscode/
+
+# Every engineering attempt has a private output directory
+work/
+runs/
+results/
+csrc/
+obj_dir/
+DVEfiles/
+simv
+simv.daidir/
+*.o
+*.so
+*.a
+*.log
+*.rpt
+*.vpd
+*.vcd
+*.fst
+*.ddc
+*.sdf
+*.db
+*.svf
+ucli.*
+core
+core.*
+*.vmdk
+*.qcow2
+*.nvram
+*.vmx
+
+# Build scripts and fixed input lists are source; generated build outputs are not
+build/*
+!build/*.f
+!build/source_info.txt
+!build/dc_libraries/
+build/dc_libraries/*
+!build/dc_libraries/*.tcl
+!build/dc_libraries/README.md
+
+# Preserved source archives needed by the existing Newlib/HardFloat generators
+# are intentionally tracked under native/optimization/vendor/.
+
+# Curated historical evidence and frozen reproduction inputs are intentional.
+!/evidence/**
+!/repro/**
+/repro/**/runs/
+/repro/**/results/
+/repro/conversion/native/swin-tiny/work/

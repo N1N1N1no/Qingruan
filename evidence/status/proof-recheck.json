@@ -1,0 +1,9 @@
+{
+  "proofs": [
+    "work/vecpipe-complete-candidate-review-v1/summary.json",
+    "work/vecpipe-full-soc-gate/v1/summary.json"
+  ],
+  "unique_guarded_files": 589,
+  "errors": [],
+  "status": "PASS"
+}

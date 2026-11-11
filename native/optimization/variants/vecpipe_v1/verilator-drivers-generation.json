@@ -1,0 +1,10 @@
+{
+  "status": "ISOLATED_VERILATOR_DRIVERS_PREPARED_NOT_EXECUTED",
+  "source_sha256": {
+    "/mnt/data/Ubuntu/qingruan/native/optimization/run_verilator_crosscheck.py": "96aec73c1572d8d6e60a5adaf4fafec17942cb3a0ff38c7d069f267aed951f30",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/run_full_rv32_verilator.py": "16c91a34797cd7b5e68e574882ba133d21ce15c9b105321e635022a43767e3cf",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/variants/vecpipe_v1/crosscheck_verilator.py": "9d06d51a898d3ffe8244459e1fb42dcb095126ee0ce6c7b0afb2933bf5fbe0fc",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/variants/vecpipe_v1/run_full_verilator.py": "8189346e9ed42f78a7759dd0bcc07f78987effd0372aa4608244a5e64a80c9ba"
+  },
+  "adaptations": "Same frozen pipeline micrograph and full fixture; existing qualified syntax adapters; O3/native qualified already in micrograph; second full run requires measured >=15% micrograph simulator wall-time improvement; full output requires byte-exact logits. Original VCS execution untouched."
+}

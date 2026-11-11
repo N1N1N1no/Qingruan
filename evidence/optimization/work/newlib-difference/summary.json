@@ -1,0 +1,46 @@
+{
+  "status": "DIFFERENCE_LOCALIZED_NOT_ACCURACY_PASS",
+  "image": "ILSVRC2012_val_00000759.JPEG",
+  "first_difference": {
+    "node": 480,
+    "op": 14,
+    "dtype": 1,
+    "elements": 460992
+  },
+  "first_quantized_difference": {
+    "node": 558,
+    "op": 16,
+    "dtype": 3,
+    "elements": 460992
+  },
+  "first_float_changed_values": 60755,
+  "first_float_max_abs_error": 1.1920928955078125e-07,
+  "first_float_max_unsigned_ULP_difference": 5,
+  "first_quantized_changed_values": 1,
+  "first_quantized_changes": [
+    {
+      "index": 348831,
+      "glibc_raw": 135,
+      "newlib_raw": 134
+    }
+  ],
+  "Softmax_directly_before_first_quantized_difference": {
+    "node": 557,
+    "op": 14,
+    "dtype": 1,
+    "elements": 460992
+  },
+  "its_input_byte_identical": true,
+  "captured_row": 7119,
+  "captured_channels": 49,
+  "different_node_outputs": 665,
+  "source_sha256": {
+    "/workspace/native/swin-tiny/c/graph.c": "8be4d8733136819c250229b476470f6606f6027dbbc1810c2b874d6a2e75635c",
+    "/workspace/native/swin-tiny/c/pe_driver.c": "7be0a4c432a0e35af7eafd85a2bacc130adcb1060a71d8ae18450e798edcd1b0",
+    "/workspace/native/optimization/work/newlib-difference/traced_host.c": "ca0e02d464a97e356d6eab13948e35c9fa92060611a0fef832c5e0c97dd5c0f5",
+    "/workspace/native/optimization/work/exp-reference/reference.c": "8135e08c5b461d7729083dbecf1cdea03fd13ab7afdc342d9f51028c8d0d8ad8",
+    "/workspace/native/optimization/work/newlib-difference/wrap.c": "1bd6f55839fe4d5e21610bb6cd6435b1bf726118da63a43c0bb888bb351c57fa",
+    "/workspace/native/optimization/c/host_opt.c": "7b61d36f3d084057cb8a982ea5c4e5dd0df88ba8fdb00291289041197221ff68"
+  },
+  "scope": "one compiled graph/plan/inputs, only expf selected by wrapper, frozen C identity of glibc run checked; diagnosis does not authorize tolerance changes or model/preprocess/label tuning"
+}

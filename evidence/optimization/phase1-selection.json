@@ -1,0 +1,23 @@
+{
+  "status": "PHASE1_MODULE_ENGINEERING_ACCEPTED_PHASE2_REQUIRED",
+  "accepted_at": "2026-11-10T19:27:25.446912+08:00",
+  "geometry": {
+    "rows": 8,
+    "columns": 16,
+    "lanes": 4,
+    "K_rows": 128,
+    "SRAM_macros": 128
+  },
+  "backend_source": "native/optimization/rtl/axi_accel_shared_backend.sv",
+  "shared_FP32_units": 1,
+  "MMIO_supported_mask": "0x1fe",
+  "clock_period_ns": 10,
+  "external_RAM_bytes": 67108864,
+  "baseline_GUI_default_changed": false,
+  "review": "native/optimization/phase1-review.json",
+  "review_sha256": "bea62154dbaa92247f614e4b58ff1da9d48fb2c4f706086e90eb7cf63fb71761",
+  "engineering_selection_scope": "minimum measured backend-area times finite 12-MAC-module-sample cycles among three fully mapped shortlist geometries; not full-SoC ADP or a global optimum",
+  "final_SoC_ADP_optimum_proven": false,
+  "whole_model_accuracy_accepted": false,
+  "next_phase": "true RV32 complete inference and organizer accuracy first; complete SoC PPA/ADP acceptance later"
+}

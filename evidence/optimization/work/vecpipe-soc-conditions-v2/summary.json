@@ -1,0 +1,306 @@
+{
+  "status": "VECPIPE_COMPLETE_SOC_BOUNDARY_LIBRARY_SDC_PHYSICAL_SRAM_AND_STA_AUDIT_PASS",
+  "source_case": "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1",
+  "clock_period_ns": 10,
+  "area": 2114649.956611,
+  "setup_slack_ns": 0.003800392,
+  "hold_slack_ns": 4.7974e-05,
+  "same_libraries_as_all_three_original_candidates": true,
+  "libraries_sha256": {
+    "standard.db": "5a2542bd7b2c56bfc7c53373a9e02fc8ee5d57cf5bb069a4d64b3a9a883bb02a",
+    "sram.db": "97d9966ea52ea9e63b3e9dfa5ae896a171017670d26e508e040e5a92795475f6"
+  },
+  "same_complete_ordered_SDC_commands_except_four_independent_transitions": true,
+  "same_original_baseline_top_port_directions_widths": true,
+  "physical_SRAMs": 128,
+  "top_ports": {
+    "ifu_axi_araddr": {
+      "direction": "output",
+      "range": [
+        31,
+        0
+      ]
+    },
+    "ifu_axi_arid": {
+      "direction": "output",
+      "range": [
+        2,
+        0
+      ]
+    },
+    "ifu_axi_arlen": {
+      "direction": "output",
+      "range": [
+        7,
+        0
+      ]
+    },
+    "ifu_axi_arsize": {
+      "direction": "output",
+      "range": [
+        2,
+        0
+      ]
+    },
+    "ifu_axi_arburst": {
+      "direction": "output",
+      "range": [
+        1,
+        0
+      ]
+    },
+    "ifu_axi_rdata": {
+      "direction": "input",
+      "range": [
+        63,
+        0
+      ]
+    },
+    "ifu_axi_rresp": {
+      "direction": "input",
+      "range": [
+        1,
+        0
+      ]
+    },
+    "ifu_axi_rid": {
+      "direction": "input",
+      "range": [
+        2,
+        0
+      ]
+    },
+    "mem_axi_awaddr": {
+      "direction": "output",
+      "range": [
+        31,
+        0
+      ]
+    },
+    "mem_axi_awid": {
+      "direction": "output",
+      "range": [
+        2,
+        0
+      ]
+    },
+    "mem_axi_awlen": {
+      "direction": "output",
+      "range": [
+        7,
+        0
+      ]
+    },
+    "mem_axi_awsize": {
+      "direction": "output",
+      "range": [
+        2,
+        0
+      ]
+    },
+    "mem_axi_awburst": {
+      "direction": "output",
+      "range": [
+        1,
+        0
+      ]
+    },
+    "mem_axi_wdata": {
+      "direction": "output",
+      "range": [
+        63,
+        0
+      ]
+    },
+    "mem_axi_wstrb": {
+      "direction": "output",
+      "range": [
+        7,
+        0
+      ]
+    },
+    "mem_axi_bresp": {
+      "direction": "input",
+      "range": [
+        1,
+        0
+      ]
+    },
+    "mem_axi_bid": {
+      "direction": "input",
+      "range": [
+        2,
+        0
+      ]
+    },
+    "mem_axi_araddr": {
+      "direction": "output",
+      "range": [
+        31,
+        0
+      ]
+    },
+    "mem_axi_arid": {
+      "direction": "output",
+      "range": [
+        2,
+        0
+      ]
+    },
+    "mem_axi_arlen": {
+      "direction": "output",
+      "range": [
+        7,
+        0
+      ]
+    },
+    "mem_axi_arsize": {
+      "direction": "output",
+      "range": [
+        2,
+        0
+      ]
+    },
+    "mem_axi_arburst": {
+      "direction": "output",
+      "range": [
+        1,
+        0
+      ]
+    },
+    "mem_axi_rdata": {
+      "direction": "input",
+      "range": [
+        63,
+        0
+      ]
+    },
+    "mem_axi_rresp": {
+      "direction": "input",
+      "range": [
+        1,
+        0
+      ]
+    },
+    "mem_axi_rid": {
+      "direction": "input",
+      "range": [
+        2,
+        0
+      ]
+    },
+    "clk": {
+      "direction": "input",
+      "range": null
+    },
+    "rst_n": {
+      "direction": "input",
+      "range": null
+    },
+    "ifu_axi_arready": {
+      "direction": "input",
+      "range": null
+    },
+    "ifu_axi_rlast": {
+      "direction": "input",
+      "range": null
+    },
+    "ifu_axi_rvalid": {
+      "direction": "input",
+      "range": null
+    },
+    "mem_axi_awready": {
+      "direction": "input",
+      "range": null
+    },
+    "mem_axi_wready": {
+      "direction": "input",
+      "range": null
+    },
+    "mem_axi_bvalid": {
+      "direction": "input",
+      "range": null
+    },
+    "mem_axi_arready": {
+      "direction": "input",
+      "range": null
+    },
+    "mem_axi_rlast": {
+      "direction": "input",
+      "range": null
+    },
+    "mem_axi_rvalid": {
+      "direction": "input",
+      "range": null
+    },
+    "ifu_axi_arvalid": {
+      "direction": "output",
+      "range": null
+    },
+    "ifu_axi_rready": {
+      "direction": "output",
+      "range": null
+    },
+    "mem_axi_awvalid": {
+      "direction": "output",
+      "range": null
+    },
+    "mem_axi_wlast": {
+      "direction": "output",
+      "range": null
+    },
+    "mem_axi_wvalid": {
+      "direction": "output",
+      "range": null
+    },
+    "mem_axi_bready": {
+      "direction": "output",
+      "range": null
+    },
+    "mem_axi_arvalid": {
+      "direction": "output",
+      "range": null
+    },
+    "mem_axi_rready": {
+      "direction": "output",
+      "range": null
+    }
+  },
+  "report_constraint_has_no_violators": true,
+  "selected_check_timing_checks_without_warnings": true,
+  "scalar_primary_closed_area": 2089316.648438,
+  "area_ratio_to_scalar_primary": 1.012125164556526,
+  "source_sha256": {
+    "/mnt/data/Ubuntu/qingruan/native/optimization/variants/vecpipe_v1/audit_soc_conditions.py": "f4646f2213a428f2913a156ebfd8bc075b9f602d1da4c071255c3d5b755bc5a7",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/audit_full_soc_conditions.py": "37abf21661674a7019f44067cbcc36555d56540daa1bbeaeb5612305ce4053ac",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/gate_connectivity_audit.py": "04bfddf770fac4a4881d4202800c25c37fc21a83eeefc36c43012e54f3f778a5",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/full-soc-conditions-v1/summary.json": "8b14de1ae413c1acad3d71e49ea08af0811346ce8058d6b538ac012f729b0740",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/summary.json": "7d43362f919988b1ab4c77c4c2d52b47ae89ffd7a3ec900d8e0b5a735b1f3674",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/mapped.ddc": "6d48f2baac13da3e93779c70590ed1d0d368df5144ef696d7aa7e958b2a938c7",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/mapped.v": "240285bc46d02a3e90ff0362bfc6e64b3bab71f1a619eb70368a4a1f1f5c1027",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/mapped.sdf": "2ece66f94376ad7304a03c32c3d0874e83fbd8f7f964d2ef24df266d87d3d81f",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/constraints.sdc": "9ccba4521beb7c033b7d81b72ddff2660d119fc0bd90f3f295d4a060313f5ebc",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/area.rpt": "5d79af8fd5e1c5c4fae957eedfb814be748d623e5e94b46cd7c7a0edc5b6456b",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/setup.rpt": "02dfa2159f6db93552fcdd6e7edd2eec1d116f8ad415d6a7a8f098d68ad87606",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/hold.rpt": "3efc0154a45f0cdb8aa89f9ffa37e2ed62b9df5b2bee6fcc5720c90bf5ce926a",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/violations.rpt": "f652df7367addd1693614cff0e907e79c8ddd1ab24e0d2c2718217136630b86a",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/timing_check.rpt": "94bf7675a38cf2f7e109edbc8dc51e1112bf6d2b3427362c2e14197d434eaf38",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/check_design.rpt": "11cd44977470cd47090daa061aa09b9e925306c9eb31cb965f520b614c5f48b8",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/hierarchy.rpt": "3558b9fd802f6459b19e3c053c4b500c34f9027a446c3c5aeb4bd6daa4a95886",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/units.rpt": "d384b0defdf393cdd19645f831337664305e19c653a7c37d183b8e9c5074a9c7",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/output-buffer-edits.tsv": "d3ba736d60112d4af857af89164437abd9f1c378ad5e829f8917e100ab5c7f2c",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/targets.json": "68a49e566e7b7374926bd8d20c85486ffba5cef7be32ea1f9309508fd043391d",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/iopath-scan.json": "9c2551952b29a554e1211f823530249c9fab812bdadd77c9f4e7ae9fed9aea58",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/iopath-scan.driver.py": "3f0a5823b01ed6841a1068461455a83de4f4a7857b647235d5f6964d0e3288ca",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/run.tcl": "548446a89652986d84877ea446d6cc685a5c553d105c72659c2dd5d3a66c71f3",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/map.log": "a3f69790d195834ece5f04ab8c12b4f4bd4661d9da05a71a7aec64cef3ea2f67",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/vecpipe-full-soc-loads-v1/scan.log": "f97af242b646b83142a95521f4bb5903d24ce18def37cac0e5825f90aa09a19f",
+    "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/my_design/project/build/dc_libraries/standard.db": "5a2542bd7b2c56bfc7c53373a9e02fc8ee5d57cf5bb069a4d64b3a9a883bb02a",
+    "/mnt/data/Ubuntu/qingruan/native/audits/20261107/riscv_pe_contest/contest/task1/my_design/project/build/dc_libraries/sram.db": "97d9966ea52ea9e63b3e9dfa5ae896a171017670d26e508e040e5a92795475f6"
+  },
+  "gate_SDF_function_accepted": false,
+  "full_inference_accepted": false,
+  "official_accuracy_accepted": false,
+  "final_ADP_accepted": false,
+  "scope": "Complete CPU/router/MMIO/arbiter/eight engines/one array and128 SRAMs at the exact existing synthesis IO boundary, libraries and exported SDC. External RAM remains outside the common boundary. Mapped area and STA only; SDF numeric paths/annotation/gate function and complete-model correctness/performance remain separate gates."
+}

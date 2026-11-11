@@ -1,0 +1,761 @@
+{
+  "status": "STATIC_SOFTMAX_FP32_BIAS_DOMAIN_AND_CAPTURED_EXP_INPUT_REUSE_ANALYSIS_COMPLETE",
+  "observed_at": "2026-11-10T23:58:01.674607+00:00",
+  "numpy_version": "2.5.4",
+  "rounding_mode": "FE_TONEAREST; finite FP32 subtraction, no nonzero subnormal differences",
+  "model_sha256": "8a612b32e4837fa9ef96b8c84306575f0cdabd61348c15f4afaea884306cfb75",
+  "Softmax_nodes": [
+    {
+      "Softmax_node": 480,
+      "name": "/layers.0/blocks.0/attn/softmax/Softmax",
+      "input_shape": [
+        64,
+        3,
+        49,
+        49
+      ],
+      "upstream_chain": [
+        {
+          "node": 479,
+          "op": "Add",
+          "inputs": [
+            1121,
+            106
+          ]
+        },
+        {
+          "node": 478,
+          "op": "DequantizeLinear",
+          "inputs": [
+            1120,
+            140,
+            139
+          ]
+        }
+      ],
+      "FP32_Adds_after_last_DQ": 1,
+      "relative_bias_tensor": 106,
+      "first_bias_row_distinct_values": 49,
+      "first_bias_row_min": -1.0825294256210327,
+      "first_bias_row_max": 1.0552343130111694
+    },
+    {
+      "Softmax_node": 557,
+      "name": "/layers.0/blocks.1/attn/softmax/Softmax",
+      "input_shape": [
+        64,
+        3,
+        49,
+        49
+      ],
+      "upstream_chain": [
+        {
+          "node": 556,
+          "op": "Reshape",
+          "inputs": [
+            1198,
+            683
+          ]
+        },
+        {
+          "node": 555,
+          "op": "Add",
+          "inputs": [
+            1197,
+            108
+          ]
+        },
+        {
+          "node": 554,
+          "op": "Reshape",
+          "inputs": [
+            1196,
+            682
+          ]
+        },
+        {
+          "node": 553,
+          "op": "Add",
+          "inputs": [
+            1195,
+            107
+          ]
+        },
+        {
+          "node": 552,
+          "op": "DequantizeLinear",
+          "inputs": [
+            1194,
+            180,
+            179
+          ]
+        }
+      ],
+      "FP32_Adds_after_last_DQ": 2,
+      "relative_bias_tensor": 107,
+      "first_bias_row_distinct_values": 49,
+      "first_bias_row_min": -3.1112771034240723,
+      "first_bias_row_max": 1.0150628089904785
+    },
+    {
+      "Softmax_node": 646,
+      "name": "/layers.1/blocks.0/attn/softmax/Softmax",
+      "input_shape": [
+        16,
+        6,
+        49,
+        49
+      ],
+      "upstream_chain": [
+        {
+          "node": 645,
+          "op": "Add",
+          "inputs": [
+            1287,
+            109
+          ]
+        },
+        {
+          "node": 644,
+          "op": "DequantizeLinear",
+          "inputs": [
+            1286,
+            227,
+            226
+          ]
+        }
+      ],
+      "FP32_Adds_after_last_DQ": 1,
+      "relative_bias_tensor": 109,
+      "first_bias_row_distinct_values": 49,
+      "first_bias_row_min": -5.950126647949219,
+      "first_bias_row_max": 1.6342041492462158
+    },
+    {
+      "Softmax_node": 723,
+      "name": "/layers.1/blocks.1/attn/softmax/Softmax",
+      "input_shape": [
+        16,
+        6,
+        49,
+        49
+      ],
+      "upstream_chain": [
+        {
+          "node": 722,
+          "op": "Reshape",
+          "inputs": [
+            1364,
+            763
+          ]
+        },
+        {
+          "node": 721,
+          "op": "Add",
+          "inputs": [
+            1363,
+            111
+          ]
+        },
+        {
+          "node": 720,
+          "op": "Reshape",
+          "inputs": [
+            1362,
+            762
+          ]
+        },
+        {
+          "node": 719,
+          "op": "Add",
+          "inputs": [
+            1361,
+            110
+          ]
+        },
+        {
+          "node": 718,
+          "op": "DequantizeLinear",
+          "inputs": [
+            1360,
+            267,
+            266
+          ]
+        }
+      ],
+      "FP32_Adds_after_last_DQ": 2,
+      "relative_bias_tensor": 110,
+      "first_bias_row_distinct_values": 49,
+      "first_bias_row_min": -6.412294387817383,
+      "first_bias_row_max": 0.9316236972808838
+    },
+    {
+      "Softmax_node": 812,
+      "name": "/layers.2/blocks.0/attn/softmax/Softmax",
+      "input_shape": [
+        4,
+        12,
+        49,
+        49
+      ],
+      "upstream_chain": [
+        {
+          "node": 811,
+          "op": "Add",
+          "inputs": [
+            1453,
+            112
+          ]
+        },
+        {
+          "node": 810,
+          "op": "DequantizeLinear",
+          "inputs": [
+            1452,
+            314,
+            313
+          ]
+        }
+      ],
+      "FP32_Adds_after_last_DQ": 1,
+      "relative_bias_tensor": 112,
+      "first_bias_row_distinct_values": 49,
+      "first_bias_row_min": -3.239999532699585,
+      "first_bias_row_max": 1.6554670333862305
+    },
+    {
+      "Softmax_node": 889,
+      "name": "/layers.2/blocks.1/attn/softmax/Softmax",
+      "input_shape": [
+        4,
+        12,
+        49,
+        49
+      ],
+      "upstream_chain": [
+        {
+          "node": 888,
+          "op": "Reshape",
+          "inputs": [
+            1530,
+            843
+          ]
+        },
+        {
+          "node": 887,
+          "op": "Add",
+          "inputs": [
+            1529,
+            114
+          ]
+        },
+        {
+          "node": 886,
+          "op": "Reshape",
+          "inputs": [
+            1528,
+            842
+          ]
+        },
+        {
+          "node": 885,
+          "op": "Add",
+          "inputs": [
+            1527,
+            113
+          ]
+        },
+        {
+          "node": 884,
+          "op": "DequantizeLinear",
+          "inputs": [
+            1526,
+            354,
+            353
+          ]
+        }
+      ],
+      "FP32_Adds_after_last_DQ": 2,
+      "relative_bias_tensor": 113,
+      "first_bias_row_distinct_values": 49,
+      "first_bias_row_min": -2.457216501235962,
+      "first_bias_row_max": 1.8930401802062988
+    },
+    {
+      "Softmax_node": 963,
+      "name": "/layers.2/blocks.2/attn/softmax/Softmax",
+      "input_shape": [
+        4,
+        12,
+        49,
+        49
+      ],
+      "upstream_chain": [
+        {
+          "node": 962,
+          "op": "Add",
+          "inputs": [
+            1604,
+            115
+          ]
+        },
+        {
+          "node": 961,
+          "op": "DequantizeLinear",
+          "inputs": [
+            1603,
+            394,
+            393
+          ]
+        }
+      ],
+      "FP32_Adds_after_last_DQ": 1,
+      "relative_bias_tensor": 115,
+      "first_bias_row_distinct_values": 49,
+      "first_bias_row_min": -7.670441627502441,
+      "first_bias_row_max": 1.802597999572754
+    },
+    {
+      "Softmax_node": 1040,
+      "name": "/layers.2/blocks.3/attn/softmax/Softmax",
+      "input_shape": [
+        4,
+        12,
+        49,
+        49
+      ],
+      "upstream_chain": [
+        {
+          "node": 1039,
+          "op": "Reshape",
+          "inputs": [
+            1681,
+            897
+          ]
+        },
+        {
+          "node": 1038,
+          "op": "Add",
+          "inputs": [
+            1680,
+            1030
+          ]
+        },
+        {
+          "node": 1037,
+          "op": "Reshape",
+          "inputs": [
+            1679,
+            896
+          ]
+        },
+        {
+          "node": 1036,
+          "op": "Add",
+          "inputs": [
+            1678,
+            116
+          ]
+        },
+        {
+          "node": 1035,
+          "op": "DequantizeLinear",
+          "inputs": [
+            1677,
+            434,
+            433
+          ]
+        }
+      ],
+      "FP32_Adds_after_last_DQ": 2,
+      "relative_bias_tensor": 116,
+      "first_bias_row_distinct_values": 49,
+      "first_bias_row_min": -5.776134014129639,
+      "first_bias_row_max": 2.4332759380340576
+    },
+    {
+      "Softmax_node": 1114,
+      "name": "/layers.2/blocks.4/attn/softmax/Softmax",
+      "input_shape": [
+        4,
+        12,
+        49,
+        49
+      ],
+      "upstream_chain": [
+        {
+          "node": 1113,
+          "op": "Add",
+          "inputs": [
+            1755,
+            117
+          ]
+        },
+        {
+          "node": 1112,
+          "op": "DequantizeLinear",
+          "inputs": [
+            1754,
+            474,
+            473
+          ]
+        }
+      ],
+      "FP32_Adds_after_last_DQ": 1,
+      "relative_bias_tensor": 117,
+      "first_bias_row_distinct_values": 49,
+      "first_bias_row_min": -2.4956235885620117,
+      "first_bias_row_max": 1.1150075197219849
+    },
+    {
+      "Softmax_node": 1191,
+      "name": "/layers.2/blocks.5/attn/softmax/Softmax",
+      "input_shape": [
+        4,
+        12,
+        49,
+        49
+      ],
+      "upstream_chain": [
+        {
+          "node": 1190,
+          "op": "Reshape",
+          "inputs": [
+            1832,
+            951
+          ]
+        },
+        {
+          "node": 1189,
+          "op": "Add",
+          "inputs": [
+            1831,
+            1029
+          ]
+        },
+        {
+          "node": 1188,
+          "op": "Reshape",
+          "inputs": [
+            1830,
+            950
+          ]
+        },
+        {
+          "node": 1187,
+          "op": "Add",
+          "inputs": [
+            1829,
+            118
+          ]
+        },
+        {
+          "node": 1186,
+          "op": "DequantizeLinear",
+          "inputs": [
+            1828,
+            514,
+            513
+          ]
+        }
+      ],
+      "FP32_Adds_after_last_DQ": 2,
+      "relative_bias_tensor": 118,
+      "first_bias_row_distinct_values": 49,
+      "first_bias_row_min": -2.516972303390503,
+      "first_bias_row_max": 2.4002573490142822
+    },
+    {
+      "Softmax_node": 1280,
+      "name": "/layers.3/blocks.0/attn/softmax/Softmax",
+      "input_shape": [
+        1,
+        24,
+        49,
+        49
+      ],
+      "upstream_chain": [
+        {
+          "node": 1279,
+          "op": "Add",
+          "inputs": [
+            1921,
+            119
+          ]
+        },
+        {
+          "node": 1278,
+          "op": "DequantizeLinear",
+          "inputs": [
+            1920,
+            561,
+            560
+          ]
+        }
+      ],
+      "FP32_Adds_after_last_DQ": 1,
+      "relative_bias_tensor": 119,
+      "first_bias_row_distinct_values": 49,
+      "first_bias_row_min": -7.529959678649902,
+      "first_bias_row_max": 0.58221435546875
+    },
+    {
+      "Softmax_node": 1348,
+      "name": "/layers.3/blocks.1/attn/softmax/Softmax",
+      "input_shape": [
+        1,
+        24,
+        49,
+        49
+      ],
+      "upstream_chain": [
+        {
+          "node": 1347,
+          "op": "Add",
+          "inputs": [
+            1989,
+            120
+          ]
+        },
+        {
+          "node": 1346,
+          "op": "DequantizeLinear",
+          "inputs": [
+            1988,
+            601,
+            600
+          ]
+        }
+      ],
+      "FP32_Adds_after_last_DQ": 1,
+      "relative_bias_tensor": 120,
+      "first_bias_row_distinct_values": 49,
+      "first_bias_row_min": -7.066244125366211,
+      "first_bias_row_max": 0.9192538857460022
+    }
+  ],
+  "simple_INT8_difference_only_LUT_not_justified": true,
+  "reason": "All12 nodes have FP32 bias additions after DQ. Equal quantized codes can give different per-key scores; shifted blocks have another Add. Max/sub/exp cannot be indexed solely by an INT8 code difference while ignoring these additions.",
+  "captured_image": "ILSVRC2012_val_00000759.JPEG",
+  "captured_profiles": [
+    {
+      "Softmax_node": 480,
+      "rows": 9408,
+      "channels": 49,
+      "values": 460992,
+      "eligible_values": 451584,
+      "bypassed_fast_or_special_values": 9408,
+      "distinct_difference_FP32_bits": 230954,
+      "variants": [
+        {
+          "entries": 16,
+          "flush_scope": "external_Softmax_command",
+          "hypothetical_key_value_bytes": 128,
+          "row_plus_cache_bytes": 324,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 524,
+          "misses": 451060,
+          "eligible_hit_fraction": 0.001160359977324263,
+          "all_values_hit_fraction": 0.0011366791614605026
+        },
+        {
+          "entries": 32,
+          "flush_scope": "external_Softmax_command",
+          "hypothetical_key_value_bytes": 256,
+          "row_plus_cache_bytes": 452,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 2764,
+          "misses": 448820,
+          "eligible_hit_fraction": 0.006120677437641723,
+          "all_values_hit_fraction": 0.005995765653200056
+        },
+        {
+          "entries": 64,
+          "flush_scope": "external_Softmax_command",
+          "hypothetical_key_value_bytes": 512,
+          "row_plus_cache_bytes": 708,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 7157,
+          "misses": 444427,
+          "eligible_hit_fraction": 0.015848657171201815,
+          "all_values_hit_fraction": 0.015525215188116063
+        },
+        {
+          "entries": 128,
+          "flush_scope": "external_Softmax_command",
+          "hypothetical_key_value_bytes": 1024,
+          "row_plus_cache_bytes": 1220,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 14410,
+          "misses": 437174,
+          "eligible_hit_fraction": 0.031909899376417236,
+          "all_values_hit_fraction": 0.03125867694016382
+        },
+        {
+          "entries": 16,
+          "flush_scope": "row",
+          "hypothetical_key_value_bytes": 128,
+          "row_plus_cache_bytes": 324,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 0,
+          "misses": 451584,
+          "eligible_hit_fraction": 0.0,
+          "all_values_hit_fraction": 0.0
+        },
+        {
+          "entries": 32,
+          "flush_scope": "row",
+          "hypothetical_key_value_bytes": 256,
+          "row_plus_cache_bytes": 452,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 0,
+          "misses": 451584,
+          "eligible_hit_fraction": 0.0,
+          "all_values_hit_fraction": 0.0
+        },
+        {
+          "entries": 64,
+          "flush_scope": "row",
+          "hypothetical_key_value_bytes": 512,
+          "row_plus_cache_bytes": 708,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 0,
+          "misses": 451584,
+          "eligible_hit_fraction": 0.0,
+          "all_values_hit_fraction": 0.0
+        },
+        {
+          "entries": 128,
+          "flush_scope": "row",
+          "hypothetical_key_value_bytes": 1024,
+          "row_plus_cache_bytes": 1220,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 0,
+          "misses": 451584,
+          "eligible_hit_fraction": 0.0,
+          "all_values_hit_fraction": 0.0
+        }
+      ]
+    },
+    {
+      "Softmax_node": 557,
+      "rows": 9408,
+      "channels": 49,
+      "values": 460992,
+      "eligible_values": 423259,
+      "bypassed_fast_or_special_values": 37733,
+      "distinct_difference_FP32_bits": 267432,
+      "variants": [
+        {
+          "entries": 16,
+          "flush_scope": "external_Softmax_command",
+          "hypothetical_key_value_bytes": 128,
+          "row_plus_cache_bytes": 324,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 120,
+          "misses": 423139,
+          "eligible_hit_fraction": 0.0002835143493700075,
+          "all_values_hit_fraction": 0.0002603082049146189
+        },
+        {
+          "entries": 32,
+          "flush_scope": "external_Softmax_command",
+          "hypothetical_key_value_bytes": 256,
+          "row_plus_cache_bytes": 452,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 548,
+          "misses": 422711,
+          "eligible_hit_fraction": 0.001294715528789701,
+          "all_values_hit_fraction": 0.0011887408024434264
+        },
+        {
+          "entries": 64,
+          "flush_scope": "external_Softmax_command",
+          "hypothetical_key_value_bytes": 512,
+          "row_plus_cache_bytes": 708,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 1410,
+          "misses": 421849,
+          "eligible_hit_fraction": 0.003331293605097588,
+          "all_values_hit_fraction": 0.003058621407746772
+        },
+        {
+          "entries": 128,
+          "flush_scope": "external_Softmax_command",
+          "hypothetical_key_value_bytes": 1024,
+          "row_plus_cache_bytes": 1220,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 2817,
+          "misses": 420442,
+          "eligible_hit_fraction": 0.006655499351460926,
+          "all_values_hit_fraction": 0.006110735110370679
+        },
+        {
+          "entries": 16,
+          "flush_scope": "row",
+          "hypothetical_key_value_bytes": 128,
+          "row_plus_cache_bytes": 324,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 0,
+          "misses": 423259,
+          "eligible_hit_fraction": 0.0,
+          "all_values_hit_fraction": 0.0
+        },
+        {
+          "entries": 32,
+          "flush_scope": "row",
+          "hypothetical_key_value_bytes": 256,
+          "row_plus_cache_bytes": 452,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 0,
+          "misses": 423259,
+          "eligible_hit_fraction": 0.0,
+          "all_values_hit_fraction": 0.0
+        },
+        {
+          "entries": 64,
+          "flush_scope": "row",
+          "hypothetical_key_value_bytes": 512,
+          "row_plus_cache_bytes": 708,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 0,
+          "misses": 423259,
+          "eligible_hit_fraction": 0.0,
+          "all_values_hit_fraction": 0.0
+        },
+        {
+          "entries": 128,
+          "flush_scope": "row",
+          "hypothetical_key_value_bytes": 1024,
+          "row_plus_cache_bytes": 1220,
+          "PE_existing_cache_bytes_R8_C16": 2048,
+          "hits": 0,
+          "misses": 423259,
+          "eligible_hit_fraction": 0.0,
+          "all_values_hit_fraction": 0.0
+        }
+      ]
+    }
+  ],
+  "cache_hypothesis": "Memoize exact FP32 exp input bits/results inside currently unused PE SRAM slots; filter cheap/special exp cases; invalidate at external command/cancel/ownership change. No such RTL is implemented by this analysis.",
+  "source_sha256": {
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/conversion-replay-relocation-v1/expected/base-plan.json": "53a8a057730afa2689cda05c7b4c83d04dc485d360fc66a237df94a654afe80c",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/conversion-replay-relocation-v1/native/swin-tiny/work/verify.ylnpqxth/graph_manifest.json": "6b4efd14f8ef03b98274ae063843941f6567f86dd89c0522991fde6fcd2d4248",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/conversion-replay-relocation-v1/native/swin-tiny/work/verify.ylnpqxth/constants.bin": "1ff66e6b85cdf6da89c53321d89f5a402ad43609dfe83c593a9c905d01917683",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/newlib-difference/summary.json": "c3f751916e683782dafaaa3be93ea518f943d74079415c4b0ac0519c18301264",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/newlib-difference/glibc/node_480_input.bin": "0da654fa4395c99632abf2f4d5971bd1fafe5b68b993555fb418cd4c040ade99",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/newlib-difference/newlib/node_480_input.bin": "0da654fa4395c99632abf2f4d5971bd1fafe5b68b993555fb418cd4c040ade99",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/newlib-difference/glibc/node_557_input.bin": "b312e3a231671b6eff7879c17a93f27dbbbf47bbf2a69f0045a987719e4835ba",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/work/newlib-difference/newlib/node_557_input.bin": "b312e3a231671b6eff7879c17a93f27dbbbf47bbf2a69f0045a987719e4835ba",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/analyze_softmax_exp_reuse.py": "8be13f8055cccf20a26de6d412b68493a2aa20dc36f1b279650c05b0794513b2",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/rtl/fp32_exp.sv": "e5afa346736889e5aa6cace835e62a547710669e18f81a63016c16b8bb34b8f1",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/rtl/fp32_softmax_row.sv": "a499a823a4692f5348936e937b18186995d6f4a1fc685225949f9a4068e0d28c"
+  },
+  "model_preprocessing_firmware_or_RTL_modified": false,
+  "exp_output_bits_or_flags_verified_by_this_analysis": false,
+  "new_cache_RTL_implemented": false,
+  "hardware_latency_or_area_measured": false,
+  "dataset20_profile_complete": false,
+  "official_accuracy_accepted": false,
+  "scope": "Static12-node domain plus two already-captured finite Softmax inputs of one private image. Simulated hit counts and byte capacity are not feasibility, functional, PPA or whole-model performance acceptance."
+}

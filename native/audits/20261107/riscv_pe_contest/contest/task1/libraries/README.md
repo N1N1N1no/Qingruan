@@ -1,0 +1,5 @@
+# 统一库与模型资料
+
+standard.lib/standard_timing.v为本轮已通过参考流程的Nangate45库及兼容时序模型；sram.lib/sram_timing.v为原v011输入电容增量工程库及配套模型，不切换至v014。原版权头、Nangate LICENSE、SRAM来源manifest和README保留。
+
+SRAM_library_README.md包含原提供方表征工具的说明，其中check.py、base.lib和原证据归档不属于本基础包的常规运行入口；日常运行用任务说明中的入口。本包保留的是选手所需库/模型与边界资料，不包含主办方优化网表、ECO脚本或参考SDF。soc_10ns.sdc仅为预算示例，具体竞赛约束与面积统计方法按最终规则。

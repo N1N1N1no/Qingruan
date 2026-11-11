@@ -1,0 +1,104 @@
+{
+  "status": "RECOVERY_QUEUE_ACTIVE",
+  "updated_at": "2026-11-11T09:47:38.370834+00:00",
+  "controller_pid": 646500,
+  "active": [
+    {
+      "image": "ILSVRC2012_val_00007089.JPEG",
+      "pid": 478529,
+      "adopted": true
+    },
+    {
+      "image": "ILSVRC2012_val_00009086.JPEG",
+      "pid": 480408,
+      "adopted": true
+    },
+    {
+      "image": "ILSVRC2012_val_00012874.JPEG",
+      "pid": 532276,
+      "adopted": true
+    },
+    {
+      "image": "ILSVRC2012_val_00013609.JPEG",
+      "pid": 571807,
+      "adopted": true
+    }
+  ],
+  "pending": [
+    "ILSVRC2012_val_00015860.JPEG",
+    "ILSVRC2012_val_00025654.JPEG",
+    "ILSVRC2012_val_00028082.JPEG",
+    "ILSVRC2012_val_00028858.JPEG",
+    "ILSVRC2012_val_00035110.JPEG",
+    "ILSVRC2012_val_00035219.JPEG",
+    "ILSVRC2012_val_00038042.JPEG"
+  ],
+  "completed": [
+    {
+      "image": "ILSVRC2012_val_00004937.JPEG",
+      "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00004937.JPEG/summary.json",
+      "status": "ACTUAL_RV32_FULL_IMAGE_FROZEN_C_BYTE_EXACT_PASS_OFFICIAL_REFERENCE_OPEN",
+      "byte_exact": true,
+      "complete_graph": true,
+      "returncode": 0
+    },
+    {
+      "image": "ILSVRC2012_val_00008350.JPEG",
+      "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00008350.JPEG/summary.json",
+      "status": "ACTUAL_RV32_FULL_IMAGE_FROZEN_C_BYTE_EXACT_PASS_OFFICIAL_REFERENCE_OPEN",
+      "byte_exact": true,
+      "complete_graph": true,
+      "returncode": 0
+    },
+    {
+      "image": "ILSVRC2012_val_00000914.JPEG",
+      "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00000914.JPEG/summary.json",
+      "status": "ACTUAL_RV32_FULL_IMAGE_FROZEN_C_BYTE_EXACT_PASS_OFFICIAL_REFERENCE_OPEN",
+      "byte_exact": true,
+      "complete_graph": true,
+      "returncode": 0
+    },
+    {
+      "image": "ILSVRC2012_val_00004628.JPEG",
+      "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00004628.JPEG/summary.json",
+      "status": "ACTUAL_RV32_FULL_IMAGE_FROZEN_C_BYTE_EXACT_PASS_OFFICIAL_REFERENCE_OPEN",
+      "byte_exact": true,
+      "complete_graph": true,
+      "returncode": 0
+    },
+    {
+      "image": "ILSVRC2012_val_00000759.JPEG",
+      "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00000759.JPEG/failure.json",
+      "status": "ACTUAL_RV32_FULL_IMAGE_DIAGNOSTIC_NOT_ACCEPTED",
+      "byte_exact": false,
+      "complete_graph": true,
+      "returncode": 0
+    },
+    {
+      "image": "ILSVRC2012_val_00001559.JPEG",
+      "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00001559.JPEG/summary.json",
+      "status": "ACTUAL_RV32_FULL_IMAGE_FROZEN_C_BYTE_EXACT_PASS_OFFICIAL_REFERENCE_OPEN",
+      "byte_exact": true,
+      "complete_graph": true,
+      "returncode": 0
+    },
+    {
+      "image": "ILSVRC2012_val_00002951.JPEG",
+      "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00002951.JPEG/summary.json",
+      "status": "ACTUAL_RV32_FULL_IMAGE_FROZEN_C_BYTE_EXACT_PASS_OFFICIAL_REFERENCE_OPEN",
+      "byte_exact": true,
+      "complete_graph": true,
+      "returncode": 0
+    },
+    {
+      "image": "ILSVRC2012_val_00004239.JPEG",
+      "result": "/workspace/native/optimization/work/vecpipe-images-rv32-v1/ILSVRC2012_val_00004239.JPEG/summary.json",
+      "status": "ACTUAL_RV32_FULL_IMAGE_FROZEN_C_BYTE_EXACT_PASS_OFFICIAL_REFERENCE_OPEN",
+      "byte_exact": true,
+      "complete_graph": true,
+      "returncode": 0
+    }
+  ],
+  "official_accuracy_accepted": false,
+  "final_ADP_accepted": false
+}

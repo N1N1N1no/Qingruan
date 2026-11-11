@@ -1,0 +1,237 @@
+{
+  "status": "NUMERICAL_DIFFERENCE_REQUIRES_REVIEW",
+  "images": 20,
+  "byte_exact_images": 17,
+  "within_bound_images": 17,
+  "top1_equal_images": 19,
+  "results": [
+    {
+      "image": "ILSVRC2012_val_00000274.JPEG",
+      "byte_exact_logits": true,
+      "top1": 607,
+      "frozen_C_top1": 607,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.340351390838623e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "65f82e72433f74815a4df147a6bfd8d1a985b83fa3c0c8ba83e7bea40c3f0ebc"
+    },
+    {
+      "image": "ILSVRC2012_val_00000759.JPEG",
+      "byte_exact_logits": false,
+      "top1": 617,
+      "frozen_C_top1": 617,
+      "max_abs_error": 1.2126989364624023,
+      "comparison_bound": 1.08504638671875e-05,
+      "within_bound": false,
+      "top1_equal": true,
+      "sha256": "a7450614f3be80e456e420c2ac89432c028d3e0ed58f79c35cdf1a3a42bef3a9"
+    },
+    {
+      "image": "ILSVRC2012_val_00000914.JPEG",
+      "byte_exact_logits": true,
+      "top1": 853,
+      "frozen_C_top1": 853,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.2382293701171874e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "766efa7ae2fcf5dd2bb6a1efe0730e91c2f0cc42ae7d51acbc0d6ffaed5e669e"
+    },
+    {
+      "image": "ILSVRC2012_val_00001559.JPEG",
+      "byte_exact_logits": true,
+      "top1": 473,
+      "frozen_C_top1": 473,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.3914123535156249e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "22b21c93f2be07cde8bb2de9442cc0247380b67563d5c07181c6fa0f3c6d005d"
+    },
+    {
+      "image": "ILSVRC2012_val_00002951.JPEG",
+      "byte_exact_logits": true,
+      "top1": 859,
+      "frozen_C_top1": 859,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.5062995910644531e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "c49fea6e0c166d75a1ed4538a4abaeb142eb74c1f895c0ad842011c930ee767e"
+    },
+    {
+      "image": "ILSVRC2012_val_00004239.JPEG",
+      "byte_exact_logits": true,
+      "top1": 890,
+      "frozen_C_top1": 890,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.2126988410949706e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "a87d70c82dc9270803c286931d6ec7fb3176e590d7e0aa2beda2aff49280b03b"
+    },
+    {
+      "image": "ILSVRC2012_val_00004628.JPEG",
+      "byte_exact_logits": true,
+      "top1": 488,
+      "frozen_C_top1": 488,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.621186828613281e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "55ef5703624c6bd1d995a1034f64b53af1103d164bec0e8923092d0798c27ced"
+    },
+    {
+      "image": "ILSVRC2012_val_00004937.JPEG",
+      "byte_exact_logits": true,
+      "top1": 707,
+      "frozen_C_top1": 707,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.2765251159667968e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "0c67fc04f3cfb4bb9e0be9387067810e5862131ff101f12476dd54ea56bed0de"
+    },
+    {
+      "image": "ILSVRC2012_val_00007089.JPEG",
+      "byte_exact_logits": true,
+      "top1": 633,
+      "frozen_C_top1": 633,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.4424734115600586e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "0e3499e14ca884dfafec4380ed92a6ae222fabd70e060ed80e1f2cd1a6add711"
+    },
+    {
+      "image": "ILSVRC2012_val_00008350.JPEG",
+      "byte_exact_logits": true,
+      "top1": 578,
+      "frozen_C_top1": 578,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.53183012008667e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "e65351970e565138cb00cf0c0bcb6ec0214e76dce0a250af6d2a1d165394d460"
+    },
+    {
+      "image": "ILSVRC2012_val_00009086.JPEG",
+      "byte_exact_logits": true,
+      "top1": 620,
+      "frozen_C_top1": 620,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.3914123535156249e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "3faafa9d838a62aa8a84097c5112c316a124d4cf5a643655893ce41faca8c87b"
+    },
+    {
+      "image": "ILSVRC2012_val_00012874.JPEG",
+      "byte_exact_logits": true,
+      "top1": 643,
+      "frozen_C_top1": 643,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.1616378784179687e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "da6bb671e2c7c93eaaa0c883da6429a80bc9d4068f8d2afbc52b0a6139602938"
+    },
+    {
+      "image": "ILSVRC2012_val_00013609.JPEG",
+      "byte_exact_logits": true,
+      "top1": 277,
+      "frozen_C_top1": 277,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.4424734115600586e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "331cb22cc350c0ca1d438b5c235e62a4488046843afe53ff262e4fc6f2f30add"
+    },
+    {
+      "image": "ILSVRC2012_val_00015860.JPEG",
+      "byte_exact_logits": true,
+      "top1": 310,
+      "frozen_C_top1": 310,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.4935343742370605e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "a4ee1d13ce235250dc8f9fd9c1bb847e4e858833d005464e336bb153da0c227f"
+    },
+    {
+      "image": "ILSVRC2012_val_00025654.JPEG",
+      "byte_exact_logits": false,
+      "top1": 668,
+      "frozen_C_top1": 668,
+      "max_abs_error": 0.5106101036071777,
+      "comparison_bound": 1.6339521408081052e-05,
+      "within_bound": false,
+      "top1_equal": true,
+      "sha256": "d3b4855e03b9b86a1ba470ef2cd786284680b8451fb2be1daf98d4353828a2d9"
+    },
+    {
+      "image": "ILSVRC2012_val_00028082.JPEG",
+      "byte_exact_logits": true,
+      "top1": 889,
+      "frozen_C_top1": 889,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.3786471366882324e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "0d9391d6d12b19d1dfdff513295b5bddee6a4214e8add11247549acb4b62d219"
+    },
+    {
+      "image": "ILSVRC2012_val_00028858.JPEG",
+      "byte_exact_logits": true,
+      "top1": 504,
+      "frozen_C_top1": 504,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.2892903327941894e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "ba1e4d02231ba322f5c751420117a7331ca8dc480ea49598f52c4245188e402f"
+    },
+    {
+      "image": "ILSVRC2012_val_00035110.JPEG",
+      "byte_exact_logits": true,
+      "top1": 626,
+      "frozen_C_top1": 626,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.53183012008667e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "a3d47f8bd23dec7b0b1577475ec8117719245e85c803cc715a9c4c1cbf7a7a72"
+    },
+    {
+      "image": "ILSVRC2012_val_00035219.JPEG",
+      "byte_exact_logits": true,
+      "top1": 552,
+      "frozen_C_top1": 552,
+      "max_abs_error": 0.0,
+      "comparison_bound": 1.25099458694458e-05,
+      "within_bound": true,
+      "top1_equal": true,
+      "sha256": "d731f54bf65eef6425a75f26e5ad6d713e59fc1009fc30a7464a8f4729565e6b"
+    },
+    {
+      "image": "ILSVRC2012_val_00038042.JPEG",
+      "byte_exact_logits": false,
+      "top1": 457,
+      "frozen_C_top1": 401,
+      "max_abs_error": 1.1488726139068604,
+      "comparison_bound": 1.0978116035461425e-05,
+      "within_bound": false,
+      "top1_equal": false,
+      "sha256": "737445cb52755e891fe6d912c524f02bd3a70c9bc0ea9117bf5de7606ee3970f"
+    }
+  ],
+  "source_sha256": {
+    "/workspace/native/swin-tiny/c/graph.c": "8be4d8733136819c250229b476470f6606f6027dbbc1810c2b874d6a2e75635c",
+    "/workspace/native/swin-tiny/c/pe_driver.c": "7be0a4c432a0e35af7eafd85a2bacc130adcb1060a71d8ae18450e798edcd1b0",
+    "/workspace/native/optimization/c/host_opt.c": "7b61d36f3d084057cb8a982ea5c4e5dd0df88ba8fdb00291289041197221ff68",
+    "/workspace/native/optimization/work/exp-reference/reference.c": "8135e08c5b461d7729083dbecf1cdea03fd13ab7afdc342d9f51028c8d0d8ad8",
+    "/workspace/native/optimization/work/newlib-model/wrap.c": "e56b0a6f959c1e9edb98802d6c3ffd5f29b9df4da5d989c14e5a6776409d7fd0"
+  },
+  "scope": "host full graph with archived installed-path classic Newlib expf replacing glibc expf only, fixed model/quantization/preprocess; numerical tolerance and Top1 comparison to frozen C, not RTL whole graph or official accuracy"
+}

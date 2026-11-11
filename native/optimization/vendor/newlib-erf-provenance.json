@@ -1,0 +1,8 @@
+{
+  "official_archive_url": "https://sourceware.org/pub/newlib/newlib-4.4.0.20231231.tar.gz",
+  "archive_sha256": "0c166a39e1bf0951dfafcd68949fe0e4b6d3658081d6282f39aeefc6310f2f13",
+  "member": "newlib-4.4.0.20231231/newlib/libm/math/sf_erf.c",
+  "member_sha256": "3f60872d626fdb26682c652c85dd0375b2d85daf7380b719c90d7aefe4a6667b",
+  "license_file": "newlib-exp-source/COPYING.NEWLIB",
+  "scope": "primary source audit; installed RV32 numerical equivalence is separate"
+}

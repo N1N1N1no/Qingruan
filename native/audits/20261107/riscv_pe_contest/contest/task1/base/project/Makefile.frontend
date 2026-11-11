@@ -1,0 +1,18 @@
+include Makefile
+.DEFAULT_GOAL := frontend-help
+COMPAT_OBJ ?= $(wildcard compat/pthread_yield_compat.o)
+SV2V ?= sv2v
+YOSYS ?= yosys
+DELAY_NS ?= 0.0
+FRONTEND_VCS_ARGS = -assert svaext +define+PE_REFERENCE_MACRO +define+AXI_RAM_OUTPUT_DELAY_NS=$(DELAY_NS) +define+AXI_RX_TIMING_CHECK $(if $(COMPAT_OBJ),-LDFLAGS $(abspath $(COMPAT_OBJ))) tb/sram_reference_model.v
+.PHONY: frontend-help frontend-pe-test frontend-run frontend-synth-check
+frontend-help:
+	@echo 'frontend-pe-test / frontend-run: macro interface + reference behavioral model'
+	@echo 'frontend-synth-check: sv2v/Yosys generic synthesis; exactly 256 SRAM blackboxes'
+	@echo 'Read ../README.md. Generic synthesis / RTL simulation scope.'
+frontend-pe-test:
+	$(MAKE) -f Makefile pe-test VCS_ARGS="$(VCS_ARGS) $(FRONTEND_VCS_ARGS)"
+frontend-run:
+	$(MAKE) -f Makefile run VCS_ARGS="$(VCS_ARGS) $(FRONTEND_VCS_ARGS)"
+frontend-synth-check: prepare
+	$(PYTHON) scripts/check_frontend_synthesis.py --sv2v "$(SV2V)" --yosys "$(YOSYS)"

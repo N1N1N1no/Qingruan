@@ -1,0 +1,23 @@
+{
+  "status": "ISOLATED_PIPELINE_GATE_DRIVERS_GENERATED_NOT_EXECUTED",
+  "source_sha256": {
+    "/mnt/data/Ubuntu/qingruan/native/optimization/prepare_full_soc_gate.py": "8f40987b939ff8b132041b1bd69402ed00137f2c4e63a261c1d9ed42d108c1bd",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/variants/vecpipe_v1/prepare_gate.py": "9443e270e8546c83d6dc24f729b8b4f6a1f38b7e52865bb78efce3829e7637b7",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/run_full_soc_gate_extended.py": "70e440b3eb97e6211070e836d82b957ee5fb635f99cdcfbeddfd2d30c7e6da96",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/variants/vecpipe_v1/run_gate.py": "a668718ba5c196dbd5693ac493244a0ea3f9194a3ac0ec0475e42df7401c8f05",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/run_full_soc_gate_corrupt_parallel.py": "71c8232db88427be986cbff8860f691cb3bcce095218d204bf75459c4377c7c0",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/variants/vecpipe_v1/run_gate_corrupt.py": "bfecc6a7afee952eed3759a8cad3752df48fb522f16ea69f5a9f187b380f2e6a",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/audit_full_soc_annotation.py": "b28c0a4ddd24931d866ad9bcf90193f01804ec59d6a400a66cf1013d27baa842",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/variants/vecpipe_v1/audit_gate_annotation.py": "c54d68ff54f8c9f707d4099670285305dd37fbc3f21f14399b70004021d1b2f1",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/run_full_soc_timing_probe.py": "84ea07545e55f8fd5a392297df9ed5fb09df12a7d851dfd08c8c250a3bf706c3",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/variants/vecpipe_v1/run_gate_timing_probe.py": "59aba283d0d22574097e550d98baaaa19f5ee1159d8287bda6e8a0607a78c00c",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/review_full_soc_gate.py": "c5bb55c5fae303594c381062106b408125afefe6f00dd2ea1f4ab4f69c2fb767",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/variants/vecpipe_v1/review_gate.py": "f9144be841ecf78200eccd3c34a29f0d0c369fec7e6738f10774d7cdefe28a85",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/audit_gate_corruption.py": "67c1ff3950e91de87824e7b2d4537b41b66ae88cbfb882c184c6f0a1be4e05bb",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/variants/vecpipe_v1/audit_gate_corruption.py": "e00d70d9db098a4067dcfcaf97087769639d94016c8c25a0a1274788498bdfcd",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/variants/vecpipe_v1/create_gate_drivers.py": "2cc66ea608a410b33b456fa44d7548e4e0f40109372be452148a7681e783bbd5",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/variants/vecpipe_v1/audit_gate_connections.py": "2092beed452d020f171608d49013befe7daa1289c8befd934bd533386da06030",
+    "/mnt/data/Ubuntu/qingruan/native/optimization/variants/vecpipe_v1/run_gate_workflow.py": "e9838725ce0665c8e5394e8c51e9f07c2996f0b4be56858d4f8900c566ef690e"
+  },
+  "adaptations": "Original qualified gate drivers isolated to current pipeline source/gold case, correct workspace imports and complete source guards. Same physical alias/warning/count checks, actual MIPD-compensated timing probe, frozen simulator and86400s runtime gates. Corruption reviewer retains strict Fatal exception/negative controls."
+}

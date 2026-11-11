@@ -1,0 +1,4 @@
+source /home/zhz/contest/env.sh
+export PS1='[qingruan-native] \u@\h:\w\$ '
+
+source /workspace/native/site-env.sh

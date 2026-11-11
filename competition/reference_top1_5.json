@@ -1,0 +1,167 @@
+{
+  "reference_source": "提供方原始推理结果.txt；保持原Top1记录，不替换为自建CPU结果",
+  "class_index_base": 0,
+  "class_count": 1000,
+  "reference_environment_as_reported": {
+    "runtime": "ONNX Runtime 1.23.2",
+    "provider": "CUDAExecutionProvider",
+    "device": "NVIDIA A100",
+    "TF32": false,
+    "graph_optimization": "ORT_DISABLE_ALL",
+    "execution": "ORT_SEQUENTIAL",
+    "intra_op_threads": 1,
+    "inter_op_threads": 1
+  },
+  "images": [
+    {
+      "file": "ILSVRC2012_val_00000274.JPEG",
+      "top1": {
+        "Swin-Tiny": {
+          "index": 607,
+          "wnid": "n03590841",
+          "label": "jack-o'-lantern"
+        },
+        "ViT-Base": {
+          "index": 920,
+          "wnid": "n06874185",
+          "label": "traffic light, traffic signal, stoplight"
+        },
+        "DeiT-Base": {
+          "index": 818,
+          "wnid": "n04286575",
+          "label": "spotlight, spot"
+        },
+        "ResNet-50": {
+          "index": 879,
+          "wnid": "n04507155",
+          "label": "umbrella"
+        },
+        "MobileNetV3-Large": {
+          "index": 862,
+          "wnid": "n04456115",
+          "label": "torch"
+        }
+      }
+    },
+    {
+      "file": "ILSVRC2012_val_00000914.JPEG",
+      "top1": {
+        "Swin-Tiny": {
+          "index": 853,
+          "wnid": "n04417672",
+          "label": "thatch, thatched roof"
+        },
+        "ViT-Base": {
+          "index": 743,
+          "wnid": "n04005630",
+          "label": "prison, prison house"
+        },
+        "DeiT-Base": {
+          "index": 698,
+          "wnid": "n03877845",
+          "label": "palace"
+        },
+        "ResNet-50": {
+          "index": 858,
+          "wnid": "n04435653",
+          "label": "tile roof"
+        },
+        "MobileNetV3-Large": {
+          "index": 497,
+          "wnid": "n03028079",
+          "label": "church, church building"
+        }
+      }
+    },
+    {
+      "file": "ILSVRC2012_val_00004628.JPEG",
+      "top1": {
+        "Swin-Tiny": {
+          "index": 488,
+          "wnid": "n02999410",
+          "label": "chain"
+        },
+        "ViT-Base": {
+          "index": 761,
+          "wnid": "n04074963",
+          "label": "remote control, remote"
+        },
+        "DeiT-Base": {
+          "index": 902,
+          "wnid": "n04579432",
+          "label": "whistle"
+        },
+        "ResNet-50": {
+          "index": 487,
+          "wnid": "n02992529",
+          "label": "cellular telephone, cellular phone, cellphone, cell, mobile phone"
+        },
+        "MobileNetV3-Large": {
+          "index": 679,
+          "wnid": "n03814906",
+          "label": "necklace"
+        }
+      }
+    },
+    {
+      "file": "ILSVRC2012_val_00004937.JPEG",
+      "top1": {
+        "Swin-Tiny": {
+          "index": 480,
+          "wnid": "n02977058",
+          "label": "cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM"
+        },
+        "ViT-Base": {
+          "index": 807,
+          "wnid": "n04258138",
+          "label": "solar dish, solar collector, solar furnace"
+        },
+        "DeiT-Base": {
+          "index": 704,
+          "wnid": "n03891332",
+          "label": "parking meter"
+        },
+        "ResNet-50": {
+          "index": 707,
+          "wnid": "n03902125",
+          "label": "pay-phone, pay-station"
+        },
+        "MobileNetV3-Large": {
+          "index": 637,
+          "wnid": "n03710193",
+          "label": "mailbox, letter box"
+        }
+      }
+    },
+    {
+      "file": "ILSVRC2012_val_00008350.JPEG",
+      "top1": {
+        "Swin-Tiny": {
+          "index": 459,
+          "wnid": "n02892767",
+          "label": "brassiere, bra, bandeau"
+        },
+        "ViT-Base": {
+          "index": 501,
+          "wnid": "n03045698",
+          "label": "cloak"
+        },
+        "DeiT-Base": {
+          "index": 869,
+          "wnid": "n04479046",
+          "label": "trench coat"
+        },
+        "ResNet-50": {
+          "index": 578,
+          "wnid": "n03450230",
+          "label": "gown"
+        },
+        "MobileNetV3-Large": {
+          "index": 728,
+          "wnid": "n03958227",
+          "label": "plastic bag"
+        }
+      }
+    }
+  ]
+}

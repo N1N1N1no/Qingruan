@@ -1,0 +1,13 @@
+{
+  "status": "GATE_WORKFLOW_SYNTAX_FAILURE_BEFORE_ANY_GATE_PREPARATION",
+  "session": 35729,
+  "terminal_exit_code": 1,
+  "error": "state.update mixed keyword argument and dictionary-item syntax; positional argument follows keyword argument",
+  "gate_compilation_started": false,
+  "gate_work_directory_created": false,
+  "archived_sha256": {
+    "create_gate_drivers.py": "3b8615374e89a2b97d3557befef67c2eb99ed8f8e47891131782bf4afb1c3610",
+    "gate-drivers-generation.json": "142fe5eab1b42caeb7829b58dae5e40b5634b243b7150dbb17374d51b8fec9bb",
+    "run_gate_workflow.py": "6907b537ecd6acdf5cff1a141ac355773d7a3c5f19ae39fd2e037d54e0feb923"
+  }
+}
